@@ -5,6 +5,8 @@ node_modules
 text-dump
 /public/static/text/fnreplaced
 /public/static/text/corrected
+/public/assets/databases
+server/dict.db
 
 # local env files
 .env.local

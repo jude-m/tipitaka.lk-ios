@@ -15,6 +15,7 @@ const dictionaryList = [ // shortname to filename map
     ['PN', 'en-dppn.json'],
     ['VRI', 'en-vri.json'],
     ['CR', 'en-critical.json'],
+    ['DPD', 'en-dpd.json'],
     
     ['BUS', 'sinhala/buddhadatta_dict.json'],
     ['MS', 'sinhala/sumangala_dict.json'],
@@ -23,14 +24,32 @@ const dictionaryList = [ // shortname to filename map
 const dataInputFolder = path.join(__dirname, 'dict-input')
 let allWords = []
 let meaningsProcessed = 0
+let allWordsFromDPD = []
 
 dictionaryList.forEach(([shortName, filename]) => {
     const data = JSON.parse(fs.readFileSync(path.join(dataInputFolder, filename)))
-    data.forEach(([word, meaning]) => {
-        if (shortName == 'CR') meaning = removeBRTags(meaning)
-        word = word.replace(/\d$/, '') // some words have ending numbers
-        allWords.push([word, shortName, meaning])
-    })
+    
+    ///TODO - remove the additional list
+    if (shortName === 'DPD') {
+        (async () => {
+            const { convert, Script } = await import('@pnfo/pali-converter')
+                data.forEach(({ definition, word }) => {
+                let siword = convert(word, Script.SI, Script.RO)
+                if (siword) { 
+                    allWordsFromDPD.push([siword, word, definition])
+                } else {
+                    console.log(`Could not covert to SI ${word}`)
+                }
+            })
+          })().catch(console.error)
+            
+    } else {
+        data.forEach(([word, meaning]) => {
+            if (shortName == 'CR') meaning = removeBRTags(meaning)
+            word = word.replace(/\d$/, '') // some words have ending numbers
+            allWords.push([word, shortName, meaning])
+        })
+    }
     meaningsProcessed += data.length
 })
 
@@ -61,6 +80,9 @@ async function writeToSqlite() {
     await dictDb.runAsync('CREATE INDEX worddict ON dictionary(word, dict);');
     allWords.forEach(([word, dict, meaning]) => {
         dictDb.run('INSERT INTO dictionary (word, dict, meaning) VALUES (?, ?, ?)', [word, dict, meaning]);
+    });
+    allWordsFromDPD.forEach(([siword, word, definition]) => {
+        dictDb.run('INSERT INTO dictionary (word, dict, meaning) VALUES (?, ?, ?)', [siword, 'DPD', definition]);
     });
     dictDb.run('COMMIT').close();
 }

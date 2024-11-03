@@ -24,9 +24,15 @@ export const querySqlite = async (type, sql) => {
             const sqliteDictConn = new SQLiteConnection(CapacitorSQLite);
             const dbDict = await sqliteDictConn.createConnection(dbFileNameDict, false, 'no-encryption', 1);
 
-            await dbDict.open();
+            await dbDict.open(); 
             console.log("query>> " + sql);
             const result = await dbDict.query(sql);
+            
+            console.log("Result>> ");
+            result.values.forEach((row) => {
+               console.log(row);
+            });
+            
             await dbDict.close();
             await sqliteDictConn.closeConnection(dbFileNameDict);
             return result.values;
