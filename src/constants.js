@@ -1,8 +1,8 @@
 import { Capacitor } from "@capacitor/core"
 
 /** special flags and constants */
-export const tipitakaAppVersion = 2.0 // used to determine if app needs to be updated 
-
+export const latestAndroidAppVersion = 2.0 // used to determine if app needs to be updated 
+export const latestIosAppVersion = 1.0 // used to determine if ios app needs to be updated
 const settingsVersion = '2'
 export const settingsKey = `tipitaka.lk-settings-${settingsVersion}`
 const bookmarksVersion = '1'
