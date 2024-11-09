@@ -33,6 +33,10 @@ function dictWordList(input) {
 	return [...words, ...stripEnd, ...addVowel].filter((w, i, ar) => ar.indexOf(w) == i) // concat and remove duplicates
 }
 
+function normalizeWord(input) {
+  return input.toLowerCase().replace(/[\u200d\.,:\?\(\)“”‘’]/g, '') 
+}
+
 const dbVersions = { // updated dbs need to be marked here for update in android app
   'dict': 2,
   'fts': 2
@@ -61,7 +65,8 @@ export default {
     titleSearchCache: {},
     md5SearchCache: { 'fts': {}, 'dict': {} },
     maxResults: 100,  // search stopped after getting this many matches
-    inlineDict: { show: false, wordElem: null, word: '', results: {} },
+    inlineDict: { show: false, wordElem: null, word: '', results: {}, exactMatch: false },
+    exactMatchPage: false,
 
     bookmarks: {}, // loaded from localStorage
   },
@@ -108,6 +113,10 @@ export default {
       state.selectedDictionaries = newList
       saveSettings(state)
     },
+    setExactMatchPage(state, value) {
+      state.exactMatchPage = value
+    },
+
     setInlineDict(state, { prop, value }) {
       if (prop == 'show' && !value && state.inlineDict.wordElem) {
         state.inlineDict.wordElem.classList.remove('bottom-open')
@@ -175,11 +184,24 @@ export default {
     async runInlineDictQuery({ commit, dispatch, getters, state }) {
       commit('setInlineDict', { prop: 'queryRunning', value: true })
       commit('setInlineDict', { prop: 'errorMessage', value: '' })
+
       const word = state.inlineDict.word
+      const exactMatch = state.inlineDict.exactMatch
+
+      console.log("exactMatch>>>>" + state.inlineDict.exactMatch)
       const dictList = getters['getShortDicts']
+
+      let whereClause
+      if(exactMatch) {
+          whereClause = `WHERE word = '${normalizeWord(word)}';`
+      } else {
+          whereClause = `WHERE word IN ('${dictWordList(word).join("','")}')`
+      }
+
       const sql = `SELECT word, dict, meaning FROM dictionary 
-        WHERE word IN ('${dictWordList(word).join("','")}') AND dict IN ('${[...dictList, 'BR'].join("','")}')
-        ORDER BY word LIMIT 50;`
+                   ${whereClause} AND dict IN ('${[...dictList, 'BR'].join("','")}')
+                   ORDER BY word LIMIT 50;`
+
       try {
         const results = await dispatch('runDictQuery', { sql, 'input': word })
         commit('setInlineDict', { prop: 'results', value: results })
@@ -189,8 +211,15 @@ export default {
       commit('setInlineDict', { prop: 'queryRunning', value: false })
     },
 
-    async runPageDictQuery({ dispatch, getters }, input) {
+    async runPageDictQuery({ dispatch, getters }, {input, exactMatchPage}) {
       const wordsList = dictWordList(input), dictFilter = `dict IN ('${getters['getShortDicts'].join("', '")}')`
+      let whereClause
+      if (exactMatchPage) {
+        whereClause = `WHERE word = '${normalizeWord(input)}';`
+      } else {
+        whereClause = `WHERE word IN ('${wordsList.join("','")}')`
+      }
+      
       const likePrefixQuery = (wordsList.length > 100) ? '' :
        `UNION
           SELECT word, COUNT(dict) AS num, 'like' AS meaning FROM dictionary 
@@ -198,8 +227,8 @@ export default {
             GROUP BY word`
 
       const sql = `SELECT word, dict, meaning FROM dictionary 
-            WHERE word IN ('${wordsList.join("','")}') AND (${dictFilter} OR dict = 'BR')
-          ${likePrefixQuery} ORDER BY word LIMIT 50;`
+                  ${whereClause} AND (${dictFilter} OR dict = 'BR')
+                  ${likePrefixQuery} ORDER BY word LIMIT 50;`
       return dispatch('runDictQuery', { sql, input })
     },
 
