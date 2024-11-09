@@ -64,7 +64,7 @@
           </v-card-text>
           <v-card-actions>
             <v-slider v-model="fontSize" step="1" ticks="always" :thumb-size="24"
-              thumb-label="always" :min="-5" :max="5"></v-slider>
+              thumb-label="always" :min="-5" :max="10"></v-slider>
           </v-card-actions>
         </v-card>
       </v-col>

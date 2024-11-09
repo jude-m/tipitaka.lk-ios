@@ -34,6 +34,7 @@ export const dictionaryInfo = {
     'VRI English': [Language.EN, 'VRI', 'en-vri', {d: 'Dictionary distributed with VRI Chatta Sangayana Software', g: true, n: 13508}],
     'Critical PD': [Language.EN, 'CR', 'en-critical', {d: 'Critical Pali Dictionary - limited number of words', o: 'extracted from https://cpd.uni-koeln.de/', n: 29669, g: true}],
     'Digital Pali Dictionary': [Language.EN, 'DPD', 'en-dpd', {d: 'Digital Pali Dictionary', o: 'dpr', g: true}],
+    'DPD Construction': [Language.EN, 'DPDC', 'en-dpd-construction', {d: 'Digital Pali Dictionary Construction', o: 'dpr', g: true}],
 }
 
 export const IOS = 'ios';
