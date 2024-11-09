@@ -1,2 +1,4 @@
 # server/fts.db filter=lfs diff=lfs merge=lfs -text
 fts.db filter=lfs diff=lfs merge=lfs -text
+dev/dicts/dict-input/en-dpd.json filter=lfs diff=lfs merge=lfs -text
+server/dict.db filter=lfs diff=lfs merge=lfs -text
