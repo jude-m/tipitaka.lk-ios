@@ -102,8 +102,8 @@
 <script>
 import TabColumnSelector from '@/components/TabColumnSelector'
 import { mapState } from 'vuex'
-import { latestAndroidAppVersion, latestIosAppVersion, platform, IOS} from '@/constants.js'
-import axios from 'axios'
+import { installedAndroidAppVersion, installedIosAppVersion, platform, IOS} from '@/constants.js'
+import { getLatestVersionAvailable } from '../services/version-service'
 
 function getVuexBindings(props) {
   const bindings = {}
@@ -122,7 +122,7 @@ export default {
   },
 
   data: () => ({
-    version: platform === IOS ? latestIosAppVersion : latestAndroidAppVersion, //Number(process.env.VUE_APP_VERSION),
+    version: platform === IOS ? installedIosAppVersion : installedAndroidAppVersion, //Number(process.env.VUE_APP_VERSION),
     newVersion: 0,
   }),
   computed: {
@@ -157,33 +157,36 @@ export default {
 
   methods: {
     async checkVersion() {
-      if (platform === IOS) {
-        try {
-              const bundleId = "lk.tipitaka.ios";
-              const url = `https://itunes.apple.com/lookup?bundleId=${bundleId}`;
 
-              const response = await axios.get(url);
+      this.newVersion = await getLatestVersionAvailable();
 
-              // Check if the response contains data
-              if (response.data.resultCount > 0) {
-                this.newVersion = response.data.results[0].version;
-                console.log('Version fetched from itunes:', this.newVersion);
-              } else {
-                throw new Error('No results found for the provided bundle ID');
-              }
-          } catch (error) {
-            console.error('Error checking for update:', error.message);
-            this.newVersion = -1
-          }
-   } else {
-        try {
-          const response = await axios.get('https://tipitaka.lk/tipitaka-query/version')
-          this.newVersion = Number(response.data.split('v').pop()) // returns something like "Tipitaka.lk v2.0"
-        } catch (error) {
-          console.log('Error checking for update:',error)
-          this.newVersion = -1
-        }
-      }
+  //     if (platform === IOS) {
+  //       try {
+  //             const bundleId = "lk.tipitaka.ios";
+  //             const url = `https://itunes.apple.com/lookup?bundleId=${bundleId}`;
+
+  //             const response = await axios.get(url);
+
+  //             // Check if the response contains data
+  //             if (response.data.resultCount > 0) {
+  //               this.newVersion = response.data.results[0].version;
+  //               console.log('Version fetched from itunes:', this.newVersion);
+  //             } else {
+  //               throw new Error('No results found for the provided bundle ID');
+  //             }
+  //         } catch (error) {
+  //           console.error('Error checking for update:', error.message);
+  //           this.newVersion = -1
+  //         }
+  //  } else {
+  //       try {
+  //         const response = await axios.get('https://tipitaka.lk/tipitaka-query/version')
+  //         this.newVersion = Number(response.data.split('v').pop()) // returns something like "Tipitaka.lk v2.0"
+  //       } catch (error) {
+  //         console.log('Error checking for update:',error)
+  //         this.newVersion = -1
+  //       }
+  //    }
     },
   },
 

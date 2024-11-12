@@ -1,8 +1,8 @@
 import { Capacitor } from "@capacitor/core"
 
 /** special flags and constants */
-export const latestAndroidAppVersion = 2.0 // used to determine if app needs to be updated 
-export const latestIosAppVersion = 1.0 // used to determine if ios app needs to be updated
+export const installedAndroidAppVersion = 2.0 // used to determine if app needs to be updated 
+export const installedIosAppVersion = 1.0 // used to determine if ios app needs to be updated
 const settingsVersion = '2'
 export const settingsKey = `tipitaka.lk-settings-${settingsVersion}`
 const bookmarksVersion = '1'
@@ -41,7 +41,8 @@ export const IOS = 'ios';
 export const platform = Capacitor.getPlatform();
 export const dbFileNameDict = 'dict.db';
 export const dbFileNameFts = 'fts.db';
-
+export const bundleId = "lk.tipitaka.ios";
+ 
 // helper function to copy the title to the og:title
 export const copyMetaTitle = (title) => ({
     title,

@@ -103,16 +103,50 @@
 </style>
 
 <script>
-import { IOS, platform } from '../constants';
+import Vue from "vue";
+import { installedAndroidAppVersion, installedIosAppVersion, platform, IOS} from '@/constants.js'
+import Toast from "vue-toastification";
+import "vue-toastification/dist/index.css";
+import { getLatestVersionAvailable } from '../services/version-service'
+import NewVersion from '@/components/NewVersion'
+
+const options = {
+    // You can set your default options here
+};
+Vue.use(Toast, options);
+
+
 
 export default {
   metaInfo: {
     title: 'Welcome / පිළිගනිමු',
   },
+
+  data: () => ({
+    version: platform === IOS ? installedIosAppVersion : installedAndroidAppVersion, //Number(process.env.VUE_APP_VERSION),
+    latestVersion: 0,
+  }),
   computed: {
       isIOS() {
-      return platform === IOS;
-    }
-  }
+        return platform === IOS;
+      },
+  },
+
+  methods: {
+    async notifyNewVersion() {
+        try {
+        this.latestVersion = await getLatestVersionAvailable();
+        } catch (e) {
+          console.log(e.message);
+        }
+      
+      if (1.5 > installedIosAppVersion) {
+        this.$toast.info(NewVersion, {timeout:10000});
+      }
+    },
+  },
+
+  mounted() {this.notifyNewVersion();},
+
 }
 </script>
