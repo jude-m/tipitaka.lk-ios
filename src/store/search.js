@@ -215,12 +215,12 @@ export default {
       const wordsList = dictWordList(input), dictFilter = `dict IN ('${getters['getShortDicts'].join("', '")}')`
       let whereClause
       if (exactMatchPage) {
-        whereClause = `WHERE word = '${normalizeWord(input)}';`
+        whereClause = `WHERE word = '${normalizeWord(input)}'`
       } else {
         whereClause = `WHERE word IN ('${wordsList.join("','")}')`
       }
       
-      const likePrefixQuery = (wordsList.length > 100) ? '' :
+      const likePrefixQuery = (wordsList.length > 100 || exactMatchPage) ? '' :
        `UNION
           SELECT word, COUNT(dict) AS num, 'like' AS meaning FROM dictionary 
             WHERE (word LIKE '${wordsList.join("_%' OR word LIKE '")}_%') AND ${dictFilter}

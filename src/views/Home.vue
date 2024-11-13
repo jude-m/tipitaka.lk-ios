@@ -13,21 +13,23 @@
     </v-sheet>
     
     <v-sheet v-if="showInlineDict" class="bottom-sheet pb-2" :style="{ height: sheetHeight }" :elevation="7">
-      <v-toolbar dense flat>
-        <v-text-field v-model="inlineWord" hide-details class="shrink"></v-text-field>
+      <v-toolbar :dense="$vuetify.breakpoint.smAndDown" flat>
+        <v-text-field v-model="inlineWord" hide-details :class="{ grow: $vuetify.breakpoint.mdAndUp }"></v-text-field>
         <v-btn icon @click="inlineWordBackspace"><v-icon>mdi-backspace</v-icon></v-btn>
-        <v-btn @click="$router.push('/fts/' + inlineWord)" :icon="true">
-          <v-icon color="primary">mdi-magnify</v-icon>
-        </v-btn>
-        <v-btn v-model="exactMatch" @click="toggleExactMatch"  icon="true">
-          <v-icon :color="exactMatch ? 'primary' : ''">mdi-format-letter-matches</v-icon>
-        </v-btn>
-        <v-btn @click="resizeInlineDictSheet" icon="true">
-          <v-icon color="primary">{{ isExpanded ? 'mdi-chevron-down-circle-outline' : 'mdi-chevron-up-circle-outline' }}</v-icon>
-        </v-btn>
-        <v-btn @click="showInlineDict = !showInlineDict" icon color="error">
-          <v-icon>mdi-close</v-icon>
-        </v-btn>
+        <div class="button-container">
+          <v-btn  @click="$router.push('/fts/' + inlineWord)" :icon="true">
+            <v-icon :size="$vuetify.breakpoint.mdAndUp ? '36px' : '24px'" color="primary">mdi-magnify</v-icon>
+          </v-btn>
+          <v-btn v-model="exactMatch" @click="toggleExactMatch"  icon="true">
+            <v-icon :size="$vuetify.breakpoint.mdAndUp ? '36px' : '24px'" :color="exactMatch ? 'primary' : ''">mdi-format-letter-matches</v-icon>
+          </v-btn>
+          <v-btn @click="resizeInlineDictSheet" icon="true">
+            <v-icon :size="$vuetify.breakpoint.mdAndUp ? '36px' : '24px'" color="primary">{{ isExpanded ? 'mdi-chevron-down-circle-outline' : 'mdi-chevron-up-circle-outline' }}</v-icon>
+          </v-btn>
+          <v-btn @click="showInlineDict = !showInlineDict" icon color="error">
+            <v-icon :size="$vuetify.breakpoint.mdAndUp ? '36px' : '24px'">mdi-close</v-icon>
+          </v-btn>
+        </div>
       </v-toolbar>
 
       <v-sheet :style="{ height: '100%', overflowY: 'auto' }">
@@ -48,6 +50,25 @@
   z-index: 10; border-top: 1px solid var(--v-secondary-base); }
 .result .word { color: var(--v-info-base); }
 .search-message { font-size: 0.9rem; }
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+/* For medium screens and below (e.g., tablets and mobile) */
+@media (max-width: 768px) {
+  .button-container {
+    gap: 4px; /* Smaller gap for tablets and mobile */
+  }
+}
+
+/* For small screens (e.g., mobile) */
+@media (max-width: 480px) {
+  .button-container {
+    gap: 1px; /* Even smaller gap for mobile */
+  }
+}
 </style>
 
 <script>

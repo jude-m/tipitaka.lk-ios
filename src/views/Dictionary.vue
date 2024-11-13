@@ -6,12 +6,18 @@
       {{ searchMessage }}
       <ShareLinkIcon :link="linkToPage" />
     </v-banner>
-
-    <DictionaryFilter />
-    <v-btn v-model="exactMatchPage" @click="toggleExactMatch" class="mb-6">
-        <v-icon class="mr-2" :color="exactMatchPage ? 'primary' : ''">mdi-format-letter-matches</v-icon>
+    <v-row >
+    <v-col cols="12">
+      <DictionaryFilter />
+    </v-col>
+    <v-col cols="12">
+      <v-btn v-model="exactMatchPage" @click="toggleExactMatch" class="mb-6">
+        <v-icon :color="exactMatchPage ? 'primary' : ''">mdi-format-letter-matches</v-icon>
         <span>එම වචනයම සොයන්න</span>
-    </v-btn>
+      </v-btn>
+    </v-col>
+  </v-row>
+
     <v-spacer></v-spacer>
     <v-skeleton-loader v-if="queryRunning" type="table"></v-skeleton-loader>
 

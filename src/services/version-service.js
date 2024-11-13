@@ -9,6 +9,7 @@ export const getLatestVersionAvailable = async () => {
 
       // Check if the response contains data
       if (response.data.resultCount > 0) {
+        console.log("response.data.results[0].version>>"+response.data.results[0].version);
         return response.data.results[0].version;
       } else {``
         throw new Error('No results found for the provided bundle ID');

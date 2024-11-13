@@ -1,25 +1,37 @@
 <template>
-  <div class="button-container">
-    <v-btn text class="toast-button" @click="handleDismiss">Dismiss</v-btn>
-    <v-btn tile color="#F48045FF" class="toast-button" @click="handleUpdate">Update</v-btn>
+  <div class="update-notification">
+    <p class="update-message" readonly>නව අනුවාදයක් තිබේ.</p>
+    <div class="button-container">
+      <v-btn text class="toast-button" @click="handleDismiss">අවශ්‍ය නැ​ත</v-btn>
+      <v-btn tile color="#F48045FF" class="toast-button" @click="handleUpdate" style="font-weight: bold">යාවත්කාල කරන්​න</v-btn>
+    </div>
   </div>
 </template>
 
 <style scoped>
+
+.update-message {
+  background: transparent; 
+  font-size: 1.5rem; 
+  font-weight: bold; 
+  flex-grow: 1; 
+  margin-bottom: 18px; 
+}
+
 .button-container {
   display: flex;
   justify-content: flex-end;
-  /* Aligns buttons to the right */
   gap: 8px;
-  /* Adds space between the buttons */
 }
 
 .toast-button {
   /* Optional: Add button-specific styling */
-  padding: 8px 16px;
+  padding: 6px 14px;
+  font-size: 1rem; 
   color: white;
   cursor: pointer;
   border-radius: 4px;
+  min-width: 60px;
 }
 </style>
 

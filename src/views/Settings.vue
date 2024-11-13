@@ -64,7 +64,7 @@
           </v-card-text>
           <v-card-actions>
             <v-slider v-model="fontSize" step="1" ticks="always" :thumb-size="24"
-              thumb-label="always" :min="-5" :max="10"></v-slider>
+              thumb-label="always" :min="-6" :max="12"></v-slider>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -157,36 +157,7 @@ export default {
 
   methods: {
     async checkVersion() {
-
       this.newVersion = await getLatestVersionAvailable();
-
-  //     if (platform === IOS) {
-  //       try {
-  //             const bundleId = "lk.tipitaka.ios";
-  //             const url = `https://itunes.apple.com/lookup?bundleId=${bundleId}`;
-
-  //             const response = await axios.get(url);
-
-  //             // Check if the response contains data
-  //             if (response.data.resultCount > 0) {
-  //               this.newVersion = response.data.results[0].version;
-  //               console.log('Version fetched from itunes:', this.newVersion);
-  //             } else {
-  //               throw new Error('No results found for the provided bundle ID');
-  //             }
-  //         } catch (error) {
-  //           console.error('Error checking for update:', error.message);
-  //           this.newVersion = -1
-  //         }
-  //  } else {
-  //       try {
-  //         const response = await axios.get('https://tipitaka.lk/tipitaka-query/version')
-  //         this.newVersion = Number(response.data.split('v').pop()) // returns something like "Tipitaka.lk v2.0"
-  //       } catch (error) {
-  //         console.log('Error checking for update:',error)
-  //         this.newVersion = -1
-  //       }
-  //    }
     },
   },
 

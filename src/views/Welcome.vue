@@ -116,7 +116,6 @@ const options = {
 Vue.use(Toast, options);
 
 
-
 export default {
   metaInfo: {
     title: 'Welcome / පිළිගනිමු',
@@ -139,8 +138,7 @@ export default {
         } catch (e) {
           console.log(e.message);
         }
-      
-      if (1.5 > installedIosAppVersion) {
+      if (this.latestVersion > installedIosAppVersion) {
         this.$toast.info(NewVersion, {timeout:10000});
       }
     },
