@@ -249,7 +249,7 @@
     ],
     [
         "akaritvā",
-        "na > a + √kar + itvā"
+        "na > a + √kar + itvā\nna + karitvā"
     ],
     [
         "akarissa",
@@ -333,7 +333,7 @@
     ],
     [
         "akāretvā",
-        "na > a + kāre + tvā"
+        "na > a + kāre + tvā\nna + kāretvā"
     ],
     [
         "akālacārī",
@@ -809,7 +809,7 @@
     ],
     [
         "akhantiya",
-        "√kham + ti + iya\nakhanti + iya"
+        "na > a + √kham + ti + iya\nakhanti + iya"
     ],
     [
         "akhādana",
@@ -837,7 +837,7 @@
     ],
     [
         "akhepetvā",
-        "na > a + khepe + tvā"
+        "na > a + khepe + tvā\nna + khepetvā"
     ],
     [
         "akhema",
@@ -897,7 +897,7 @@
     ],
     [
         "agantvā",
-        "na > a + √gam + tvā"
+        "na > a + √gam + tvā\nna + gantvā"
     ],
     [
         "agandhaka",
@@ -961,11 +961,11 @@
     ],
     [
         "agarukatvā",
-        "na > a + garu + katvā"
+        "na > a + garu + katvā\nna + garukatvā"
     ],
     [
         "agarukaritvā",
-        "na > a + garu + karitvā"
+        "na > a + garu + karitvā\nna + garukaritvā"
     ],
     [
         "agaruṃ karitvā",
@@ -1050,6 +1050,10 @@
     [
         "agilānasaññī",
         "agilāna + saññī"
+    ],
+    [
+        "agiha",
+        "na > a + √gah > gih + a"
     ],
     [
         "aguṇakoṭṭhāsa",
@@ -1713,7 +1717,7 @@
     ],
     [
         "acetana",
-        "na > a + √cit > cet + *ana"
+        "na > a + cete + ana"
     ],
     [
         "acetayanta",
@@ -1769,7 +1773,7 @@
     ],
     [
         "acorī",
-        "√cur > cor + a + *ī\nacora + ī"
+        "na > a + √cur > cor + a + *ī\nacora + ī"
     ],
     [
         "acc",
@@ -2042,6 +2046,10 @@
     [
         "acchinnavutti",
         "acchinna + vutti"
+    ],
+    [
+        "acchibaddha",
+        "acci + baddha"
     ],
     [
         "acchupanta",
@@ -2576,6 +2584,10 @@
         "adhi > adhy > ajjh + upa + √ikkh + itvā"
     ],
     [
+        "ajjhupeti",
+        "adhi > adhy > ajjh + upa + e + ti"
+    ],
+    [
         "ajjhūpagata",
         "adhi > adhy > ajjh + upa + √gam + ta"
     ],
@@ -2706,10 +2718,6 @@
     [
         "ajjhoharaṇīya",
         "adhi > adhy > ajjh + ava + √har + aṇīya"
-    ],
-    [
-        "ajjhoharati",
-        "adhi > adhy > ajjh + ava + hara + ti"
     ],
     [
         "ajjhohari",
@@ -2910,10 +2918,6 @@
     [
         "aññamaññapaccayatā",
         "aññamañña + paccayatā"
-    ],
-    [
-        "aññamaññassa",
-        "aññaṃ + aññassa"
     ],
     [
         "aññamaññavacana",
@@ -3220,6 +3224,10 @@
         "aṭṭīya + itvā"
     ],
     [
+        "aṭṭha vimokkhā",
+        "aṭṭha + vimokkhā"
+    ],
+    [
         "aṭṭhaabhibhāyatana",
         "aṭṭha + abhibhāyatana"
     ],
@@ -3302,6 +3310,10 @@
     [
         "aṭṭhatiṃsārammaṇāni",
         "aṭṭhatiṃsa + ārammaṇa + āni\naṭṭhatiṃsārammaṇa + āni"
+    ],
+    [
+        "aṭṭhadoṇa",
+        "aṭṭha + doṇa"
     ],
     [
         "aṭṭhadosavimuttatta",
@@ -3574,6 +3586,10 @@
     [
         "aṭṭhiṃmiñja",
         "aṭṭhiṃ + miñja"
+    ],
+    [
+        "aṭṭhīkatvā",
+        "aṭṭha > aṭṭhī + katvā"
     ],
     [
         "aṭṭhīyakapiṇḍa",
@@ -3972,6 +3988,10 @@
         "ati + √gar + u"
     ],
     [
+        "aticari",
+        "ati + √car + i"
+    ],
+    [
         "aticira",
         "ati + cira"
     ],
@@ -4118,6 +4138,10 @@
     [
         "atinivāsa",
         "ati + ni + √vas > vās + *a"
+    ],
+    [
+        "atinīca",
+        "ati + nīca"
     ],
     [
         "atipaggahita",
@@ -4476,6 +4500,10 @@
         "ati + sīgha + aṃ\natisīgha + aṃ"
     ],
     [
+        "atisīta",
+        "ati + √sid > sit > sīt + *a"
+    ],
+    [
         "atisītaṃ",
         "ati + √sid > sit > sīt + *a + aṃ\natisīta + aṃ"
     ],
@@ -4694,6 +4722,10 @@
     [
         "attajjhāsaya",
         "atta + ajjhāsaya"
+    ],
+    [
+        "attaññū",
+        "atta + ñū"
     ],
     [
         "attaṭṭhena",
@@ -5904,6 +5936,10 @@
         "addhāna + magga + paṭippanna"
     ],
     [
+        "addhānaṃ āpādeti",
+        "addhānaṃ + āpādeti"
+    ],
+    [
         "addhika",
         "addha + ika"
     ],
@@ -5926,6 +5962,10 @@
     [
         "advejjhavāca",
         "advejjha + vāca"
+    ],
+    [
+        "adhakkhaka",
+        "adho + akkhaka"
     ],
     [
         "adhana",
@@ -6376,6 +6416,10 @@
         "adhimuttaka + mālā"
     ],
     [
+        "adhimuttacitta",
+        "adhimutta + citta"
+    ],
+    [
         "adhimuttikatā",
         "adhi + √muc + ti + ka + tā\nadhimuttika + tā"
     ],
@@ -6710,6 +6754,10 @@
     [
         "anajjhāvuṭṭha",
         "na > a + adhi > adhy > ajjh + ā + √vas > vus + ta"
+    ],
+    [
+        "anajjhāvuṭṭhapubba",
+        "na > an + ajjhāvuṭṭha + pubba"
     ],
     [
         "anajjhāvuttha",
@@ -7621,7 +7669,7 @@
     ],
     [
         "anavakkanta",
-        "na > an + ava + √kam + ta\nna + avakkanta"
+        "na > an + ava + √kam + ta"
     ],
     [
         "anavajjatā",
@@ -8009,7 +8057,7 @@
     ],
     [
         "anāmantetvā",
-        "na > an + ā + mante + tvā"
+        "na > an + ā + mante + tvā\nna + āmantetvā"
     ],
     [
         "anāmetvā",
@@ -10024,8 +10072,8 @@
         "anurakkhaṇā + padhāna"
     ],
     [
-        "anurakkhatā",
-        "anu + √rakkh + ā + tā\nanurakkhā + tā"
+        "anurakkhanta",
+        "anu + rakkha + nta"
     ],
     [
         "anurakkhati",
@@ -10853,7 +10901,7 @@
     ],
     [
         "anopama",
-        "na > an + upa > opa + √mā + *a\nanupama + *a"
+        "na > an + upa > opa + √mā + ā + *a\nanopamā + *a"
     ],
     [
         "anopārambha",
@@ -11557,7 +11605,7 @@
     ],
     [
         "anvā",
-        "anu + ā"
+        "anu > anv + ā"
     ],
     [
         "anvāgameti",
@@ -11598,6 +11646,10 @@
     [
         "anvāhiṇḍanta",
         "anu > anv + ā + hiṇḍa + nta"
+    ],
+    [
+        "anventa",
+        "anu > anv + e + nta"
     ],
     [
         "anvesanta",
@@ -12648,10 +12700,6 @@
         "apa + sāde + anā"
     ],
     [
-        "apasādita",
-        "apa + sāde + ita"
-    ],
-    [
         "apasādetabba",
         "apa + sāde + tabba"
     ],
@@ -13261,7 +13309,7 @@
     ],
     [
         "appaṭimaṃsa",
-        "na > a + pati + √mas + ya > maṃsa"
+        "na > a + pati + √mas + ya > massa > maṃsa"
     ],
     [
         "appaṭirūpa",
@@ -13625,7 +13673,7 @@
     ],
     [
         "appamādarata",
-        "na > a + pamāda + rata"
+        "appamāda + rata"
     ],
     [
         "appamādasamosaraṇa",
@@ -14460,10 +14508,6 @@
         "na > a + vi > vy > by + √añj + ta"
     ],
     [
-        "abyaya",
-        "na > a + vi > vy > by + √i > ay + *a"
-    ],
-    [
         "abyayībhāva",
         "abyaya > abyayī + bhāva"
     ],
@@ -14972,6 +15016,10 @@
         "abhijānāmi + ahaṃ"
     ],
     [
+        "abhijāni",
+        "abhi + jānā + i"
+    ],
+    [
         "abhijānitvā",
         "abhi + jānā + itvā"
     ],
@@ -15006,6 +15054,10 @@
     [
         "abhijjhābyāpāda",
         "abhijjhā + byāpāda"
+    ],
+    [
+        "abhijjhāyati",
+        "abhi + jhāya + ti"
     ],
     [
         "abhijjhāyanta",
@@ -15230,6 +15282,10 @@
     [
         "abhinandī",
         "abhi + √nand + ī"
+    ],
+    [
+        "abhinikūjita",
+        "abhi + ni + √kūj + ita"
     ],
     [
         "abhinikkhamana",
@@ -15548,6 +15604,10 @@
         "abhi + pa + √sad + na"
     ],
     [
+        "abhippasāreti",
+        "abhi + pa + sāre + ti"
+    ],
+    [
         "abhippavuṭṭha",
         "abhi + pa + √vass > vus + ta"
     ],
@@ -15578,6 +15638,10 @@
     [
         "abhibhuyya",
         "abhi + √bhū + ya"
+    ],
+    [
+        "abhibhuyyacārī",
+        "abhibhuyya + cārī"
     ],
     [
         "abhibhūsambhava",
@@ -15736,10 +15800,6 @@
         "abhi + √ruh + i"
     ],
     [
-        "abhiruḷha",
-        "abhi + √ruh + ta > ruḍha > ruḷha"
-    ],
-    [
         "abhirūpa",
         "abhi + √rūp + a"
     ],
@@ -15750,6 +15810,10 @@
     [
         "abhirūhati",
         "abhi + rūha + ti"
+    ],
+    [
+        "abhirūhana",
+        "abhi + rūha + ana"
     ],
     [
         "abhiropayi",
@@ -16096,6 +16160,10 @@
         "abhi + vi + √ji + ya"
     ],
     [
+        "abhivitarati",
+        "abhi + vi + tara + ti"
+    ],
+    [
         "abhivitaritvā",
         "abhi + vi + √tar + itvā"
     ],
@@ -16253,7 +16321,7 @@
     ],
     [
         "amakasa",
-        "na > a + √mas + aka\nmasaka > makasa"
+        "na > a + √mas + aka > makasa"
     ],
     [
         "amakkha",
@@ -16948,6 +17016,10 @@
         "na > a + yasas"
     ],
     [
+        "ayaṃ tattha samayo",
+        "ayaṃ + tattha + samayo"
+    ],
+    [
         "ayaṃsa",
         "ayaṃ + assa"
     ],
@@ -17286,6 +17358,10 @@
     [
         "arāga",
         "na > a + √raj > rag > rāg + *a"
+    ],
+    [
+        "arājaka",
+        "na > a + √rāj + a + ka\narāja + ka"
     ],
     [
         "ariṭṭhakā",
@@ -18046,6 +18122,10 @@
     [
         "asaṅkhāraparinibbāyī",
         "na > a + saṅkhāra + parinibbāyī"
+    ],
+    [
+        "asaṅkhārika",
+        "na > a + saṃ + √kar > khār + *a + ika\nasaṅkhāra + ika"
     ],
     [
         "asaṅkhitta",
@@ -19017,7 +19097,7 @@
     ],
     [
         "asāratta",
-        "na > a + saṃ + √raj + ta"
+        "na > a + saṃ > sā + √raj + ta"
     ],
     [
         "asārattaratta",
@@ -19033,7 +19113,7 @@
     ],
     [
         "asāraddha",
-        "na > a + saṃ + √rabh + ta"
+        "na > a + saṃ > sā + √rabh + ta"
     ],
     [
         "asārambha",
@@ -19114,6 +19194,10 @@
     [
         "asibandhakaputta",
         "asibandhaka + putta"
+    ],
+    [
+        "asilakkhaṇa",
+        "asi + lakkhaṇa"
     ],
     [
         "asilakkhaṇapāṭhaka",
@@ -19668,16 +19752,16 @@
         "assa + ratana"
     ],
     [
-        "assaratha",
-        "assa + ratha"
-    ],
-    [
         "assaranta",
         "na > a + sara + nta"
     ],
     [
         "assarāja",
         "assa + rāja"
+    ],
+    [
+        "assalakkhaṇa",
+        "assa + lakkhaṇa"
     ],
     [
         "assalāyana",
@@ -19764,6 +19848,10 @@
         "assāda + diṭṭhi"
     ],
     [
+        "assādanā",
+        "ā + sāde + anā"
+    ],
+    [
         "assādapariyesanā",
         "assāda + pariyesanā"
     ],
@@ -19830,6 +19918,10 @@
     [
         "assāsetabba",
         "ā + sāse + tabba"
+    ],
+    [
+        "assāseti",
+        "ā + sāse + ti"
     ],
     [
         "assāsenta",
@@ -20416,6 +20508,10 @@
         "na > a + vi + khambhe + ita + tta\navikkhambhita + tta"
     ],
     [
+        "avikkhambhiya",
+        "na > a + vi + √khambh + iya"
+    ],
+    [
         "avikkhitta",
         "na > a + vi + √khip + ta"
     ],
@@ -20534,6 +20630,10 @@
     [
         "avijjaṇḍakosa",
         "avijjā + aṇḍakosa"
+    ],
+    [
+        "avijjandhakāra",
+        "avijjā + andhakāra"
     ],
     [
         "avijjampāhaṃ",
@@ -21868,8 +21968,16 @@
         "ākiṇṇa + yakkha"
     ],
     [
+        "ākiṇṇaludda",
+        "ākiṇṇa + ludda"
+    ],
+    [
         "ākiranta",
         "ā + kira + nta"
+    ],
+    [
+        "ākiri",
+        "ā + √kir + i"
     ],
     [
         "ākiritvā",
@@ -22024,10 +22132,6 @@
         "ā + √gam + tuṃ"
     ],
     [
-        "āgantvā",
-        "ā + √gam + tvā"
-    ],
-    [
         "āgamanadiṭṭhika",
         "āgamana + diṭṭhika"
     ],
@@ -22058,10 +22162,6 @@
     [
         "āgametuṃ",
         "āgame + tuṃ"
-    ],
-    [
-        "āgā",
-        "ā + √gam + ā"
     ],
     [
         "āgārika",
@@ -22434,6 +22534,10 @@
     [
         "ājīvika",
         "ā + √jīv + ika"
+    ],
+    [
+        "ājīvikabhaya",
+        "ājīvika + bhaya"
     ],
     [
         "ājīvikāpakata",
@@ -23086,10 +23190,6 @@
     [
         "āpajjissa",
         "ā + pajja + issa"
-    ],
-    [
-        "āpato",
-        "√āp + as + to\nāpas + to"
     ],
     [
         "āpatta",
@@ -23840,6 +23940,10 @@
         "ā + √yaj > yag > yāg + *a"
     ],
     [
+        "āyāgaseṭṭha",
+        "āyāga + seṭṭha"
+    ],
+    [
         "āyācati",
         "ā + yāca + ti"
     ],
@@ -24404,10 +24508,6 @@
         "ālasa + anuyoga"
     ],
     [
-        "ālasiya",
-        "na > a > ā + √las + a + *iya\nalasa + *iya"
-    ],
-    [
         "ālasiyabhāva",
         "ālasiya + bhāva"
     ],
@@ -24700,8 +24800,8 @@
         "āsava + samudaya"
     ],
     [
-        "āsavā",
-        "ā + √su > sav + *a + ā\nāsava + ā"
+        "āsavant",
+        "ā + √is + ā + vant\nāsā + vant"
     ],
     [
         "āsavānaṃ khayañāṇa",
@@ -24734,6 +24834,10 @@
     [
         "āsādetabba",
         "ā + sāde + tabba"
+    ],
+    [
+        "āsāvacchedika",
+        "āsā + avaccheda + ika\nāsāvaccheda + ika"
     ],
     [
         "āsiñcati",
@@ -25052,6 +25156,10 @@
         "āvudha + pāṇī"
     ],
     [
+        "āvudhalakkhaṇa",
+        "āvudha + lakkhaṇa"
+    ],
+    [
         "āvunituṃ",
         "ā + vunā + ituṃ"
     ],
@@ -25066,6 +25174,10 @@
     [
         "āveṇika",
         "na + √ve + [ṇ] + ī + ika\naveṇi + ika"
+    ],
+    [
+        "āvellita",
+        "ā + √vell + ita"
     ],
     [
         "āha",
@@ -25264,10 +25376,6 @@
         "a + aha + u"
     ],
     [
-        "āhuti",
-        "ā + √hu + ti"
-    ],
-    [
         "āhutigandha",
         "āhuti + gandha"
     ],
@@ -25294,6 +25402,10 @@
     [
         "āḷahana",
         "ā + √ḍah > ḷah + ana"
+    ],
+    [
+        "āḷārika",
+        "āḷāra + ika"
     ],
     [
         "āḷāhana",
@@ -26812,6 +26924,10 @@
         "ud + kaṃsa + ti"
     ],
     [
+        "ukkaṃsato",
+        "ud + kaṃsa + a + to\nukkaṃsa + to"
+    ],
+    [
         "ukkaṃsanā",
         "ud + kaṃsa + anā"
     ],
@@ -26862,10 +26978,6 @@
     [
         "ukkāsitvā",
         "ud + √kās + itvā"
-    ],
-    [
-        "ukkujja",
-        "ud + √kujj + a"
     ],
     [
         "ukkujjati",
@@ -27464,6 +27576,10 @@
         "ud + jagghiya + māna"
     ],
     [
+        "ujjaṅgala",
+        "ud + jaṅgala"
+    ],
+    [
         "ujjalana",
         "ud + √jal + ana"
     ],
@@ -27744,6 +27860,10 @@
         "utu + ācikkhana"
     ],
     [
+        "utuka",
+        "utu + ka"
+    ],
+    [
         "utukkhāna",
         "utu + akkhāna"
     ],
@@ -27889,7 +28009,7 @@
     ],
     [
         "uttaramāṇavavatthu",
-        "uttara + māṇava + vatthu"
+        "māṇava + vatthu"
     ],
     [
         "uttaramāna",
@@ -28498,6 +28618,10 @@
     [
         "udarāvadehakaṃ",
         "udara + avadehaka + aṃ\nudarāvadehaka + aṃ"
+    ],
+    [
+        "itivuttakaṭṭhakathā",
+        "itivuttaka + aṭṭhakathā"
     ],
     [
         "udāneti",
@@ -29180,10 +29304,6 @@
         "upaṭṭhāna + sāra"
     ],
     [
-        "upaṭṭhānasālā",
-        "upaṭṭhāna + sālā"
-    ],
-    [
         "upaṭṭhānākāra",
         "upaṭṭhāna + ākāra"
     ],
@@ -29282,6 +29402,10 @@
     [
         "upatthambheti",
         "upa + thambhe + ti"
+    ],
+    [
+        "upatthara",
+        "upa + √thar + a"
     ],
     [
         "upadassita",
@@ -29458,6 +29582,10 @@
     [
         "upanikkhitta",
         "upa + ni + √khip + ta"
+    ],
+    [
+        "upanikkhipana",
+        "upa + ni + √khip + ana"
     ],
     [
         "upanikkhepana",
@@ -29925,7 +30053,7 @@
     ],
     [
         "upalepana",
-        "upa + √lip > lep + *ana"
+        "upa + lepe + ana"
     ],
     [
         "upasaggapada",
@@ -30588,6 +30716,10 @@
         "upekkhā + sahagata"
     ],
     [
+        "upekkhāsukhasukhumasaccasaññā",
+        "upekkhāsukha + sukhuma + sacca + saññā"
+    ],
+    [
         "upekkhāsukhassādagadhita",
         "upekkhā + sukha + assāda + gadhita"
     ],
@@ -31048,8 +31180,8 @@
         "ud + bhaja + ti"
     ],
     [
-        "ubbhajāṇumaṇḍalaṃ",
-        "ubbha + jāṇumaṇḍala + aṃ\nubbhajāṇumaṇḍala + aṃ"
+        "ubbhajāṇumaṇḍala",
+        "ubbha + jāṇumaṇḍala"
     ],
     [
         "ubbhajāṇumaṇḍalikā",
@@ -31090,6 +31222,10 @@
     [
         "ubbhamuppatitalomavant",
         "ubbhaṃ + uppatita + lomavant"
+    ],
+    [
+        "ubbhāra",
+        "ud + √bhar > bhār + *a"
     ],
     [
         "ubbhijja",
@@ -31310,6 +31446,10 @@
     [
         "ummādana",
         "ud + māde + ana"
+    ],
+    [
+        "ummādaṃ pāpuṇāti",
+        "ummādaṃ + pāpuṇāti"
     ],
     [
         "ummī",
@@ -31544,6 +31684,10 @@
         "ud + √lih > leh + *a + ka\nullleha + ka"
     ],
     [
+        "ullokaka",
+        "ud + √lok + aka"
+    ],
+    [
         "ulloketi",
         "ud + loke + ti"
     ],
@@ -31562,6 +31706,10 @@
     [
         "usabhayuddha",
         "usabha + yuddha"
+    ],
+    [
+        "usabhalakkhaṇa",
+        "usabha + lakkhaṇa"
     ],
     [
         "usabhasata",
@@ -31610,6 +31758,10 @@
     [
         "usumā",
         "√us + umā"
+    ],
+    [
+        "usulakkhaṇa",
+        "usu + lakkhaṇa"
     ],
     [
         "usūyā",
@@ -32528,6 +32680,14 @@
         "eka + pada"
     ],
     [
+        "ekapadikamagga",
+        "ekapadika + magga"
+    ],
+    [
+        "ekapalāsika",
+        "eka + palāsa + ika\nekapalāsa + ika"
+    ],
+    [
         "ekapāliphulla",
         "eka + pāli + phulla"
     ],
@@ -32562,10 +32722,6 @@
     [
         "ekaphoṭṭhabba",
         "eka + phoṭṭhabba"
-    ],
-    [
-        "ekabandhana",
-        "eka + bandhana"
     ],
     [
         "ekabandhanokāsa",
@@ -33781,7 +33937,7 @@
     ],
     [
         "evaṃmahiddhika",
-        "evaṃ + mahā + iddhi + ka\nevaṃmahiddhi + ka"
+        "evaṃ + mahiddhika"
     ],
     [
         "evaṃmānī",
@@ -34368,6 +34524,10 @@
         "oṇata + oṇata"
     ],
     [
+        "oṇirakkha",
+        "oṇi + rakkha"
+    ],
+    [
         "oṇītapattapāṇī",
         "oṇīta + patta + pāṇī"
     ],
@@ -34402,6 +34562,10 @@
     [
         "otāpenta",
         "ava + tāpe + nta"
+    ],
+    [
+        "otāraṃ labhati",
+        "otāraṃ + labhati"
     ],
     [
         "otārita",
@@ -34474,10 +34638,6 @@
     [
         "otthata",
         "ava + √thar + ta"
-    ],
-    [
-        "ottharati",
-        "ava + thara + ti"
     ],
     [
         "ottharita",
@@ -34592,6 +34752,10 @@
         "odāta + vasana"
     ],
     [
+        "odātālaṅkāra",
+        "odāta + alaṅkāra"
+    ],
+    [
         "odāna",
         "ava + √dā + ana"
     ],
@@ -34652,6 +34816,10 @@
         "onīta + patta + pāṇī"
     ],
     [
+        "opadhika",
+        "upa > opa + √dhā + i + *ika\nupadhi + *ika"
+    ],
+    [
         "opanayika",
         "upa > opa + √nī > nay + *a + *ika\nupanaya + *ika"
     ],
@@ -34694,6 +34862,14 @@
     [
         "opasilesika",
         "upa + √silis > siles + *a + *ika\nupasilesa + *ika"
+    ],
+    [
+        "opavayha",
+        "upa > opa + √vah + *ya"
+    ],
+    [
+        "opāta",
+        "ava > o + √pat > pāt + *a"
     ],
     [
         "opāna",
@@ -34802,6 +34978,10 @@
     [
         "obhāsajāta",
         "obhāsa + jāta"
+    ],
+    [
+        "obhāsana",
+        "ava + √bhās + ana"
     ],
     [
         "obhāsanimitta",
@@ -35160,6 +35340,10 @@
         "ava + vadīya + māna"
     ],
     [
+        "ovaddheyya",
+        "ava + √vaddh + eyya"
+    ],
+    [
         "ovamitvā",
         "ava + √vam + itvā"
     ],
@@ -35320,6 +35504,10 @@
         "kaṅkha + māna"
     ],
     [
+        "kaṅkhaṃ vitarati",
+        "kaṅkhaṃ + vitarati"
+    ],
+    [
         "kaṅkhā",
         "√kaṅkh + ā"
     ],
@@ -35402,6 +35590,10 @@
     [
         "kacchapa",
         "kaccha + pa"
+    ],
+    [
+        "kacchapalakkhaṇa",
+        "kacchapa + lakkhaṇa"
     ],
     [
         "kacchamāna",
@@ -36160,8 +36352,8 @@
         "kathā + nācarati"
     ],
     [
-        "kathamatta",
-        "kathaṃ + atta"
+        "kathamattānaṃ",
+        "kathaṃ + attānaṃ"
     ],
     [
         "kathamidaṃ",
@@ -36258,6 +36450,10 @@
     [
         "kathāpābhata",
         "kathā + pābhata"
+    ],
+    [
+        "kathāpesi",
+        "kathāpe + si"
     ],
     [
         "kathābāhulla",
@@ -36473,7 +36669,7 @@
     ],
     [
         "kapālamanusaṃcarati",
-        "kapāla + anusaṃcarati"
+        "kapālaṃ + anusaṃcarati"
     ],
     [
         "kapālahattha",
@@ -36664,8 +36860,8 @@
         "kamaṇḍalu + ka"
     ],
     [
-        "kamatta",
-        "kaṃ + atta"
+        "kamattānaṃ",
+        "kaṃ + attānaṃ"
     ],
     [
         "kamatthamanubhoti",
@@ -37194,10 +37390,6 @@
     [
         "kariyati",
         "kariya + ti"
-    ],
-    [
-        "karissati",
-        "karissa + ti"
     ],
     [
         "karissaṃ",
@@ -39120,6 +39312,10 @@
         "kiṃ + karaṇīya"
     ],
     [
+        "kiṅkārapaṭissāvī",
+        "kiṃ + kāra + paṭissāvī"
+    ],
+    [
         "kiṅkiṇikasadda",
         "kiṅkiṇikā + sadda"
     ],
@@ -39130,6 +39326,10 @@
     [
         "kiṅkusalagavesī",
         "kiṃ + kusala + gavesī"
+    ],
+    [
+        "kiṅkusalānuesī",
+        "kiṃ + kusala + anuesī"
     ],
     [
         "kiṅgatika",
@@ -39274,10 +39474,6 @@
     [
         "kitanta",
         "kita + anta"
-    ],
-    [
-        "kittaka",
-        "ka > ki + tta + ka\nkitta + ka"
     ],
     [
         "kittayanta",
@@ -39508,6 +39704,10 @@
         "kilamāpaya + nta"
     ],
     [
+        "kilamesi",
+        "kilame + si"
+    ],
+    [
         "kiliṭṭha",
         "√kilis + ta"
     ],
@@ -39680,6 +39880,10 @@
         "kiṃ + kusalaṃ + gavesī"
     ],
     [
+        "kiṃkusalānuesī",
+        "kiṃ + kusala + anuesī"
+    ],
+    [
         "kiṃgatika",
         "kiṃ + gatika"
     ],
@@ -39712,16 +39916,16 @@
         "kiṃ + nidāna"
     ],
     [
-        "kiṃninnaṃ",
-        "kiṃ + ninnaṃ"
+        "kiṃninna",
+        "kiṃ + ninna"
     ],
     [
         "kiṃpaccayā",
         "kiṃ + paccaya + ā\nkiṃpaccaya + ā"
     ],
     [
-        "kiṃpabbhāraṃ",
-        "kiṃ + pabbhāraṃ"
+        "kiṃpabbhāra",
+        "kiṃ + pabbhāra"
     ],
     [
         "kiṃpabhava",
@@ -39744,8 +39948,8 @@
         "kiṃ + purisa"
     ],
     [
-        "kiṃpoṇaṃ",
-        "kiṃ + poṇaṃ"
+        "kiṃpoṇa",
+        "kiṃ + poṇa"
     ],
     [
         "kiṃmūlaka",
@@ -39962,6 +40166,10 @@
     [
         "kukkuṭayuddha",
         "kukkuṭa + yuddha"
+    ],
+    [
+        "kukkuṭalakkhaṇa",
+        "kukkuṭa + lakkhaṇa"
     ],
     [
         "kukkuṭasampāta",
@@ -40344,10 +40552,6 @@
         "kuppa + i"
     ],
     [
-        "kubbati",
-        "kubba + ti"
-    ],
-    [
         "kubbati santhavaṃ",
         "kubbati + santhavaṃ"
     ],
@@ -40396,6 +40600,10 @@
         "kumāra + bhūta"
     ],
     [
+        "kumāralakkhaṇa",
+        "kumāra + lakkhaṇa"
+    ],
+    [
         "kumāravaṇṇa",
         "kumāra + vaṇṇa"
     ],
@@ -40418,6 +40626,10 @@
     [
         "kumāribhūtā",
         "kumārī + bhūtā"
+    ],
+    [
+        "kumārilakkhaṇa",
+        "kumārī + lakkhaṇa"
     ],
     [
         "kumārisata",
@@ -40522,6 +40734,14 @@
     [
         "kumbhathūṇa",
         "kumbha + thūṇa"
+    ],
+    [
+        "kumbhathūṇika",
+        "kumbha + thūṇa + ika\nkumbhathūṇa + ika"
+    ],
+    [
+        "kumbhathūnika",
+        "kumbha + thūṇa + ika\nkumbhathūna + ika"
     ],
     [
         "kumbhadāsī",
@@ -40658,6 +40878,10 @@
     [
         "kulapariyanta",
         "kula + pariyanta"
+    ],
+    [
+        "kulaparivattaso",
+        "kula + parivatta + so\nkulaparivatta + so"
     ],
     [
         "kulaputta",
@@ -41118,10 +41342,6 @@
     [
         "kelāyati",
         "kelāya + ti"
-    ],
-    [
-        "kelāyana",
-        "kelāya + ana"
     ],
     [
         "kelāsakūṭa",
@@ -41604,6 +41824,14 @@
         "kosātakī + bīja"
     ],
     [
+        "kosārakkha",
+        "kosa + ārakkha"
+    ],
+    [
+        "kosināraka",
+        "kusi > kosi + nagara + ā + *aka\nkusinārā + *aka"
+    ],
+    [
         "kosiyakāraka",
         "kosiya + kāraka"
     ],
@@ -41910,6 +42138,10 @@
     [
         "khattiyamahāsālakula",
         "khattiya + mahāsāla + kula"
+    ],
+    [
+        "khattiyasahassa",
+        "khattiya + sahassa"
     ],
     [
         "khattiyā",
@@ -42625,7 +42857,7 @@
     ],
     [
         "khuppipāsasamappita",
-        "khuppipāsa + samappita"
+        "khuppipāsā + samappita"
     ],
     [
         "khuppipāsā",
@@ -42814,6 +43046,10 @@
     [
         "kheḷaṃ karoti",
         "kheḷaṃ + karoti"
+    ],
+    [
+        "khobhayamāna",
+        "khobhaya + māna"
     ],
     [
         "khobheti",
@@ -43916,6 +44152,10 @@
         "gahapati + ratana"
     ],
     [
+        "gahapatiratanappamukha",
+        "gahapatiratana + pamukha"
+    ],
+    [
         "gahapativāda",
         "gahapati + vāda"
     ],
@@ -43978,6 +44218,10 @@
     [
         "gaḷa",
         "√gal > gaḷ + a"
+    ],
+    [
+        "gaḷagaḷa",
+        "gaḷa + gaḷa"
     ],
     [
         "gaḷagaḷāyati",
@@ -44496,6 +44740,10 @@
         "gilāna + upaṭṭhākī"
     ],
     [
+        "gilānupaṭṭhāna",
+        "gilāna + upaṭṭhāna"
+    ],
+    [
         "gilānūpama",
         "gilāna + upama"
     ],
@@ -44510,6 +44758,10 @@
     [
         "gilitabaḷisa",
         "gilita + baḷisa"
+    ],
+    [
+        "gilitvā",
+        "√gil + itvā"
     ],
     [
         "gihigatasikkhāpada",
@@ -44964,6 +45216,10 @@
         "gotama + thera"
     ],
     [
+        "gotamadvāra",
+        "gotama + dvāra"
+    ],
+    [
         "gotamasāsana",
         "gotama + sāsana"
     ],
@@ -45006,6 +45262,10 @@
     [
         "godharaṇī",
         "go + dharaṇī"
+    ],
+    [
+        "godhālakkhaṇa",
+        "godhā + lakkhaṇa"
     ],
     [
         "godhūma",
@@ -45200,6 +45460,10 @@
         "go + rūpa"
     ],
     [
+        "golakkhaṇa",
+        "go + lakkhaṇa"
+    ],
+    [
         "goliyānisutta",
         "goliyāni + sutta"
     ],
@@ -45378,6 +45642,10 @@
     [
         "gharagolikā",
         "ghara + golikā"
+    ],
+    [
+        "gharaṇī",
+        "ghara + iṇī"
     ],
     [
         "gharadvāra",
@@ -45786,6 +46054,10 @@
     [
         "cakkhuppāda",
         "cakkhu + uppāda"
+    ],
+    [
+        "cakkhubhaṇḍa",
+        "cakkhu + bhaṇḍa"
     ],
     [
         "cakkhubhūta",
@@ -46252,6 +46524,10 @@
         "catu + mahāpatha"
     ],
     [
+        "catumahāpadesakathā",
+        "catu + mahāpadesa + kathā"
+    ],
+    [
         "catumāsa",
         "catu + māsa"
     ],
@@ -46370,6 +46646,10 @@
     [
         "caturāsītipallaṅkasahassāni",
         "caturāsīti + pallaṅka + sahassa + āni\ncaturāsītipallaṅkasahassa + āni"
+    ],
+    [
+        "caturāsītipāṇasahassa",
+        "caturāsīti + pāṇa + sahassa"
     ],
     [
         "caturāsītipāsādasahassāni",
@@ -46885,7 +47165,7 @@
     ],
     [
         "cavanatā",
-        "√cu > cav + *ana + tā\ncavana + tā"
+        "cāve + ana + tā\ncavana + tā"
     ],
     [
         "cavanadhamma",
@@ -46910,6 +47190,10 @@
     [
         "cavituṃ",
         "cava + ituṃ"
+    ],
+    [
+        "cavitvā",
+        "cava + itvā"
     ],
     [
         "cavitvāna",
@@ -47150,6 +47434,10 @@
     [
         "cāletuṃ",
         "cāle + tuṃ"
+    ],
+    [
+        "cālesi",
+        "cāle + si"
     ],
     [
         "cāsiṃ",
@@ -47604,6 +47892,10 @@
         "citra + chada"
     ],
     [
+        "citrupāhana",
+        "citra + upāhana"
+    ],
+    [
         "cidaṃ",
         "ca + idaṃ"
     ],
@@ -47718,6 +48010,10 @@
     [
         "ciramabhippamodati",
         "ciraṃ + abhippamodati"
+    ],
+    [
+        "cirayapana",
+        "cira + yapana"
     ],
     [
         "cirayāpanā",
@@ -48192,8 +48488,12 @@
         "√cit > cet + *ya"
     ],
     [
+        "ceṭa",
+        "√ciṭ > ceṭ + *a"
+    ],
+    [
         "ceṭaka",
-        "√ciṭ > ceṭ + *aka"
+        "√ciṭ > ceṭ + *a + ka\nceṭa + ka"
     ],
     [
         "ceṭikā",
@@ -48201,7 +48501,7 @@
     ],
     [
         "cetana",
-        "√cit > cet + *anā + a\ncetanā + a"
+        "cete + anā + a\ncetanā + a"
     ],
     [
         "cetanā",
@@ -48254,6 +48554,10 @@
     [
         "cetāpaka",
         "cetāpe + aka"
+    ],
+    [
+        "cetāpana",
+        "cetāpe + ana"
     ],
     [
         "cetāpanna",
@@ -48330,6 +48634,10 @@
     [
         "cetodukkha",
         "ceto + dukkha"
+    ],
+    [
+        "cetodukkhasamappita",
+        "cetodukkha + samappita"
     ],
     [
         "cetopaṇidhi",
@@ -49676,6 +49984,10 @@
         "jaṇṇu + ka"
     ],
     [
+        "jatukā",
+        "jatu + kā"
+    ],
+    [
         "jatumaṭṭaka",
         "jatu + maṭṭa + ka\njatumaṭṭa + ka"
     ],
@@ -50174,6 +50486,10 @@
     [
         "jahāpenta",
         "jahāpe + nta"
+    ],
+    [
+        "jahi",
+        "jaha + i"
     ],
     [
         "jahita",
@@ -50944,10 +51260,6 @@
         "jīra + ti"
     ],
     [
-        "jīri",
-        "√jīr + i"
-    ],
-    [
         "jīrīyati",
         "jīrīya + ti"
     ],
@@ -51380,6 +51692,10 @@
         "jhāna + abhirata"
     ],
     [
+        "jhāpana",
+        "jhāpe + ana"
+    ],
+    [
         "jhāpayamāna",
         "jhāpaya + māna"
     ],
@@ -51394,6 +51710,10 @@
     [
         "jhāpetvā",
         "jhāpe + tvā"
+    ],
+    [
+        "jhāpenta",
+        "jhāpe + nta"
     ],
     [
         "jhāpesi",
@@ -51538,6 +51858,10 @@
     [
         "ñāṇasampanna",
         "ñāṇa + sampanna"
+    ],
+    [
+        "ñāṇasampayutta",
+        "ñāṇa + sampayutta"
     ],
     [
         "ñāṇasukha",
@@ -52900,6 +53224,10 @@
         "tathā + tta + ā\ntathatta + ā"
     ],
     [
+        "tathattāya",
+        "tathā + atta + āya\ntathatta + āya"
+    ],
+    [
         "tathariva",
         "tathā + eva > riva"
     ],
@@ -53116,8 +53444,8 @@
         "tadattha + vaṇṇanā"
     ],
     [
-        "tadadhimutto",
-        "tad + adhimutto"
+        "tadadhimutta",
+        "tad + adhimutta"
     ],
     [
         "tadanatta",
@@ -53686,6 +54014,10 @@
     [
         "tabbiparita",
         "tad + viparitā + a\ntabbiparitā + a"
+    ],
+    [
+        "tabbiparīta",
+        "tad + viparīta"
     ],
     [
         "tabbirati",
@@ -54372,6 +54704,10 @@
         "ta + āsu"
     ],
     [
+        "tāvakālika",
+        "tāva + kālika"
+    ],
+    [
         "tāvatakeneva",
         "tāvatakena + eva"
     ],
@@ -54786,6 +55122,10 @@
     [
         "titikkhā",
         "titikkha + ā"
+    ],
+    [
+        "titikkhi",
+        "titikkha + i"
     ],
     [
         "tittakagga",
@@ -55352,12 +55692,20 @@
         "ti + dasa + ti > tiṃsati"
     ],
     [
+        "tiṃsabhikkhusahassa",
+        "tiṃsa + bhikkhusahassa"
+    ],
+    [
         "tiṃsamatta",
         "tiṃsā + matta"
     ],
     [
-        "tiṃsaratti",
-        "tiṃsa + ratti"
+        "tiṃsarattiya",
+        "tiṃsa + rattiya"
+    ],
+    [
+        "tiṃsavassasahassa",
+        "tiṃsa + vassa + sahassa"
     ],
     [
         "tiṃsaṃ",
@@ -55596,8 +55944,16 @@
         "turiya + sata"
     ],
     [
+        "tula",
+        "√tul + ā + a\ntulā + a"
+    ],
+    [
         "tulanā",
         "√tul + anā"
+    ],
+    [
+        "tulamatulaṃ",
+        "tulaṃ + atulaṃ"
     ],
     [
         "tulayati",
@@ -55786,6 +56142,10 @@
     [
         "tejī",
         "√tij > tej + *ī"
+    ],
+    [
+        "tejetvā",
+        "teje + tvā"
     ],
     [
         "tejo",
@@ -56649,7 +57009,7 @@
     ],
     [
         "daka",
-        "√ud + aka\n(u)duka > daka"
+        "√ud > d + aka"
     ],
     [
         "dakavaṇṇa",
@@ -56724,8 +57084,8 @@
         "dakkha + itāye"
     ],
     [
-        "dakkhiya",
-        "dakkha + iya"
+        "dakkhituṃ",
+        "dakkha + ituṃ"
     ],
     [
         "dakkhuṃ",
@@ -56838,6 +57198,10 @@
     [
         "daṇḍayuddha",
         "daṇḍa + yuddha"
+    ],
+    [
+        "daṇḍalakkhaṇa",
+        "daṇḍa + lakkhaṇa"
     ],
     [
         "daṇḍasamphassa",
@@ -56986,6 +57350,10 @@
     [
         "dantapura",
         "danta + pura"
+    ],
+    [
+        "dantapoṇa",
+        "danta + poṇa"
     ],
     [
         "dantapona",
@@ -57668,10 +58036,6 @@
         "dāna + saṃvibhāga + rata"
     ],
     [
-        "dānasīla",
-        "dāna + sīla"
-    ],
-    [
         "dānādiupakaraṇa",
         "dāna + ādi + upakaraṇa"
     ],
@@ -57892,6 +58256,14 @@
         "dāsa + vya > bya"
     ],
     [
+        "dāsalakkhaṇa",
+        "dāsa + lakkhaṇa"
+    ],
+    [
+        "dāsikaputta",
+        "dāsikā + putta"
+    ],
+    [
         "dāsikā",
         "dāsa + ikā"
     ],
@@ -57912,12 +58284,20 @@
         "dāsī + bhogena"
     ],
     [
+        "dāsilakkhaṇa",
+        "dāsī + lakkhaṇa"
+    ],
+    [
         "dāsī",
         "dāsa + ī"
     ],
     [
         "dāvaggi",
         "dāva + aggi"
+    ],
+    [
+        "dikkhita",
+        "√dikkh + ita"
     ],
     [
         "digu",
@@ -58392,6 +58772,10 @@
         "dinna + pāṭikaṅkhī"
     ],
     [
+        "dinnapubba",
+        "dinna + pubba"
+    ],
+    [
         "dinnaphalapaṭiggāhaka",
         "dinna + phala + paṭiggāhaka"
     ],
@@ -58494,10 +58878,6 @@
     [
         "dirattatirattaṃ",
         "diratta + tiratta + aṃ\ndirattatiratta + aṃ"
-    ],
-    [
-        "disampati",
-        "disā + pati"
     ],
     [
         "disādāha",
@@ -58658,6 +59038,10 @@
     [
         "dīghatomarayaṭṭhi",
         "dīgha + tomara + yaṭṭhi"
+    ],
+    [
+        "dīghadasa",
+        "dīgha + dasa"
     ],
     [
         "dīghadassī",
@@ -59904,6 +60288,10 @@
         "[d] + ubha + ya"
     ],
     [
+        "dumagga",
+        "duma + agga"
+    ],
+    [
         "dumapatta",
         "duma + patta"
     ],
@@ -60066,6 +60454,10 @@
     [
         "dussibbita",
         "dur + sibba + ita"
+    ],
+    [
+        "dussīlaādīnava",
+        "dussīla + ādīnava"
     ],
     [
         "dussīlya",
@@ -60262,6 +60654,10 @@
     [
         "desanāpariyosāna",
         "desanā + pariyosāna"
+    ],
+    [
+        "desanāmatta",
+        "desanā + matta"
     ],
     [
         "desanāvilāsa",
@@ -60872,8 +61268,16 @@
         "dovacassa + karaṇa"
     ],
     [
+        "dovacassatā",
+        "dur > do + √vac + as + *ya + tā\ndovacassa + tā"
+    ],
+    [
         "dovārika",
         "√dvar > dvār + *a > dovāra + *ika\ndvāra + *ika"
+    ],
+    [
+        "doḷasa",
+        "dvi > do + dasa > ḷasa + *a"
     ],
     [
         "dvaṅgulakappa",
@@ -61496,6 +61900,10 @@
         "dhanu + gaha"
     ],
     [
+        "dhanulakkhaṇa",
+        "dhanu + lakkhaṇa"
+    ],
+    [
         "dhanusattisūlādibheda",
         "dhanu + satti + sūla + ādi + bheda"
     ],
@@ -61660,6 +62068,10 @@
         "dhamma + jīvī"
     ],
     [
+        "dhammaññū",
+        "dhamma + ñū"
+    ],
+    [
         "dhammaṭṭhapaṭisaṃyutta",
         "dhammaṭṭha + paṭisaṃyutta"
     ],
@@ -61772,8 +62184,16 @@
         "dhamma + nijjhāna + khanti"
     ],
     [
+        "dhammanijjhānakhanti",
+        "dhamma + nijjhāna + khanti"
+    ],
+    [
         "dhammanimantana",
         "dhamma + nimantana"
+    ],
+    [
+        "dhammanimitta",
+        "dhamma + nimitta"
     ],
     [
         "dhammanimittaniketavisāravinibandha",
@@ -62348,6 +62768,10 @@
         "dhamma + upasaṃhita"
     ],
     [
+        "dhammūpahāra",
+        "dhamma + upahāra"
+    ],
+    [
         "dhammesa",
         "dhamme + esa"
     ],
@@ -62664,6 +63088,10 @@
         "dhura + nikkhepa"
     ],
     [
+        "dhurasamādhi",
+        "dhura + samādhi"
+    ],
+    [
         "dhuravant",
         "√dhar > dhur + a + vant\ndhura + vant"
     ],
@@ -62732,6 +63160,10 @@
         "dhūmāya + ita + tta\ndhūmāyita + tta"
     ],
     [
+        "dhūmāyitvā",
+        "dhūmāya + itvā"
+    ],
+    [
         "dhūmī",
         "√dhū + ma + ī\ndhūma + ī"
     ],
@@ -62746,6 +63178,10 @@
     [
         "dhotasaṅkhasappaṭibhāga",
         "dhota + saṅkha + sappaṭibhāga"
+    ],
+    [
+        "dhoraka",
+        "√dhur > dhor + *a + ka\ndhora + ka"
     ],
     [
         "dhorayhasīla",
@@ -63388,6 +63824,10 @@
         "nandi + bhava + parikkhaya"
     ],
     [
+        "nandimukhiyā rattiyā",
+        "nandi + mukhiyā + rattiyā"
+    ],
+    [
         "nandimukhī",
         "nandi + mukhī"
     ],
@@ -63632,6 +64072,10 @@
         "na + pa + pata + ti\nna + papatati"
     ],
     [
+        "nappamaddana",
+        "na + pa + √madd + ana"
+    ],
+    [
         "nappamussati",
         "na + pa + mussa + ti\nna + pamussati"
     ],
@@ -63746,6 +64190,10 @@
     [
         "namucibala",
         "namuci + bala"
+    ],
+    [
+        "namucī",
+        "na + √muc + ī"
     ],
     [
         "namo",
@@ -64204,6 +64652,10 @@
         "nāga + mahāmatta"
     ],
     [
+        "nāgamāṇavikā",
+        "nāga + māṇavikā"
+    ],
+    [
         "nāgameti",
         "na + āgame + ti\nna + āgameti"
     ],
@@ -64386,6 +64838,10 @@
     [
         "nātikālena",
         "na + ati + √kal > kāl + *a + ena\nnātikāla + ena"
+    ],
+    [
+        "nātikāḷika",
+        "na + ati + kāḷa + ika\nnātikāḷa + ika"
     ],
     [
         "nātikāḷī",
@@ -64849,7 +65305,7 @@
     ],
     [
         "nānujaññā",
-        "na + anu + jānā + eyya\nna + anujānayya > nānujaññā"
+        "na + anu + jānā + eyya\nna + anujāneyya > nānujaññā"
     ],
     [
         "nānujānāti",
@@ -65037,7 +65493,7 @@
     ],
     [
         "nābhijjhati",
-        "na + abhi + jhāya + ti\nna + abhijjhati"
+        "na + abhi + jhā + ti\nna + abhijjhati"
     ],
     [
         "nābhijjhātar",
@@ -65768,10 +66224,6 @@
         "nikkhipituṃ + kāma"
     ],
     [
-        "nikkhipituṃ",
-        "ni + √khip + ituṃ"
-    ],
-    [
         "nikkhipitvāna",
         "ni + √khip + itvāna"
     ],
@@ -65786,10 +66238,6 @@
     [
         "nikkhepapada",
         "nikkhepa + pada"
-    ],
-    [
-        "nikhaṇati",
-        "ni + khaṇa + ti"
     ],
     [
         "nikhaṇāpetvā",
@@ -66252,6 +66700,14 @@
         "ni + ṭhā + ti"
     ],
     [
+        "niṭṭhāna",
+        "ni + √ṭhā + ana"
+    ],
+    [
+        "niṭṭhānamagamāsi",
+        "niṭṭhānaṃ + agamāsi"
+    ],
+    [
         "niṭṭhāpita",
         "ni + ṭhāpe + ita"
     ],
@@ -66318,6 +66774,10 @@
     [
         "nitthiṇṇa",
         "nī + √tar > tir > thir + na"
+    ],
+    [
+        "nidahanta",
+        "ni + daha + nta"
     ],
     [
         "nidaṃsesi",
@@ -66604,10 +67064,6 @@
         "nipacca + kāra"
     ],
     [
-        "nipajjāpeti",
-        "ni + pajjāpe + ti"
-    ],
-    [
         "nipajjāpetvā",
         "ni + pajjāpe + tvā"
     ],
@@ -66630,10 +67086,6 @@
     [
         "nipatitvā",
         "ni + √pat + itvā"
-    ],
-    [
-        "nipanna",
-        "ni + √pad + na"
     ],
     [
         "nipannaka",
@@ -67232,6 +67684,10 @@
         "ni + √bhās + a"
     ],
     [
+        "nibhāsī",
+        "ni + √bhās + ī"
+    ],
+    [
         "nimantanapaṭipāṭiyā",
         "nimantana + paṭipāṭi + iyā\nnimantanapaṭipāṭi + iyā"
     ],
@@ -67318,6 +67774,10 @@
     [
         "nimittānusārī",
         "nimitta + anusārī"
+    ],
+    [
+        "nimittobhāsakathā",
+        "nimittobhāsa + kathā"
     ],
     [
         "nimināti",
@@ -68304,6 +68764,10 @@
         "nivāsana + pāvuraṇa"
     ],
     [
+        "nivāsamabhijāni",
+        "nivāsaṃ + abhijāni"
+    ],
+    [
         "nivāsāpesi",
         "ni + vāsāpe + si"
     ],
@@ -69160,6 +69624,10 @@
         "nahāpe + ana"
     ],
     [
+        "nhāpita",
+        "nhāpe + ita"
+    ],
+    [
         "nhāpetabba",
         "nhāpe + tabba"
     ],
@@ -69440,6 +69908,10 @@
         "pa + √khand + ta"
     ],
     [
+        "pakkhandi",
+        "pa + √khand + i"
+    ],
+    [
         "pakkhandikā",
         "pa + √khand + ikā"
     ],
@@ -69669,7 +70141,7 @@
     ],
     [
         "pacetana",
-        "pa + √cit > cet + *anā + a\npacetanā + a"
+        "pa + cete + anā + a\npacetanā + a"
     ],
     [
         "pacessati",
@@ -69758,6 +70230,10 @@
     [
         "paccaniyyāti",
         "pati > paty > pacc + ā + nī + yā + ti"
+    ],
+    [
+        "paccaniyyāsi",
+        "pati > paty > pacc + ā + nī + √yā + ti"
     ],
     [
         "paccanīkaṅgavasena",
@@ -70080,6 +70556,10 @@
         "pati > paty > pacc + ā + harāpe + ti"
     ],
     [
+        "pacci",
+        "pacca + i"
+    ],
+    [
         "paccuggantvā",
         "pati > paty > pacc + ud + √gam + tvā"
     ],
@@ -70308,6 +70788,10 @@
         "pacchā + nipātī"
     ],
     [
+        "pacchānutappati",
+        "pacchā + anutappati"
+    ],
+    [
         "pacchānutāpī",
         "pacchā + anutāpī"
     ],
@@ -70526,6 +71010,10 @@
     [
         "pajjalanā",
         "pa + √jal + anā"
+    ],
+    [
+        "pajjalitvā",
+        "pa + √jal + itvā"
     ],
     [
         "pajjālita",
@@ -70932,6 +71420,10 @@
         "pañcahi + ākāra + ehi\npañcahākāra + ehi"
     ],
     [
+        "pañcābhiññā",
+        "pañca + abhiññā"
+    ],
+    [
         "pañcāyatana",
         "pañca + āyatana"
     ],
@@ -71028,8 +71520,8 @@
         "pañca + orambhāgiya"
     ],
     [
-        "pañjali",
-        "pa + √añj + ali"
+        "pañjalī",
+        "pa + √añj + alī"
     ],
     [
         "pañjalika",
@@ -71628,6 +72120,10 @@
         "pati + √kam + itabba"
     ],
     [
+        "paṭikkamitvā",
+        "pati + √kam + itvā"
+    ],
+    [
         "paṭikkamosānaṃ",
         "paṭikkamo + esānaṃ"
     ],
@@ -71706,6 +72202,10 @@
     [
         "paṭigata",
         "pati + √gam + ta"
+    ],
+    [
+        "paṭigantuṃ",
+        "pati + √gam + tuṃ"
     ],
     [
         "paṭiggaṇhanta",
@@ -71996,6 +72496,10 @@
         "pati + ne + ti"
     ],
     [
+        "paṭipajjanta",
+        "pati + pajja + nta"
+    ],
+    [
         "paṭipajjamāna",
         "pati + pajja + māna"
     ],
@@ -72054,6 +72558,10 @@
     [
         "paṭipāṭiyā",
         "pati + √paṭ > pāṭ + *i + yā\npaṭipāṭi + yā"
+    ],
+    [
+        "paṭipāda",
+        "pati + √pad > pād + *a"
     ],
     [
         "paṭipādana",
@@ -72292,6 +72800,10 @@
         "pati + bhāya + ti"
     ],
     [
+        "paṭibhogiya",
+        "pati + √bhuj > bhog + *a + iya\npaṭibhoga + iya"
+    ],
+    [
         "paṭimanta",
         "pati + √mant + a"
     ],
@@ -72321,7 +72833,7 @@
     ],
     [
         "paṭimaṃsa",
-        "pati + √mas + ya > maṃsa"
+        "pati + √mas + ya > massa > maṃsa"
     ],
     [
         "paṭimaṃsati",
@@ -72334,6 +72846,10 @@
     [
         "paṭimā",
         "pati + √mā + ā"
+    ],
+    [
+        "paṭimānenta",
+        "pati + māne + nta"
     ],
     [
         "paṭimuñcanta",
@@ -73476,6 +73992,10 @@
         "paṇṇa + chattaka"
     ],
     [
+        "paṇṇattivajja",
+        "paṇṇatti + vajja"
+    ],
+    [
         "paṇṇapuṭa",
         "paṇṇa + puṭa"
     ],
@@ -73688,10 +74208,6 @@
         "pati + ṭhāpe + tuṃ"
     ],
     [
-        "patiṭṭhāsi",
-        "pati + √ṭhā + si"
-    ],
-    [
         "patiṭṭhitakāla",
         "patiṭṭhita + kāla"
     ],
@@ -73829,7 +74345,7 @@
     ],
     [
         "pattakalla",
-        "patta + kalla"
+        "patta + kāla > kalla"
     ],
     [
         "pattakallatta",
@@ -73841,10 +74357,6 @@
     ],
     [
         "pattakāya",
-        "patta + kāya"
-    ],
-    [
-        "pattakāyena",
         "patta + kāyena"
     ],
     [
@@ -74608,6 +75120,10 @@
         "pa + nassa + i"
     ],
     [
+        "panāda",
+        "pa + √nad > nād + *a"
+    ],
+    [
         "panāniccaṃ",
         "pana + aniccaṃ"
     ],
@@ -75317,7 +75833,7 @@
     ],
     [
         "pamāṇika",
-        "pa + māṇā + a + ika\npamāṇa + ika"
+        "pa + √mā + aṇa + ika\npamāṇa + ika"
     ],
     [
         "pamādacāraṃ",
@@ -75794,10 +76310,6 @@
     [
         "parapurāya",
         "para + pura + āya\nparapura + āya"
-    ],
-    [
-        "parapessa",
-        "para + pessa"
     ],
     [
         "parappavāda",
@@ -76636,6 +77148,10 @@
         "pari + ṇe + ti"
     ],
     [
+        "paritajjanā",
+        "pari + √tajj + anā"
+    ],
+    [
         "paritappati",
         "pari + tappa + ti"
     ],
@@ -76744,6 +77260,10 @@
         "pari + daha + ti"
     ],
     [
+        "paridahituṃ",
+        "pari + daha + ituṃ"
+    ],
+    [
         "paridahitvā",
         "pari + daha + itvā"
     ],
@@ -76820,6 +77340,10 @@
         "pari + √dhov + ta"
     ],
     [
+        "pariniṭṭhāpetvā",
+        "pari + ni + ṭhāpe + tvā"
+    ],
+    [
         "pariniṭṭhitatta",
         "pari + ni + √ṭhā + ita + tta\npariniṭṭhita + tta"
     ],
@@ -76889,7 +77413,7 @@
     ],
     [
         "paripācaniya",
-        "pari + pāce + aniya"
+        "pari + pāce + ana + iya\nparipācana + iya"
     ],
     [
         "paripācanīya",
@@ -77426,6 +77950,10 @@
     [
         "pariyāpuṇitvā",
         "pari + [y] + ā + apuṇā + itvā"
+    ],
+    [
+        "pariyāyakathā",
+        "pariyāya + kathā"
     ],
     [
         "pariyāyati",
@@ -77980,6 +78508,10 @@
         "pari + vāre + a + tā\nparivāra + tā"
     ],
     [
+        "parivārayi",
+        "pari + vāraya + i"
+    ],
+    [
         "parivārasampadā",
         "parivāra + sampadā"
     ],
@@ -78094,6 +78626,10 @@
     [
         "parihānikāraṇa",
         "parihāni + kāraṇa"
+    ],
+    [
+        "parihāniyadhamma",
+        "parihāniya + dhamma"
     ],
     [
         "parihāpeti",
@@ -78853,7 +79389,7 @@
     ],
     [
         "passāvūpatthambha",
-        "passāvūpatthambha"
+        "passāva + upatthambha"
     ],
     [
         "passitabba",
@@ -79062,6 +79598,10 @@
     [
         "pavāraṇaṭṭhapana",
         "pavāraṇā + ṭhapana"
+    ],
+    [
+        "pavāraṇasaṅgaha",
+        "pavāraṇā + saṅgaha"
     ],
     [
         "pavāraṇāsikkhāpada",
@@ -79458,6 +79998,10 @@
     [
         "pahāraṃ deti",
         "pahāraṃ + deti"
+    ],
+    [
+        "pahārāda",
+        "pahāra + da"
     ],
     [
         "pahārī",
@@ -79860,6 +80404,10 @@
         "pāṇa + saññī"
     ],
     [
+        "pāṇasahassa",
+        "pāṇa + sahassa"
+    ],
+    [
         "pāṇātipāta",
         "pāṇa + atipāta"
     ],
@@ -80006,6 +80554,10 @@
     [
         "pātukamma",
         "pātu + kamma"
+    ],
+    [
+        "pātukamyatā",
+        "pātuṃ + kamyatā"
     ],
     [
         "pātukaritvā",
@@ -81708,6 +82260,10 @@
         "piḷe + [s] + ita"
     ],
     [
+        "piṃsetvā",
+        "piṃse + tvā"
+    ],
+    [
         "pīṭhaka",
         "pīṭha + ka"
     ],
@@ -82133,7 +82689,7 @@
     ],
     [
         "puññabhāgiya",
-        "puñña + bhāga + iya\npuññabhāga + iya"
+        "puñña + bhāgiya"
     ],
     [
         "puññamahī",
@@ -82468,6 +83024,10 @@
         "√puth + ula + tta\nputhula + tta"
     ],
     [
+        "puthuloma",
+        "puthu + loma"
+    ],
+    [
         "puthusadda",
         "puthu + sadda"
     ],
@@ -82490,6 +83050,10 @@
     [
         "puthusippa",
         "puthu + sippa"
+    ],
+    [
+        "puthusippāyatanāni",
+        "puthu + sippa + āyatana + āni\nputhusippāyatana + āni"
     ],
     [
         "puthusilā",
@@ -82654,6 +83218,10 @@
     [
         "pupphatthika",
         "puppha + atthika"
+    ],
+    [
+        "pupphadāma",
+        "puppha + dāma"
     ],
     [
         "pupphantara",
@@ -83332,6 +83900,10 @@
         "purisa + vara + agga + lakkhaṇa"
     ],
     [
+        "purisavaruttama",
+        "purisa + vara + uttama"
+    ],
+    [
         "purisaviggaha",
         "purisa + viggaha"
     ],
@@ -83630,6 +84202,10 @@
     [
         "pūvasurā",
         "pūva + surā"
+    ],
+    [
+        "pūvika",
+        "pūva + ika"
     ],
     [
         "pekkhaka",
@@ -84708,10 +85284,6 @@
         "bandhuka + roga"
     ],
     [
-        "bandhujīvaka",
-        "bandhu + jīvaka"
-    ],
-    [
         "bandhujīvakapuppha",
         "bandhu + jīvaka + puppha"
     ],
@@ -85388,10 +85960,6 @@
         "√bādh + a"
     ],
     [
-        "bādhana",
-        "√bādh + ana"
-    ],
-    [
         "bādhayati",
         "bādhaya + ti"
     ],
@@ -85768,6 +86336,10 @@
         "bīja + naṅgala"
     ],
     [
+        "bījanī",
+        "√vīj > bīj + ana + ī\nbījana + ī"
+    ],
+    [
         "bījabīja",
         "bīja + bīja"
     ],
@@ -85994,6 +86566,10 @@
     [
         "buddhāsana",
         "buddha + āsana"
+    ],
+    [
+        "buddhisampanna",
+        "buddhi + sampanna"
     ],
     [
         "buddhisevī",
@@ -86432,6 +87008,10 @@
         "byādhi + pārijuñña"
     ],
     [
+        "byādhippabāḷha",
+        "byādhi + pabāḷha"
+    ],
+    [
         "byādhibhaya",
         "byādhi + bhaya"
     ],
@@ -86594,6 +87174,14 @@
     [
         "byāmamatta",
         "byāma + matta"
+    ],
+    [
+        "byāyamati",
+        "vi > vy > by + ā + yama + ti"
+    ],
+    [
+        "byāyāmati",
+        "vi > vy > by + ā + yāma + ti"
     ],
     [
         "byāruddha",
@@ -86908,6 +87496,10 @@
         "brahmaloka + upaga"
     ],
     [
+        "brahmalokūpagama",
+        "brahmaloka + upagama"
+    ],
+    [
         "brahmalokūpapatti",
         "brahmaloka + upapatti"
     ],
@@ -87152,6 +87744,10 @@
         "bhā + kuṭi"
     ],
     [
+        "bhakkhayitvā",
+        "bhakkhaya + itvā"
+    ],
+    [
         "bhakkhitvā",
         "√bhakkh + itvā"
     ],
@@ -87314,6 +87910,10 @@
     [
         "bhaṇḍaka",
         "bhaṇḍa + ka"
+    ],
+    [
+        "bhaṇḍati",
+        "bhaṇḍa + ti"
     ],
     [
         "bhaṇḍadhovana",
@@ -87984,6 +88584,10 @@
         "bhava + lobha + jappā"
     ],
     [
+        "bhavasaṅkhāra",
+        "bhava + saṅkhāra"
+    ],
+    [
         "bhavasatta",
         "bhava + satta"
     ],
@@ -88114,6 +88718,10 @@
     [
         "bhākuṭikabhākuṭika",
         "bhākuṭika + bhākuṭika"
+    ],
+    [
+        "bhāgaso",
+        "√bhaj > bhag > bhāg + *a + so\nbhāga + so"
     ],
     [
         "bhāgavant",
@@ -88274,6 +88882,10 @@
     [
         "bhāraṭṭha",
         "bhāra + ṭha"
+    ],
+    [
+        "bhārata",
+        "bharata > bhārata + *a"
     ],
     [
         "bhāratara",
@@ -89024,10 +89636,6 @@
         "bhuñjituṃ + kāmatā"
     ],
     [
-        "bhuñjitvā",
-        "bhuñja + itvā"
-    ],
-    [
         "bhuñjeyya",
         "bhuñja + eyya"
     ],
@@ -89076,12 +89684,24 @@
         "bhusa + muṭṭhi"
     ],
     [
+        "bhusāgāra",
+        "bhusa + agāra"
+    ],
+    [
+        "bhusāgāradvāra",
+        "bhusāgāra + dvāra"
+    ],
+    [
         "bhusikā",
         "bhusa + ikā"
     ],
     [
         "bhūkuṭi",
         "bhū + kuṭi"
+    ],
+    [
+        "bhūtakamma",
+        "bhūta + kamma"
     ],
     [
         "bhūtakāla",
@@ -89150,6 +89770,10 @@
     [
         "bhūtavādī",
         "bhūta + vādī"
+    ],
+    [
+        "bhūtavejja",
+        "bhūta + vejja"
     ],
     [
         "bhūtavejjaka",
@@ -89920,6 +90544,10 @@
         "magga + araha"
     ],
     [
+        "maggi",
+        "√magg + i"
+    ],
+    [
         "magghadeva",
         "maggha + deva"
     ],
@@ -90110,6 +90738,10 @@
     [
         "macchariya",
         "macchara + iya"
+    ],
+    [
+        "macchasūrasenā",
+        "macchā + sūrasenā"
     ],
     [
         "macchavilopa",
@@ -90444,6 +91076,10 @@
         "maṇiratana + pamukha"
     ],
     [
+        "maṇilakkhaṇa",
+        "maṇi + lakkhaṇa"
+    ],
+    [
         "maṇivaṇṇa",
         "maṇi + vaṇṇa"
     ],
@@ -90466,6 +91102,10 @@
     [
         "maṇḍanajātika",
         "maṇḍana + jātika"
+    ],
+    [
+        "maṇḍanavibhūsanaṭṭhānānuyoga",
+        "maṇḍana + vibhūsanaṭṭhāna + anuyoga"
     ],
     [
         "maṇḍanāya",
@@ -90678,10 +91318,6 @@
     [
         "madetvā",
         "made + tvā"
-    ],
-    [
-        "madda",
-        "√madd + a"
     ],
     [
         "maddakucchi",
@@ -90932,6 +91568,10 @@
         "√man + as + o\nmanas + o"
     ],
     [
+        "manaṃ padosaye",
+        "manaṃ + padosaye"
+    ],
+    [
         "manāniccatā",
         "mano + aniccatā"
     ],
@@ -91160,6 +91800,10 @@
         "manussa + maṃsa"
     ],
     [
+        "manussarāja",
+        "manussa + rāja"
+    ],
+    [
         "manussarāmaṇeyya",
         "manussa + rāmaṇeyya"
     ],
@@ -91334,6 +91978,10 @@
     [
         "manobhāvanīya",
         "mano + bhāvanīya"
+    ],
+    [
+        "manomayiddhiñāṇa",
+        "manomaya + iddhi + ñāṇa"
     ],
     [
         "manomoneyya",
@@ -91908,6 +92556,10 @@
         "malla + pāmokkha"
     ],
     [
+        "mallaputta",
+        "malla + putta"
+    ],
+    [
         "mallā",
         "malla + ā"
     ],
@@ -92114,6 +92766,10 @@
     [
         "mahākassapa",
         "mahā + kassapa"
+    ],
+    [
+        "mahākassapattheravatthu",
+        "mahākassapa + thera + vatthu"
     ],
     [
         "mahākāya",
@@ -93032,12 +93688,20 @@
         "mahiṃsa + yuddha"
     ],
     [
+        "mahiṃsalakkhaṇa",
+        "mahiṃsa + lakkhaṇa"
+    ],
+    [
         "mahiṃsasappi",
         "mahiṃsa + sappi"
     ],
     [
         "mahīyati",
         "mahīya + ti"
+    ],
+    [
+        "mahīruha",
+        "mahī + ruha"
     ],
     [
         "maheti",
@@ -93380,6 +94044,10 @@
         "mātar + ula"
     ],
     [
+        "mātulā",
+        "mātar + ula + ā\nmātula + ā"
+    ],
+    [
         "mātulānī",
         "mātar + ula + anī\nmātula + anī"
     ],
@@ -93548,12 +94216,16 @@
         "manu > mānu + *sa + ikā\nmānusa + ikā"
     ],
     [
+        "mānusivaṇṇa",
+        "mānusī + vaṇṇa"
+    ],
+    [
         "mānusuttamā",
         "mānusa + uttama + ā\nmānusuttama + ā"
     ],
     [
         "mānussaka",
-        "manu + ssa > mānussa + *ka"
+        "manu > mānu + ssa + *ka\nmanussa + *ka"
     ],
     [
         "mānetabba",
@@ -93740,6 +94412,10 @@
         "māra + bala"
     ],
     [
+        "mārayācanakathā",
+        "māra + yācana + kathā"
+    ],
+    [
         "mārasenappamaddana",
         "mārasenā + pamaddana"
     ],
@@ -93844,6 +94520,10 @@
         "mālā + vaccha"
     ],
     [
+        "mālāvilepana",
+        "mālā + vilepana"
+    ],
+    [
         "mālika",
         "mālā + ika"
     ],
@@ -93916,6 +94596,10 @@
         "māsa + anatikkanta"
     ],
     [
+        "māsiya",
+        "√mā + sa + iya\nmāsa + iya"
+    ],
+    [
         "māssu",
         "mā + ssu"
     ],
@@ -93970,6 +94654,10 @@
     [
         "migarāja",
         "miga + rāja"
+    ],
+    [
+        "migalakkhaṇa",
+        "miga + lakkhaṇa"
     ],
     [
         "migalaṇḍika",
@@ -94344,6 +95032,10 @@
         "√muc > muk + ta"
     ],
     [
+        "mukhacuṇṇa",
+        "mukha + cuṇṇa"
+    ],
+    [
         "mukhaja",
         "mukha + ja"
     ],
@@ -94370,6 +95062,10 @@
     [
         "mukharoga",
         "mukha + roga"
+    ],
+    [
+        "mukhalepana",
+        "mukha + lepana"
     ],
     [
         "mukhasatti",
@@ -94414,6 +95110,14 @@
     [
         "mukhī",
         "mukha + ī"
+    ],
+    [
+        "mukhullokaka",
+        "mukha + ullokaka"
+    ],
+    [
+        "mukhullokika",
+        "mukha + ullokika"
     ],
     [
         "mukhena",
@@ -94692,8 +95396,8 @@
         "mudu + taluna"
     ],
     [
-        "mudutalunaṅguliyo",
-        "mudu + taluna + aṅguli + iyo\nmudutalunaṅguli + iyo"
+        "mudutalunaṅguli",
+        "mudu + taluna + aṅguli"
     ],
     [
         "mudutalunahatthapāda",
@@ -94814,10 +95518,6 @@
     [
         "musāvādupasañhita",
         "musāvāda + upasañhita"
-    ],
-    [
-        "muhutta",
-        "muhu + tta"
     ],
     [
         "muhuttampi",
@@ -95008,6 +95708,10 @@
         "meṇḍa + yuddha"
     ],
     [
+        "meṇḍalakkhaṇa",
+        "meṇḍa + lakkhaṇa"
+    ],
+    [
         "metamāsado",
         "mā + etaṃ + āsado"
     ],
@@ -95184,6 +95888,10 @@
         "meda + vaṭṭi"
     ],
     [
+        "medavaṇṇa",
+        "meda + vaṇṇa"
+    ],
+    [
         "medeti",
         "mede + ti"
     ],
@@ -95252,6 +95960,10 @@
         "moggallāna + byākaraṇa"
     ],
     [
+        "moggallānavagga",
+        "moggallāna + vagga"
+    ],
+    [
         "mogha",
         "√muh > moh + *gha"
     ],
@@ -95278,10 +95990,6 @@
     [
         "mocanādhippāya",
         "mocana + adhippāya"
-    ],
-    [
-        "mocayati",
-        "mocaya + ti"
     ],
     [
         "mocayi",
@@ -95328,10 +96036,6 @@
         "monissa + ti"
     ],
     [
-        "moneyya",
-        "√mun > mon + i + *eyya\nmuni + *eyya"
-    ],
-    [
         "moneyyasampanna",
         "moneyya + sampanna"
     ],
@@ -95349,7 +96053,7 @@
     ],
     [
         "momūhatta",
-        "momuha + a + tta\nmomūha + tta"
+        "momūha + a + tta\nmomūha + tta"
     ],
     [
         "mora",
@@ -95612,16 +96316,8 @@
         "√yaj + a"
     ],
     [
-        "yajati",
-        "yaja + ti"
-    ],
-    [
         "yajanta",
         "yaja + nta"
-    ],
-    [
-        "yajamāna",
-        "yaja + māna"
     ],
     [
         "yajāpeti",
@@ -96050,10 +96746,6 @@
     [
         "yathārūpa",
         "yathā + rūpa"
-    ],
-    [
-        "yathāsaka",
-        "yathā + saka"
     ],
     [
         "yathāsakaṃ",
@@ -96540,6 +97232,10 @@
         "yaṃ + attha + āya\nyaṃattha + āya"
     ],
     [
+        "yaṃabhisamparāya",
+        "yaṃ + abhisamparāya"
+    ],
+    [
         "yaṃkaci",
         "yaṃ + kaci"
     ],
@@ -96736,6 +97432,10 @@
         "yāja + yoga"
     ],
     [
+        "yāta",
+        "√yā + ta"
+    ],
+    [
         "yātuṃ",
         "√yā + tuṃ"
     ],
@@ -96890,6 +97590,10 @@
     [
         "yāssa",
         "yā + assa"
+    ],
+    [
+        "yāvakālika",
+        "yāva + kāla + ika\nyāvakāla + ika"
     ],
     [
         "yāvakāle",
@@ -97181,7 +97885,7 @@
     ],
     [
         "yūpatthāya",
-        "yūpa + atthāya\nyūpattha + āya"
+        "yūpa + attha + āya\nyūpattha + āya"
     ],
     [
         "ye keci",
@@ -97253,7 +97957,7 @@
     ],
     [
         "yebhuyyena",
-        "yad + bhūya + ena\nyebhuyya + ena"
+        "ye + bhūya + ena\nyebhuyya + ena"
     ],
     [
         "yebhuyyenakaṭhala",
@@ -98144,6 +98848,10 @@
         "ratha + īsā"
     ],
     [
+        "rathūpatthara",
+        "ratha + upatthara"
+    ],
+    [
         "rathesabha",
         "ratha + usabha"
     ],
@@ -98297,7 +99005,7 @@
     ],
     [
         "rasāda",
-        "rasa + āda"
+        "rasa + ada"
     ],
     [
         "rasādhibhū",
@@ -98344,6 +99052,10 @@
         "√ru > rav + *a + ka\nrava + ka"
     ],
     [
+        "ravitvā",
+        "rava + itvā"
+    ],
+    [
         "ravivāra",
         "ravi + vāra"
     ],
@@ -98376,6 +99088,10 @@
         "rāga + aggi"
     ],
     [
+        "rāgacarita",
+        "rāga + carita"
+    ],
+    [
         "rāgaja",
         "rāga + ja"
     ],
@@ -98402,6 +99118,10 @@
     [
         "rāgadosamoha",
         "rāga + dosa + moha"
+    ],
+    [
+        "rāgadosamohakkhaya",
+        "rāgadosamoha + khaya"
     ],
     [
         "rāgadosamohavisamagata",
@@ -98680,6 +99400,10 @@
         "rāja + putta"
     ],
     [
+        "rājaputtī",
+        "rāja + puttī"
+    ],
+    [
         "rājapurisa",
         "rāja + purisa"
     ],
@@ -98792,6 +99516,10 @@
         "rāja + isi"
     ],
     [
+        "rājupaṭṭhāna",
+        "rāja + upaṭṭhāna"
+    ],
+    [
         "rājūpabhoga",
         "rāja + upabhoga"
     ],
@@ -98806,6 +99534,10 @@
     [
         "rādha",
         "√rādh + a"
+    ],
+    [
+        "rāmagāma",
+        "rāma + gāma"
     ],
     [
         "rāmaṇeyya",
@@ -99533,7 +100265,7 @@
     ],
     [
         "rojā",
-        "roja + ā"
+        "√ruj > roj + *a + ā\nroja + ā"
     ],
     [
         "rodati",
@@ -100524,6 +101256,10 @@
         "lokassa + anta"
     ],
     [
+        "lokavajja",
+        "loka + vajja"
+    ],
+    [
         "lokavaḍḍhana",
         "loka + vaḍḍhana + a\nlokavaḍḍhana + a"
     ],
@@ -101292,6 +102028,10 @@
         "sakkata + abhidhāna"
     ],
     [
+        "sakkatasakkata",
+        "sakkata + sakkata"
+    ],
+    [
         "sakkatānurūpa",
         "sakkata + anurūpa"
     ],
@@ -101554,6 +102294,10 @@
     [
         "sakhuraka",
         "sa + √khur + a + ka\nsakhura + ka"
+    ],
+    [
+        "sakhya",
+        "sakha + ya"
     ],
     [
         "sagavacaṇḍa",
@@ -101888,6 +102632,10 @@
         "saṃ + √kit > ket + *a"
     ],
     [
+        "saṅketakamma",
+        "saṅketa + kamma"
+    ],
+    [
         "saṅkopa",
         "saṃ + √kup > kop + *a"
     ],
@@ -102001,7 +102749,7 @@
     ],
     [
         "saṅkhāna",
-        "saṃ + √khā + na"
+        "saṃ + √khā + ana"
     ],
     [
         "saṅkhāyaka",
@@ -102784,8 +103532,8 @@
         "saccaṃ + anubujjhati"
     ],
     [
-        "saccamanurakkhatā",
-        "saccaṃ + anurakkhatā"
+        "saccamanurakkhanta",
+        "saccaṃ + anurakkhanta"
     ],
     [
         "saccamanurakkhati",
@@ -103014,6 +103762,10 @@
     [
         "sajjhubhāra",
         "sajjhu + bhāra"
+    ],
+    [
+        "sañcayabelaṭṭhaputtavāda",
+        "sañcaya + belaṭṭhaputta + vāda"
     ],
     [
         "sañcaraṇanissita",
@@ -103804,6 +104556,10 @@
         "satta + ti"
     ],
     [
+        "sattadoṇa",
+        "satta + doṇa"
+    ],
+    [
         "sattadhā",
         "satta + dhā"
     ],
@@ -103826,6 +104582,14 @@
     [
         "sattapaññāsā",
         "satta + paññāsā"
+    ],
+    [
+        "sattapaṇṇiguhā",
+        "sattapaṇṇī + guhā"
+    ],
+    [
+        "sattapaṇṇī",
+        "satta + paṇṇī"
     ],
     [
         "sattapada",
@@ -104076,6 +104840,10 @@
         "sattāha + uppanna"
     ],
     [
+        "sattipañjara",
+        "satti + pañjara"
+    ],
+    [
         "sattippahāra",
         "satti + pahāra"
     ],
@@ -104152,6 +104920,10 @@
         "sattha + mala"
     ],
     [
+        "satthalakkhaṇa",
+        "sattha + lakkhaṇa"
+    ],
+    [
         "satthalūkha",
         "sattha + lūkha"
     ],
@@ -104174,10 +104946,6 @@
     [
         "satthavāhaupamā",
         "satthavāha + upamā"
-    ],
-    [
-        "satthahāraka",
-        "sattha + hāraka"
     ],
     [
         "satthā",
@@ -104794,6 +105562,10 @@
     [
         "sanidāna",
         "sa + ni + √dā + ana"
+    ],
+    [
+        "sanibbuta",
+        "sa + nibbuta"
     ],
     [
         "sanimitta",
@@ -105576,6 +106348,10 @@
         "sa + pari + √sad + ā + ya\nsapārisā + ya"
     ],
     [
+        "saputta",
+        "sa + putta"
+    ],
+    [
         "saputtadāra",
         "sa + putta + dāra"
     ],
@@ -105734,6 +106510,10 @@
     [
         "sappitela",
         "sappi + tela"
+    ],
+    [
+        "sappitelanavanītadadhimadhuphāṇita",
+        "sappi + tela + navanīta + dadhi + madhu + phāṇita"
     ],
     [
         "sappitelādiminanakāla",
@@ -106276,8 +107056,8 @@
         "sabba + bandhana + mutta"
     ],
     [
-        "sabbabhūtāni",
-        "sabba + bhūta + āni\nsabbabhūta + āni"
+        "sabbabhūta",
+        "sabba + bhūta"
     ],
     [
         "sabbabhūtānukampī",
@@ -106696,6 +107476,10 @@
         "sa + vya > bya + tā\nsabya + tā"
     ],
     [
+        "sabyāpajjacitta",
+        "sabyāpajja + citta"
+    ],
+    [
         "sabyāpajjha",
         "sa + vi + ā > byā + √bādh + ya > pajjha"
     ],
@@ -106754,6 +107538,10 @@
     [
         "sabhaya",
         "sa + √bhī > bhay + *a"
+    ],
+    [
+        "sabhariya",
+        "sa + √bhar + iya + ā + a\nsabhariyā + a"
     ],
     [
         "sabhāga",
@@ -107184,10 +107972,6 @@
         "√sam + aṇa + iya\nsamaṇa + iya"
     ],
     [
-        "samaṇī",
-        "√sam + aṇa + ī\nsamaṇa + ī"
-    ],
-    [
         "samaṇīdha",
         "samaṇaṃ + idha"
     ],
@@ -107250,6 +108034,10 @@
     [
         "samatiṭṭhā",
         "saṃ + a + tiṭṭha + ā"
+    ],
+    [
+        "samatittika",
+        "sama + titti + ka\nsamatitti + ka"
     ],
     [
         "samatittikasikkhāpada",
@@ -107476,6 +108264,10 @@
         "saṃ + anu + yuñja + i"
     ],
     [
+        "samanuyuñjitvā",
+        "saṃ + anu + yuñja + itvā"
+    ],
+    [
         "samanuyuñjiyamāna",
         "saṃ + anu + yuñjiya + māna"
     ],
@@ -107576,6 +108368,10 @@
         "saṃ + anu + ā + ne + ti"
     ],
     [
+        "samannāhata",
+        "saṃ + anu + ā + √har + ta"
+    ],
+    [
         "samannāharaṇa",
         "saṃ + anu > ann + ā + √har + aṇa"
     ],
@@ -107666,6 +108462,10 @@
     [
         "samappapāgata",
         "sama + papāgata"
+    ],
+    [
+        "samaphala",
+        "sama + phala"
     ],
     [
         "samabharita",
@@ -108054,6 +108854,10 @@
     [
         "samādhāya",
         "saṃ + ā + √dhā + ya"
+    ],
+    [
+        "samādhika",
+        "saṃ + adhi + ka"
     ],
     [
         "samādhikathā",
@@ -108616,6 +109420,10 @@
         "saṃ + ud + teje + ita"
     ],
     [
+        "samuttejiyamāna",
+        "saṃ + ud + tejiya + māna"
+    ],
+    [
         "samuttejeti",
         "saṃ + ud + teje + ti"
     ],
@@ -108996,6 +109804,10 @@
         "saṃ + pati"
     ],
     [
+        "sampatijāta",
+        "sampati + jāta"
+    ],
+    [
         "sampattavirati",
         "sampatta + virati"
     ],
@@ -109274,6 +110086,10 @@
     [
         "sampahaṃsitabba",
         "saṃ + pa + √haṃs + itabba"
+    ],
+    [
+        "sampahaṃsiyamāna",
+        "saṃ + pa + haṃsiya + māna"
     ],
     [
         "sampahaṃsetabba",
@@ -110368,6 +111184,10 @@
         "sarīra + koṭṭhāsa"
     ],
     [
+        "sarīraṭṭha",
+        "sarīra + ṭha"
+    ],
+    [
         "sarīratā",
         "sarīra + tā"
     ],
@@ -110684,10 +111504,6 @@
         "sassata + diṭṭhi"
     ],
     [
-        "sassatavāda",
-        "sassata + vāda"
-    ],
-    [
         "sassatavādadesanā",
         "sassatavāda + desanā"
     ],
@@ -110805,7 +111621,7 @@
     ],
     [
         "savibhūsā",
-        "sa + vi + √bhūs + ā"
+        "sa + vibhūsā"
     ],
     [
         "savisa",
@@ -111644,6 +112460,10 @@
         "saṃsāraṃ + āpādi"
     ],
     [
+        "saṃsārasuddhi",
+        "saṃsāra + suddhi"
+    ],
+    [
         "saṃsārasota",
         "saṃsāra + sota"
     ],
@@ -112316,6 +113136,10 @@
         "√san > sā + ta + iya\nsāta + iya"
     ],
     [
+        "sātisaya",
+        "sa + ati + √sī > say + *a"
+    ],
+    [
         "sātudaka",
         "sāta + udaka"
     ],
@@ -112410,6 +113234,10 @@
     [
         "sādhāvuso",
         "sādhu + āvuso"
+    ],
+    [
+        "sādhāhaṃ",
+        "sādhu + ahaṃ"
     ],
     [
         "sādhikanavuti",
@@ -113077,7 +113905,7 @@
     ],
     [
         "sāsaṅka",
-        "sa + ā + √saṅk > saṅk + ā + a\nsāsaṅkā + a"
+        "sa + ā + √saṅk + ā + a\nsāsaṅkā + a"
     ],
     [
         "sāsaṅkasammata",
@@ -113436,6 +114264,10 @@
         "sikhā + ari"
     ],
     [
+        "sikhābandha",
+        "sikhā + bandha"
+    ],
+    [
         "sikhābheda",
         "sikhā + bheda"
     ],
@@ -113474,6 +114306,10 @@
     [
         "siṅghāṇikā",
         "√siṅgh + aṇa > āṇa + *ikā\nsiṅghaṇa + *ikā"
+    ],
+    [
+        "siṅghānikā",
+        "√siṅgh + ana > āna + *ikā\nsiṅghana + *ikā"
     ],
     [
         "sijjhamāna",
@@ -113800,6 +114636,10 @@
         "sīta + chāyā + a\nsītacchāyā + a"
     ],
     [
+        "sītabhīruka",
+        "sīta + bhīruka"
+    ],
+    [
         "sītavana",
         "sīta + vana"
     ],
@@ -114006,6 +114846,10 @@
     [
         "sīlasamādhipaññā",
         "sīla + samādhi + paññā"
+    ],
+    [
+        "sīlasamādhipaññāsampadā",
+        "sīlasamādhipaññā + sampadā"
     ],
     [
         "sīlasamādhivipassanā",
@@ -114672,6 +115516,10 @@
         "sukha + saṃvattanika"
     ],
     [
+        "sukhasaṃvāsa",
+        "sukha + saṃvāsa"
+    ],
+    [
         "sukhasārāgitā",
         "sukha + sārāgitā"
     ],
@@ -115016,6 +115864,10 @@
         "sucitta + patta + chadana"
     ],
     [
+        "sucitti",
+        "su + √citt + i"
+    ],
+    [
         "sucittita",
         "su + √citt + ita"
     ],
@@ -115190,6 +116042,10 @@
     [
         "suṭṭhutara",
         "suṭṭhu + tara"
+    ],
+    [
+        "suṇa",
+        "soṇa > suṇa"
     ],
     [
         "suṇanta",
@@ -115474,6 +116330,10 @@
     [
         "suddakula",
         "sudda + kula"
+    ],
+    [
+        "suddadāsa",
+        "sudda + dāsa"
     ],
     [
         "suddamaṇḍala",
@@ -116276,6 +117136,10 @@
         "su + √bhikkh + a + tā\nsubhikkha + tā"
     ],
     [
+        "subhuja",
+        "su + √bhuj + a"
+    ],
+    [
         "subhūtitthera",
         "subhūti + thera"
     ],
@@ -116460,6 +117324,10 @@
         "suriyassa + upanisa"
     ],
     [
+        "suriyavaccasa",
+        "suriya + vaccasa"
+    ],
+    [
         "suriyāloka",
         "suriya + āloka"
     ],
@@ -116521,7 +117389,7 @@
     ],
     [
         "sulabhapiṇḍa",
-        "su + labha + piṇḍa"
+        "sulabha + piṇḍa"
     ],
     [
         "sulabharūpa",
@@ -116534,6 +117402,10 @@
     [
         "sulohitaka",
         "su + lohita + ka"
+    ],
+    [
+        "susakkata",
+        "su + sat + kata"
     ],
     [
         "susaṅgahitatta",
@@ -116574,6 +117446,10 @@
     [
         "susamāhitatta",
         "susamāhita + atta"
+    ],
+    [
+        "susamāhitasaṅkappa",
+        "susamāhita + saṅkappa"
     ],
     [
         "susamucchinna",
@@ -117078,6 +117954,10 @@
     [
         "sūkarabhūta",
         "sūkara + bhūta"
+    ],
+    [
+        "sūkaramaddava",
+        "sūkara + maddava"
     ],
     [
         "sūkaramaṃsa",
@@ -117756,6 +118636,10 @@
         "√suc > suk > sok + *a"
     ],
     [
+        "sokakāla",
+        "soka + kāla"
+    ],
+    [
         "sokajjhāyika",
         "soka + jhāyika"
     ],
@@ -118401,7 +119285,7 @@
     ],
     [
         "sossati",
-        "√su > so + *ssa + ti"
+        "sossa + ti"
     ],
     [
         "sova",
@@ -118696,6 +119580,10 @@
         "vaggu + vada"
     ],
     [
+        "vaṅkaghasta",
+        "vaṅka + ghasta"
+    ],
+    [
         "vaṅkaṅguli",
         "vaṅka + aṅguli"
     ],
@@ -118957,7 +119845,7 @@
     ],
     [
         "vaccūpatthambha",
-        "vaccūpatthambha"
+        "vacca + upatthambha"
     ],
     [
         "vacchaka",
@@ -119104,6 +119992,10 @@
         "vajjī + gāma"
     ],
     [
+        "vajjicetiya",
+        "vajjī + cetiya"
+    ],
+    [
         "vajjipajā",
         "vajjī + pajā"
     ],
@@ -119172,16 +120064,16 @@
         "vaṭaṃsa + ka"
     ],
     [
-        "vaṭuma",
-        "?? √vaṭṭ > vaṭ + uma"
-    ],
-    [
         "vaṭṭakata",
         "vaṭṭa + kata"
     ],
     [
         "vaṭṭakayuddha",
         "vaṭṭaka + yuddha"
+    ],
+    [
+        "vaṭṭakalakkhaṇa",
+        "vaṭṭaka + lakkhaṇa"
     ],
     [
         "vaṭṭadukkha",
@@ -119394,6 +120286,10 @@
     [
         "vaṇṇimant",
         "√var + na + ī + mant\nvaṇṇī + mant"
+    ],
+    [
+        "vaṇṇupatha",
+        "vaṇṇu + patha"
     ],
     [
         "vatakotūhalamaṅgala",
@@ -120656,6 +121552,10 @@
         "vahā + tuṃ"
     ],
     [
+        "vahitvā",
+        "√vah + itvā"
+    ],
+    [
         "vaḷañjana",
         "√vaḷañj + ana"
     ],
@@ -120877,7 +121777,7 @@
     ],
     [
         "vātūpatthambha",
-        "vātūpatthambha"
+        "vāta + upatthambha"
     ],
     [
         "vātūpādāna",
@@ -120968,16 +121868,16 @@
         "vana > vāna + *ara"
     ],
     [
+        "vānarinda",
+        "vānara + inda"
+    ],
+    [
         "vāpaka",
         "√vap > vāp + *aka"
     ],
     [
         "vāpitaḷāka",
         "vāpi + taḷāka"
-    ],
-    [
-        "vāmaka",
-        "vāma + ka"
     ],
     [
         "vāmato",
@@ -120998,10 +121898,6 @@
     [
         "vāyajigucchaka",
         "vāyas + jigucchaka"
-    ],
-    [
-        "vāyato",
-        "√vā + [y] + as + to\nvāyas + to"
     ],
     [
         "vāyatta",
@@ -121030,6 +121926,10 @@
     [
         "vāyas",
         "√vā + [y] + as"
+    ],
+    [
+        "vāyasa",
+        "vi + √i > ay > āy + *as + *a\nvayas + *a"
     ],
     [
         "vāyāpana",
@@ -121186,6 +122086,10 @@
     [
         "vāladhi",
         "vāla + dhi"
+    ],
+    [
+        "vālabījanī",
+        "vāla + bījanī"
     ],
     [
         "vālavedhirūpa",
@@ -121494,6 +122398,14 @@
     [
         "vikuṇitamukha",
         "vikuṇita + mukha"
+    ],
+    [
+        "vikubbati",
+        "vi + kubba + ti"
+    ],
+    [
+        "vikubbanatā",
+        "vi + kubba + ana + tā\nvikubbana + tā"
     ],
     [
         "vikubbanā",
@@ -121816,6 +122728,10 @@
         "vi + gayha + ita"
     ],
     [
+        "vigarahati",
+        "vi + garaha + ti"
+    ],
+    [
         "vigarahanta",
         "vi + garaha + nta"
     ],
@@ -122026,6 +122942,10 @@
     [
         "vicitakāḷaka",
         "vicita + kāḷaka"
+    ],
+    [
+        "vicini",
+        "vi + cinā + i"
     ],
     [
         "vicinita",
@@ -122446,6 +123366,10 @@
     [
         "viññāṇañcāyatanasahagata",
         "viññāṇañcāyatana + sahagata"
+    ],
+    [
+        "viññāṇañcāyatanasukhumasaccasaññā",
+        "viññāṇañcāyatana + sukhuma + sacca + saññā"
     ],
     [
         "viññāṇañcāyatanūpaga",
@@ -122980,6 +123904,10 @@
         "vi + √dham + itvā"
     ],
     [
+        "vidhameti",
+        "vi + dhame + ti"
+    ],
+    [
         "vidhamma",
         "vi + √dham + ya"
     ],
@@ -122994,6 +123922,10 @@
     [
         "vidhaṃsitvā",
         "vi + √dhaṃs + itvā"
+    ],
+    [
+        "vidhāna",
+        "vi + √dhā + ana"
     ],
     [
         "vidhāsamatikkanta",
@@ -123228,6 +124160,10 @@
         "vi + ni + vaṭṭe + nta"
     ],
     [
+        "vinivijjhana",
+        "vi + ni + vijjha + ana"
+    ],
+    [
         "vinivijjhitvā",
         "vi + ni + vijjha + itvā"
     ],
@@ -123322,6 +124258,10 @@
     [
         "vinodenta",
         "vi + node + nta"
+    ],
+    [
+        "vinodesi",
+        "vi + node + si"
     ],
     [
         "vindi",
@@ -123442,6 +124382,10 @@
     [
         "vipariṇāmavirāganirodha",
         "vipariṇāma + virāga + nirodha"
+    ],
+    [
+        "vipariṇāmita",
+        "vi + pari + ṇāme + ita"
     ],
     [
         "vipariṇāmī",
@@ -123916,6 +124860,10 @@
         "vi + √bhaj > bhag > bhāg + *a + vant\nvibhāga + vant"
     ],
     [
+        "vibhāsā",
+        "vi + √bhās + ā"
+    ],
+    [
         "vibhāvanattha",
         "vibhāvana + attha"
     ],
@@ -124252,10 +125200,6 @@
         "vi + moce + tvā"
     ],
     [
-        "vimhāpayati",
-        "vi + mhāpaya + ti"
-    ],
-    [
         "vimhita",
         "vi + √mhi + ta"
     ],
@@ -124282,6 +125226,10 @@
     [
         "viyācikkhati",
         "vi + ā + cikkha + ti"
+    ],
+    [
+        "viyāyāti",
+        "vi + yāya + ti"
     ],
     [
         "viyārabbha",
@@ -124484,6 +125432,14 @@
         "vi + rādhe + ti"
     ],
     [
+        "viriccati",
+        "vi + ricca + ti"
+    ],
+    [
+        "viriccamāna",
+        "vi + ricca + māna"
+    ],
+    [
         "viriya",
         "√vīr + iya"
     ],
@@ -124546,6 +125502,10 @@
     [
         "virecanaka",
         "vi + rece + ana + ka\nvirecana + ka"
+    ],
+    [
+        "virecamāna",
+        "vi + reca + māna"
     ],
     [
         "virocati",
@@ -124626,6 +125586,10 @@
     [
         "vilimpāpetvā",
         "vi + limpāpe + tvā"
+    ],
+    [
+        "vilīyi",
+        "vi + līya + i"
     ],
     [
         "vilīvakāra",
@@ -124725,7 +125689,7 @@
     ],
     [
         "visakkiya",
-        "vi + √sakk + a + iya\nvisakka + iya"
+        "vi + √sakk + iya"
     ],
     [
         "visagata",
@@ -125172,6 +126136,10 @@
         "vi + sose + tvā"
     ],
     [
+        "vissagga",
+        "vi + √sajj > sagg + a"
+    ],
+    [
         "vissajjati",
         "vi + sajja + ti"
     ],
@@ -125476,6 +126444,10 @@
         "viveka + ja"
     ],
     [
+        "vivekajapītisukhasukhumasaccasaññā",
+        "vivekaja + pītisukha + sukhuma + sacca + saññā"
+    ],
+    [
         "vivekajapītisukhasukhumasaccasaññī",
         "vivekaja + pītisukha + sukhumasacca + saññī"
     ],
@@ -125612,10 +126584,6 @@
         "vi + √har + emu"
     ],
     [
-        "vihareyya",
-        "vi + hara + eyya"
-    ],
-    [
         "vihassati",
         "vi + hassa + ti"
     ],
@@ -125717,7 +126685,7 @@
     ],
     [
         "vihārika",
-        "vi + √har > hār + *ī + ika\nvihārī + ika"
+        "vi + √har > hār + *a + ika\nvihāra + ika"
     ],
     [
         "vihārimātāpiṃ",
@@ -126857,7 +127825,7 @@
     ],
     [
         "vedantagū",
-        "veda + anta + gū"
+        "veda + antagū"
     ],
     [
         "vedapaṭilābha",
@@ -126922,6 +127890,10 @@
     [
         "vedeyya",
         "√vid > ved + *a + eyya\nveda + eyya"
+    ],
+    [
+        "vedeha",
+        "videha > vedeha + *a"
     ],
     [
         "vedehamuni",
@@ -127057,7 +128029,7 @@
     ],
     [
         "veyāvaṭṭika",
-        "vi > vy + ā > vyā > veyyā + √par > var + ta + *ika\nvyāvaṭṭa + *ika"
+        "vi > vy > veyy + ā > √par > var + ta + *ika\nvyāvaṭṭa + *ika"
     ],
     [
         "veyyattiya",
@@ -127065,11 +128037,11 @@
     ],
     [
         "veyyākaraṇaso",
-        "vi > vy + ā > vyā > veyyā + √kar + aṇa + *a + so\nveyyākaraṇa + so"
+        "vi > vy > veyy + ā + √kar + aṇa + *a + so\nveyyākaraṇa + so"
     ],
     [
         "veyyābādhika",
-        "vi > vy + ā > vyā > veyyā + √bādh + a + *ika\nvyābādha + *ika"
+        "vi > vy > veyy + ā + √bādh + a + *ika\nvyābādha + *ika"
     ],
     [
         "veyyāvaccakara",
@@ -127077,7 +128049,7 @@
     ],
     [
         "veyyāvaṭika",
-        "vi > vy + ā > vyā > veyyā + √par > var + ta + *ika\nvyāvaṭa + *ika"
+        "vi > vy > veyy + ā + √par > var + ta + *ika\nvyāvaṭa + *ika"
     ],
     [
         "vera",
@@ -127262,10 +128234,6 @@
     [
         "vevajjatā",
         "vi > ve + √vajj + *a + tā\nvevajja + tā"
-    ],
-    [
-        "vevaṇṇiya",
-        "vi > ve + √var + na + *iya\nvivaṇṇa + *iya"
     ],
     [
         "veviccha",
@@ -127673,7 +128641,7 @@
     ],
     [
         "haṭaka",
-        "√har + ta + ka\nhaṭa + ka"
+        "√haṭ + aka"
     ],
     [
         "haṭabhakkha",
@@ -127940,6 +128908,10 @@
         "hatthi + gāmaka"
     ],
     [
+        "hatthigīvā",
+        "hatthī + gīvā"
+    ],
+    [
         "hatthidanta",
         "hatthī + danta"
     ],
@@ -127998,6 +128970,10 @@
     [
         "hatthirājavaṇṇa",
         "hatthirāja + vaṇṇa"
+    ],
+    [
+        "hatthilakkhaṇa",
+        "hatthī + lakkhaṇa"
     ],
     [
         "hatthisadda",
@@ -128338,6 +129314,10 @@
     [
         "haṃsarāja",
         "haṃsa + rāja"
+    ],
+    [
+        "hāṭaka",
+        "√haṭ > hāṭ + *aka"
     ],
     [
         "hāṭakasannibha",
@@ -130636,10 +131616,6 @@
         "tadahu + upasampanna"
     ],
     [
-        "upagantabba",
-        "upa + √gam + tabba"
-    ],
-    [
         "maṇḍanakajātiya",
         "maṇḍanaka + jātiya"
     ],
@@ -131474,10 +132450,6 @@
     [
         "padhaṃsati",
         "pa + dhaṃsa + ti"
-    ],
-    [
-        "bhetvāna",
-        "bhede + tvāna"
     ],
     [
         "bhitvāna",
@@ -132320,8 +133292,16 @@
         "na > a + jimha + tā\najimha + tā"
     ],
     [
+        "ajiya",
+        "na > a + jiyā + a\najiyā + a"
+    ],
+    [
         "atuliya",
         "na > a + √tul + iya"
+    ],
+    [
+        "atela",
+        "na > a + tila > tela + *a\natila + *a"
     ],
     [
         "adaṇḍāraha",
@@ -132336,12 +133316,20 @@
         "adosa + ussada"
     ],
     [
+        "anāthamāna",
+        "na > a + nātha + māna"
+    ],
+    [
         "anisāmaya",
         "na > a + ni + sāme + ya\nna + nisāmaya"
     ],
     [
         "apaṭi",
         "a + paṭi"
+    ],
+    [
+        "apāpakammī",
+        "na > a + papa + kammī"
     ],
     [
         "apahānadhamma",
@@ -132360,12 +133348,20 @@
         "na > a + pesiya + māna"
     ],
     [
+        "appaṭikopayanta",
+        "na > a + pati + kopaya + nta"
+    ],
+    [
         "appaṭiggahita",
         "na > a + pati + √gah + ita"
     ],
     [
         "santappana",
         "saṃ + √tapp + ana"
+    ],
+    [
+        "appasayha",
+        "na > a + pa + √sah + ya"
     ],
     [
         "aphusi",
@@ -132389,7 +133385,7 @@
     ],
     [
         "amataṃdada",
-        "na > a + mataṃ + dada"
+        "amataṃ + dada"
     ],
     [
         "nāsekkha",
@@ -135702,10 +136698,6 @@
     [
         "ajjhenakutta",
         "ajjhena + kutta"
-    ],
-    [
-        "maṃsabhojana",
-        "maṃsa + bhojana"
     ],
     [
         "asucibhāvamissita",
@@ -141162,10 +142154,6 @@
     [
         "satthānukampita",
         "satthar + anukampita"
-    ],
-    [
-        "vadhitvāna",
-        "√vadh + itvāna"
     ],
     [
         "ñātibhātar",
@@ -148537,7 +149525,7 @@
     ],
     [
         "abyayī",
-        "na > a + vi > vy > by + √i > ay + *a + ī\nabyaya + ī"
+        "na > a + vi > vy > by + √i > ay + *a > ī\nabyaya > abyayī"
     ],
     [
         "esika",
@@ -148624,10 +149612,6 @@
         "manussa + patha"
     ],
     [
-        "kasāṭaka",
-        "kasaṭa > kasāṭa + *aka"
-    ],
-    [
         "madakāla",
         "mada + kāla"
     ],
@@ -148706,10 +149690,6 @@
     [
         "gaṇṭhita",
         "√ganth > gaṇṭh + ita"
-    ],
-    [
-        "gamayati",
-        "gamaya + ti"
     ],
     [
         "nippada",
@@ -148921,7 +149901,7 @@
     ],
     [
         "samaṇḍalīkata",
-        "sa + maṇḍala + kata"
+        "sa + maṇḍala > maṇḍalī + kata"
     ],
     [
         "nissīmaṭṭha",
@@ -148956,8 +149936,8 @@
         "savana + antika"
     ],
     [
-        "atikkantikā",
-        "ati + √kam + ta + ikā\natikkanta + ikā"
+        "atikkantika",
+        "ati + √kam + ta + ika\natikkanta + ika"
     ],
     [
         "sīmātikkantika",
@@ -149029,11 +150009,11 @@
     ],
     [
         "phāsuvihārika",
-        "phāsu + vihārika\nphāsuvihāra + ika"
+        "phāsu + vihārika"
     ],
     [
         "palibodhāpalibodhakathā",
-        "palibodhā + palibodha + kathā"
+        "palibodhā + apalibodha + kathā"
     ],
     [
         "āvāsapalibodha",
@@ -149122,5 +150102,1361 @@
     [
         "maṇḍaka",
         "√maṇḍ + a + ka\nmaṇḍa + ka"
+    ],
+    [
+        "nudeti",
+        "nude + ti"
+    ],
+    [
+        "anāsā",
+        "na > an + ā + √is + ā"
+    ],
+    [
+        "mānamada",
+        "māna + mada"
+    ],
+    [
+        "nimmadīyati",
+        "nir + madīya + ti\nnir + madīyati"
+    ],
+    [
+        "madajanana",
+        "mada + janana"
+    ],
+    [
+        "olambetvā",
+        "ava + lambe + tvā"
+    ],
+    [
+        "samugghātīyati",
+        "saṃ + ud + ghātīya + ti"
+    ],
+    [
+        "vinīyati",
+        "vi + nīya + ti"
+    ],
+    [
+        "abhirūhitvā",
+        "abhi + rūha + itvā"
+    ],
+    [
+        "purisamada",
+        "purisa + mada"
+    ],
+    [
+        "pakativesa",
+        "pakati + vesa"
+    ],
+    [
+        "gotra",
+        "go + tra"
+    ],
+    [
+        "mahārājika",
+        "mahā + rāja + ika\nmahārāja + ika"
+    ],
+    [
+        "aṭṭhāniya",
+        "na > a + √ṭhā + aniya"
+    ],
+    [
+        "upaparikkhaṇa",
+        "upa + pari + √ikkh + aṇa"
+    ],
+    [
+        "sañcālenta",
+        "saṃ + cāle + nta"
+    ],
+    [
+        "pekkhana",
+        "pa + √ikkh + ana"
+    ],
+    [
+        "haritā",
+        "hari + ta + ā\nharita + ā"
+    ],
+    [
+        "antogadhatta",
+        "anto + ogadha + tta\nantogadha + tta"
+    ],
+    [
+        "avakujjaka",
+        "ava + √kujj + aka"
+    ],
+    [
+        "anussavana",
+        "anu + √su > sav + *ana"
+    ],
+    [
+        "sajjhāpeti",
+        "saṃ + adhi > adhy > ajjh + āpe + ti"
+    ],
+    [
+        "ācariyabrāhmaṇa",
+        "ācariya + brāhmaṇa"
+    ],
+    [
+        "ācariyabhāga",
+        "ācariya + bhāga"
+    ],
+    [
+        "dhanakkītaka",
+        "dhana + kīta + ka\ndhanakkīta + ka"
+    ],
+    [
+        "antojātaka",
+        "anto + jāta + ka\nantojāta + ka"
+    ],
+    [
+        "dāsavisaya",
+        "dāsa + visaya"
+    ],
+    [
+        "kīṇitvā",
+        "kīṇā + itvā"
+    ],
+    [
+        "balūpapanna",
+        "bala + upapanna"
+    ],
+    [
+        "desayamāna",
+        "desaya + māna"
+    ],
+    [
+        "dassayitabba",
+        "dassaya + itabba"
+    ],
+    [
+        "avakiritvā",
+        "ava + √kir + itvā"
+    ],
+    [
+        "rañjetuṃ",
+        "rañje + tuṃ"
+    ],
+    [
+        "apasayha",
+        "na > a + pa + √sah + ya"
+    ],
+    [
+        "bhakkhayanta",
+        "bhakkhaya + nta"
+    ],
+    [
+        "bhakkhayati",
+        "bhakkhaya + ti"
+    ],
+    [
+        "upanisīdiya",
+        "upa + ni + sīda + iya"
+    ],
+    [
+        "palissuta",
+        "pari + √su + ta"
+    ],
+    [
+        "thālā",
+        "√thal > thāl + *ā"
+    ],
+    [
+        "rucchati",
+        "ruccha + ti"
+    ],
+    [
+        "puñjita",
+        "puñja + ita"
+    ],
+    [
+        "koñcī",
+        "√kuñc > koñc + *a + ī\nkoñca + ī"
+    ],
+    [
+        "tulīyati",
+        "tulīya + ti"
+    ],
+    [
+        "pañcābhiñña",
+        "pañca + abhiññā + a\npañcābhiññā + a"
+    ],
+    [
+        "hāpetabba",
+        "hāpe + tabba"
+    ],
+    [
+        "pothayanta",
+        "pothe + nta"
+    ],
+    [
+        "purāṇacora",
+        "purāṇa + cora"
+    ],
+    [
+        "mahiḷāmukha",
+        "mahiḷā + mukha"
+    ],
+    [
+        "anvacāri",
+        "anu > anv + a + √car > cār + i"
+    ],
+    [
+        "sabbaguṇa",
+        "sabba + guṇa"
+    ],
+    [
+        "aṭṭhā",
+        "a + ṭhā + ā"
+    ],
+    [
+        "vāḷava",
+        "vaḷavā > vāḷavā + *a\nvaḷavā + *a"
+    ],
+    [
+        "vaḷava",
+        "vaḷavā + a"
+    ],
+    [
+        "sallalīkata",
+        "sallaka > sallalī + kata"
+    ],
+    [
+        "sallalī",
+        "salla + ka > sallala > sallalī"
+    ],
+    [
+        "bhojjha",
+        "√bhuj > bhoj + *a + ya\nbhoja + ya"
+    ],
+    [
+        "vijjobhāsa",
+        "vijjā + obhāsa"
+    ],
+    [
+        "kilesatamas",
+        "kilesa + tamas"
+    ],
+    [
+        "bhūtaka",
+        "√bhū + ta + ka\nbhūta + ka"
+    ],
+    [
+        "vaṇṇabalūpapanna",
+        "vaṇṇabala + upapanna"
+    ],
+    [
+        "saghaccā",
+        "sa + ghacca + ā\nsaghacca + ā"
+    ],
+    [
+        "dubbalaghātikā",
+        "dubbala + ghātikā"
+    ],
+    [
+        "ghātikā",
+        "√ghaṭ > ghāṭ > ghāt + *a + ikā\nghāta + ikā"
+    ],
+    [
+        "paṭisūriyaṃ",
+        "paṭi + sūriya + aṃ\npaṭisūriya + aṃ"
+    ],
+    [
+        "parittodaka",
+        "paritta + udaka"
+    ],
+    [
+        "omuñcāpetvā",
+        "ava + muñcāpe + tvā"
+    ],
+    [
+        "indasahabyatā",
+        "inda + sahabyatā"
+    ],
+    [
+        "ganthitvā",
+        "√ganth + itvā"
+    ],
+    [
+        "ganthitvāna",
+        "√ganth + itvāna"
+    ],
+    [
+        "abhiropesi",
+        "abhi + rope + si"
+    ],
+    [
+        "ganthi",
+        "√ganth + i"
+    ],
+    [
+        "upacchijjati",
+        "upa + chijja + ti"
+    ],
+    [
+        "avaccheda",
+        "ava + √chid > ched + *a"
+    ],
+    [
+        "samayanta",
+        "samaya + nta"
+    ],
+    [
+        "mocayanta",
+        "mocaya + nta"
+    ],
+    [
+        "puttī",
+        "putta + ī"
+    ],
+    [
+        "āsaṅkitabba",
+        "ā + √saṅk + itabba"
+    ],
+    [
+        "upavīṇayati",
+        "upa + vīṇā + aya + ti"
+    ],
+    [
+        "avajānitabba",
+        "ava + jānā + itabba"
+    ],
+    [
+        "paribhavitabba",
+        "pari + bhava + itabba"
+    ],
+    [
+        "paribhavituṃ",
+        "pari + bhava + ituṃ"
+    ],
+    [
+        "saṃvasituṃ",
+        "saṃ + √vas + ituṃ"
+    ],
+    [
+        "sevituṃ",
+        "√sev + ituṃ"
+    ],
+    [
+        "chinditabba",
+        "chinda + itabba"
+    ],
+    [
+        "ghasta",
+        "√ghas + ta"
+    ],
+    [
+        "asaṅkamāna",
+        "na > a + saṅka + māna"
+    ],
+    [
+        "hatthatta",
+        "hattha + atta"
+    ],
+    [
+        "dukhudra",
+        "dukha + udraya > udra"
+    ],
+    [
+        "vādituṃ",
+        "vāde + ituṃ"
+    ],
+    [
+        "paṭissāveti",
+        "pati + sāve + ti"
+    ],
+    [
+        "dayāluka",
+        "√day + ā + ālu + ka\ndayālu + ka"
+    ],
+    [
+        "mahayitvā",
+        "mahaya + itvā"
+    ],
+    [
+        "nānāturiya",
+        "nānā + turiya"
+    ],
+    [
+        "vajjamāna",
+        "vajja + māna"
+    ],
+    [
+        "anupāyāsi",
+        "anu + pa > pā + √yā + si"
+    ],
+    [
+        "manomayakāya",
+        "manomaya + kāya"
+    ],
+    [
+        "vaddali",
+        "vāri + da + li\nvārida + li"
+    ],
+    [
+        "mānasāna",
+        "√man > mān + as + *a + āna\nmānasa + āna"
+    ],
+    [
+        "vaddalisamaya",
+        "vaddali + samaya"
+    ],
+    [
+        "vilīyāpetvā",
+        "vi + līyāpe + tvā"
+    ],
+    [
+        "paṭigāthā",
+        "pati + √gā + thā"
+    ],
+    [
+        "upasilesa",
+        "upa + √silis > siles + *a"
+    ],
+    [
+        "silissati",
+        "silissa + ti"
+    ],
+    [
+        "nimittobhāsa",
+        "nimitta + obhāsa"
+    ],
+    [
+        "hati",
+        "ha + ti"
+    ],
+    [
+        "mārayi",
+        "māraya + i"
+    ],
+    [
+        "nippayojana",
+        "nir + pa + yoje + ana"
+    ],
+    [
+        "sapayojana",
+        "sa + pa + yoje + ana"
+    ],
+    [
+        "sappayojana",
+        "sa + pa + yoje + ana"
+    ],
+    [
+        "atikassa",
+        "ati + √kas + ya"
+    ],
+    [
+        "samparigayha",
+        "saṃ + pari + √gah + ya"
+    ],
+    [
+        "atitaruṇa",
+        "ati + taruṇa"
+    ],
+    [
+        "atijiṇṇa",
+        "ati + jiṇṇa"
+    ],
+    [
+        "āvunitvā",
+        "ā + vunā + itvā"
+    ],
+    [
+        "kāyusmā",
+        "kāya + usmā"
+    ],
+    [
+        "suttānuloma",
+        "sutta + anuloma"
+    ],
+    [
+        "rattiya",
+        "ratti + iya"
+    ],
+    [
+        "vivaṭṭanta",
+        "vi + vaṭṭa + nta"
+    ],
+    [
+        "āvaṭṭanta",
+        "ā + vaṭṭa + nta"
+    ],
+    [
+        "nipajjitabba",
+        "ni + pajja + itabba"
+    ],
+    [
+        "āpattikara",
+        "āpatti + kara"
+    ],
+    [
+        "asaṃvaritvā",
+        "na > a + saṃ + √var + itvā"
+    ],
+    [
+        "gāyī",
+        "gāya + ī"
+    ],
+    [
+        "paṭiyādetvāna",
+        "pati + yāde + tvāna"
+    ],
+    [
+        "vippaṭikūla",
+        "vi + pati + √kūl + a"
+    ],
+    [
+        "dubbhikkhatā",
+        "dur + √bhikkh + a + tā\ndubbhikkha + tā"
+    ],
+    [
+        "sacittamanurakkhati",
+        "sacittaṃ + anurakkhati"
+    ],
+    [
+        "anavaseka",
+        "na > an + ava + √sic > sec > sek + *a"
+    ],
+    [
+        "nikkamma",
+        "nir + √kar + ma"
+    ],
+    [
+        "yapana",
+        "yape + ana"
+    ],
+    [
+        "tambapaṇṇidīpa",
+        "tambapaṇṇi + dīpa"
+    ],
+    [
+        "tambapaṇṇa",
+        "tamba + paṇṇa"
+    ],
+    [
+        "tambapaṇṇi",
+        "tamba + paṇṇa + i\ntambapaṇṇa + i"
+    ],
+    [
+        "iṭṭiyatthera",
+        "iṭṭiya + thera"
+    ],
+    [
+        "tambapaṇṇiya",
+        "tamba + paṇṇa + i + iya\ntambapaṇṇi + iya"
+    ],
+    [
+        "mārayati",
+        "māraya + ti"
+    ],
+    [
+        "paripanthi",
+        "pari + √panth + i"
+    ],
+    [
+        "anindriyabaddha",
+        "na > an + indriya + baddha"
+    ],
+    [
+        "asaññaka",
+        "na > a + saṃ + √ñā + ā + ka\nasaññā + ka"
+    ],
+    [
+        "mahāpaccarī",
+        "mahā + paccarī"
+    ],
+    [
+        "vatthaka",
+        "√vas + ta + ka\nvattha + ka"
+    ],
+    [
+        "sarīravaḷañja",
+        "sarīra + vaḷañja"
+    ],
+    [
+        "phoṭayitvā",
+        "phoṭaya + tvā"
+    ],
+    [
+        "saṅghāṭetuṃ",
+        "saṃ + ghāṭe + tuṃ"
+    ],
+    [
+        "saṅghāṭetvā",
+        "saṃ + ghāṭe + tvā"
+    ],
+    [
+        "khobhati",
+        "khoba + ti"
+    ],
+    [
+        "amāretvā",
+        "na > a + māre + tvā\nna + māretvā"
+    ],
+    [
+        "bhūnahū",
+        "bhūna + hū"
+    ],
+    [
+        "gametvā",
+        "game + tvā"
+    ],
+    [
+        "gametvāna",
+        "game + tvāna"
+    ],
+    [
+        "sampadālayitvā",
+        "saṃ + pa + dālaya + itvā"
+    ],
+    [
+        "sandālayitvā",
+        "saṃ + dālaya + itvā"
+    ],
+    [
+        "pārivāsikapavāraṇādāna",
+        "pārivāsika + pavāraṇā + dāna"
+    ],
+    [
+        "appavāraṇā",
+        "na > a + pa + vāre + anā"
+    ],
+    [
+        "dvevācikādipavāraṇā",
+        "dvevācika + ādi + pavāraṇā"
+    ],
+    [
+        "bāḷhatara",
+        "√bah + ta > bāḍha > bāḷha + tara\nbāḷha + tara"
+    ],
+    [
+        "saṅgāyanta",
+        "saṃ + gāya + nta"
+    ],
+    [
+        "vinicchinanta",
+        "vi + nī + chinā + nta"
+    ],
+    [
+        "sākacchanta",
+        "saṃ > sā + kacchā + nta\nsākacchā + nta"
+    ],
+    [
+        "pavāraṇāṭhapana",
+        "pavāraṇā + ṭhapana"
+    ],
+    [
+        "kārāpiyamāna",
+        "kārāpiya + māna"
+    ],
+    [
+        "aṭṭhapita",
+        "na > a + ṭhape + ita"
+    ],
+    [
+        "antaggāhikādiṭṭhi",
+        "antaggāhika + diṭṭhi"
+    ],
+    [
+        "thullaccayavatthuka",
+        "thullaccaya + vatthuka"
+    ],
+    [
+        "vatthuṭhapana",
+        "vatthu + ṭhapana"
+    ],
+    [
+        "bhaṇḍanakārakavatthu",
+        "bhaṇḍana + kāraka + vatthu"
+    ],
+    [
+        "asaṃvihita",
+        "na > a + saṃ + vi + √dhā > (da)h + ita\nna > a + saṃvihita"
+    ],
+    [
+        "vikkhitvā",
+        "vi + √khip + tvā"
+    ],
+    [
+        "ananuyogakkhama",
+        "na > an + anuyoga + khama"
+    ],
+    [
+        "pavāraṇāsaṅgaha",
+        "pavāraṇā + saṅgaha"
+    ],
+    [
+        "pavārenta",
+        "pa + vāre + nta"
+    ],
+    [
+        "chandadānapavāraṇā",
+        "chandadāna + pavāraṇā"
+    ],
+    [
+        "cammakkhandhaka",
+        "camma + khandhaka"
+    ],
+    [
+        "soṇakoḷivisavatthu",
+        "soṇa + koḷivisa + vatthu"
+    ],
+    [
+        "gāmasahassa",
+        "gāma + sahassa"
+    ],
+    [
+        "gāmikasahassa",
+        "gāmika + sahassa"
+    ],
+    [
+        "dakkhitukāma",
+        "dakkhituṃ + kāma"
+    ],
+    [
+        "anusāsita",
+        "anu + √sās + ita"
+    ],
+    [
+        "padhūpāyati",
+        "pa + dhūpāya + ti"
+    ],
+    [
+        "acirupasampanna",
+        "acira + upasampanna"
+    ],
+    [
+        "vīriyasamatā",
+        "vīriya + samatā"
+    ],
+    [
+        "parikkhīṇabhavasaññojana",
+        "parikkhīṇa + bhava + saññojana"
+    ],
+    [
+        "chaṭṭhāna",
+        "cha + ṭhāna"
+    ],
+    [
+        "karaṇīyamattānaṃ",
+        "karaṇīyaṃ + attānaṃ"
+    ],
+    [
+        "pavedheti",
+        "pa + vedhe + ti"
+    ],
+    [
+        "diguṇādiupāhanapaṭikkhepa",
+        "diguṇa + ādi + upāhana + paṭikkhepa"
+    ],
+    [
+        "asītisakaṭavāha",
+        "asīti + sakaṭavāha"
+    ],
+    [
+        "purāṇakulaputta",
+        "purāṇa + kulaputta"
+    ],
+    [
+        "tiracchānagatavatthu",
+        "tiracchānagata + vatthu"
+    ],
+    [
+        "aviruḷhidhamma",
+        "na > a + viruḷhi + dhamma"
+    ],
+    [
+        "tarupaṇṇa",
+        "taru + paṇṇa"
+    ],
+    [
+        "abhisandhāya",
+        "abhi + saṃ + √dhā + ya"
+    ],
+    [
+        "niggaṇhana",
+        "ni + gaṇhā + ana"
+    ],
+    [
+        "jarīyati",
+        "jarīya + ti"
+    ],
+    [
+        "sāsituṃ",
+        "√sās + ituṃ"
+    ],
+    [
+        "vijaṭetuṃ",
+        "vi + jaṭe + tuṃ"
+    ],
+    [
+        "jaṭetvā",
+        "jaṭe + tvā"
+    ],
+    [
+        "tedhātuka",
+        "ti > te + dhātu + *ka\ntidhātu + *ka"
+    ],
+    [
+        "supaṇṇamāṇavikā",
+        "supaṇṇa + māṇavikā"
+    ],
+    [
+        "palāsika",
+        "palāsa + ika"
+    ],
+    [
+        "sattahatthika",
+        "satta + hatthika"
+    ],
+    [
+        "hatthika",
+        "hattha + ī + ika\nhatthī + ika"
+    ],
+    [
+        "paripuṇṇakoṭṭhāgāra",
+        "paripuṇṇa + koṭṭhāgāra"
+    ],
+    [
+        "aṭṭhisata",
+        "aṭṭhi + sata"
+    ],
+    [
+        "vossajjana",
+        "vi + ava + √sajj + ana"
+    ],
+    [
+        "nillajjatā",
+        "nir + √lajj + a + tā\nnillajja + tā"
+    ],
+    [
+        "paridīpī",
+        "pari + dīpe + ī"
+    ],
+    [
+        "byaya",
+        "vi > vy > by + √i > ay + *a"
+    ],
+    [
+        "nānisamma",
+        "na + na > a + ni + √sam + ya"
+    ],
+    [
+        "anisāmetvā",
+        "na > a + ni + sāme + tvā\nna + nisāmetvā"
+    ],
+    [
+        "upadhārayi",
+        "upa + dhāraya + i"
+    ],
+    [
+        "asaṅkhārikacitta",
+        "asaṅkhārika + citta"
+    ],
+    [
+        "sasaṅkhārika",
+        "sa + saṃ + √kar > khār + *a + ika\nsasaṅkhāra + ika"
+    ],
+    [
+        "dhanāyanta",
+        "dhanāya + nta"
+    ],
+    [
+        "parāmasituṃ",
+        "parā + √mas + ituṃ"
+    ],
+    [
+        "sītāluka",
+        "√sid > sit > sīt + *a + ālu + ka\nsītālu + ka"
+    ],
+    [
+        "sītālu",
+        "√sid > sit > sīt + *a + ālu\nsīta + ālu"
+    ],
+    [
+        "sambharaṇa",
+        "saṃ + √bhar + aṇa"
+    ],
+    [
+        "atthānusāsana",
+        "attha + anusāsana"
+    ],
+    [
+        "rājūpaṭṭhāna",
+        "rāja + upaṭṭhāna"
+    ],
+    [
+        "siṅgika",
+        "siṅga + ika"
+    ],
+    [
+        "āvellitasiṅgika",
+        "āvellita + siṅgika"
+    ],
+    [
+        "dakkhiṇakkha",
+        "dakkhiṇa + akkha"
+    ],
+    [
+        "vasibhāvita",
+        "vasa > vasi + bhāvita"
+    ],
+    [
+        "ekasahassa",
+        "eka + sahassa + a\nekasahassa + a"
+    ],
+    [
+        "samayaññū",
+        "samaya + ñū"
+    ],
+    [
+        "rājavasati",
+        "rāja + vasati"
+    ],
+    [
+        "mūlakammaṭṭhāna",
+        "mūla + kammaṭṭhāna"
+    ],
+    [
+        "nābhivitarati",
+        "na + abhi + vi + tara + ti\nna + abhivitarati"
+    ],
+    [
+        "visāṇaka",
+        "visāṇa + ka"
+    ],
+    [
+        "abhibhavituṃ",
+        "abhi + bhava + ituṃ"
+    ],
+    [
+        "nissajjāpeti",
+        "nī + sajjāpe + ti"
+    ],
+    [
+        "aṭṭhattiṃsā",
+        "aṭṭha + tiṃsā"
+    ],
+    [
+        "aṭṭhattiṃsa",
+        "aṭṭha + tiṃsā + a\naṭṭhattiṃsā + a"
+    ],
+    [
+        "kedāraka",
+        "kedāra + ka"
+    ],
+    [
+        "cārayamāna",
+        "cāraya + māna"
+    ],
+    [
+        "hehissati",
+        "hehissa + ti"
+    ],
+    [
+        "jitavant",
+        "√ji + ta + vant\njita + vant"
+    ],
+    [
+        "paṭibāhiyyati",
+        "pati + bāhiyya + ti"
+    ],
+    [
+        "serivant",
+        "sa + √īr + a + ī + vant\nserī + vant"
+    ],
+    [
+        "anutappeti",
+        "anu + tappe + ti"
+    ],
+    [
+        "vighāṭa",
+        "vi + √ghaṭ > ghāṭ + *a"
+    ],
+    [
+        "accāsana",
+        "ati > aty > acc + asana > āsana"
+    ],
+    [
+        "upayācita",
+        "upa + √yāc + ita"
+    ],
+    [
+        "lokitthi",
+        "loka + itthi"
+    ],
+    [
+        "sabbaghasa",
+        "sabba + ghasa"
+    ],
+    [
+        "vidhamituṃ",
+        "vi + √dham + ituṃ"
+    ],
+    [
+        "aṃsakāsāva",
+        "aṃsa + kāsāva"
+    ],
+    [
+        "uraṇī",
+        "uraṇa + ī"
+    ],
+    [
+        "urabbharūpa",
+        "urabbha + rūpa"
+    ],
+    [
+        "asaṃkita",
+        "na > a + √saṅk + ita"
+    ],
+    [
+        "ajayūtha",
+        "aja + yūtha"
+    ],
+    [
+        "utrāsayitvā",
+        "ud + trāsaya + itvā"
+    ],
+    [
+        "yena kāmaṃ",
+        "yena + kāmaṃ"
+    ],
+    [
+        "saṃkappanā",
+        "saṃ + kappe + anā"
+    ],
+    [
+        "samannāgama",
+        "saṃ + anu > ann + ā + √gam + a"
+    ],
+    [
+        "āvajjitabba",
+        "ā + √vajj + itabba"
+    ],
+    [
+        "samannāharitabba",
+        "saṃ + anu + ā + √har + itabba"
+    ],
+    [
+        "ajinapaveṇī",
+        "ajina + paveṇī"
+    ],
+    [
+        "ghatāsana",
+        "ghata + asana"
+    ],
+    [
+        "disā bhajavho",
+        "disā + bhajavho"
+    ],
+    [
+        "anesamāna",
+        "na > an + esa + māna"
+    ],
+    [
+        "bhakkhasārī",
+        "bhakkha + sārī"
+    ],
+    [
+        "yamavaruṇā",
+        "yama + varuṇa + ā\nyamavaruṇa + ā"
+    ],
+    [
+        "samaṃ karoti",
+        "samaṃ + karoti"
+    ],
+    [
+        "nādayi",
+        "nādaya + i"
+    ],
+    [
+        "saddāyanta",
+        "saddāya + nta"
+    ],
+    [
+        "mahāsikhī",
+        "mahā + sikhī"
+    ],
+    [
+        "antaradhāpetvā",
+        "antara + dhāpetvā"
+    ],
+    [
+        "bhikkhunīgaṇa",
+        "bhikkhunī + gaṇa"
+    ],
+    [
+        "avasanna",
+        "ava + √sad + na"
+    ],
+    [
+        "paṭimaṇḍetvā",
+        "pati + maṇḍe + tvā"
+    ],
+    [
+        "duvaṅgula",
+        "dvi > duv + aṅgula"
+    ],
+    [
+        "atikkāmetuṃ",
+        "ati + kāme + tuṃ"
+    ],
+    [
+        "avabhutta",
+        "ava + √bhuj + ta"
+    ],
+    [
+        "pūgadhamma",
+        "pūga + dhamma"
+    ],
+    [
+        "avabhottuṃ",
+        "ava + √bhuj > bhoj + tuṃ"
+    ],
+    [
+        "rājapiṇḍa",
+        "rāja + piṇḍa"
+    ],
+    [
+        "nābhijjhāyati",
+        "na + abhi + jhāya + ti\nna + abhijjhāyati"
+    ],
+    [
+        "allīyitabba",
+        "ā + līya + itabba"
+    ],
+    [
+        "abhijjhāyana",
+        "abhi + jhāya + ana"
+    ],
+    [
+        "tisaraṇa",
+        "ti + saraṇa"
+    ],
+    [
+        "pīṭhara",
+        "piṭhara > pīṭhara"
+    ],
+    [
+        "pāpuṇīyati",
+        "pa + apuṇīya + ti"
+    ],
+    [
+        "nippariyāyato",
+        "nir + pari + [y] + √i > ay + *a + to\nnippariyāya + to"
+    ],
+    [
+        "pariyāyato",
+        "pari + [y] + √i > ay + *a + to\npariyāya + to"
+    ],
+    [
+        "vitthāriyamāna",
+        "vi + thārīya + māna"
+    ],
+    [
+        "vitthārayati",
+        "vi + thāraya + ti"
+    ],
+    [
+        "lapāpanaka",
+        "lāpāpe + ana + ka\nlapāpana + ka"
+    ],
+    [
+        "pāpanaka",
+        "pa + āpe + ana + ka\npāpana + ka"
+    ],
+    [
+        "ullolana",
+        "ud + lole + ana"
+    ],
+    [
+        "ullolenta",
+        "ud + lole + nta"
+    ],
+    [
+        "niguhati",
+        "ni + guha + ti"
+    ],
+    [
+        "bhavakantāra",
+        "bhava + kantāra"
+    ],
+    [
+        "dhiyati",
+        "dhiya + ti"
+    ],
+    [
+        "kammamakari",
+        "kammaṃ + akari"
+    ],
+    [
+        "pakkhandiyāna",
+        "pa + √khand + iyāna"
+    ],
+    [
+        "anipajjitvā",
+        "na > a + ni + pajja + itvā\nna + nipajjitvā"
+    ],
+    [
+        "āpatitvā",
+        "ā + √pat + itvā"
+    ],
+    [
+        "devila",
+        "√div > dev + *a + ila\ndeva + ila"
+    ],
+    [
+        "sukhatara",
+        "√sukh + a + tara\nsukha + tara"
+    ],
+    [
+        "upagīta",
+        "upa + √gā > gī + ta"
+    ],
+    [
+        "ghāsitabba",
+        "ghāsa + itabba"
+    ],
+    [
+        "abhivaḍḍhitabba",
+        "abhi + √vaḍḍh + itabba"
+    ],
+    [
+        "abhivaḍḍhituṃ",
+        "abhi + √vaḍḍh + ituṃ"
+    ],
+    [
+        "bilavāsī",
+        "bila + vāsī"
+    ],
+    [
+        "vippaṭipajjana",
+        "vi + pati + pajja + ana"
+    ],
+    [
+        "rakāra",
+        "ra + kāra"
+    ],
+    [
+        "nicchetuṃ",
+        "nī + √ci > ce + tuṃ"
+    ],
+    [
+        "nipatana",
+        "ni + √pat + ana"
+    ],
+    [
+        "vaditabba",
+        "√vad + itabba"
+    ],
+    [
+        "tanetvā",
+        "tane + tvā"
+    ],
+    [
+        "palibajjhati",
+        "pari + bajjha + ti"
+    ],
+    [
+        "paligijjhati",
+        "pari + gijjha + ti"
+    ],
+    [
+        "nissayitabba",
+        "ni + saya + itabba"
+    ],
+    [
+        "sanniṭṭhātuṃ",
+        "saṃ + ni + √ṭhā + tuṃ"
+    ],
+    [
+        "kuṇṭhapāda",
+        "kuṇṭha + pāda"
+    ],
+    [
+        "saṅgaṇhituṃ",
+        "saṃ + gaṇhā + ituṃ"
+    ],
+    [
+        "palimpati",
+        "pa + limpa + ti"
+    ],
+    [
+        "nipatetvā",
+        "ni + pate + tvā"
+    ],
+    [
+        "vipubba",
+        "vi + √pūy > pūv > puvv > pubb + a"
+    ],
+    [
+        "tvāsadda",
+        "tvā + sadda"
+    ],
+    [
+        "samuṭṭhāpayamāna",
+        "saṃ + ud + ṭhāpaya + māna"
+    ],
+    [
+        "visesattha",
+        "visesa + attha"
+    ],
+    [
+        "ācikkhanā",
+        "ā + √cikkh + anā"
+    ],
+    [
+        "sukhatthāya",
+        "sukha + attha + āya\nsukhattha + āya"
+    ],
+    [
+        "ballika",
+        "√bal + ya + ika\nballa + ika"
+    ],
+    [
+        "uyyāti",
+        "ud + yā + ti"
+    ],
+    [
+        "nosaññāvimokkha",
+        "no + saññā + vimokkha"
+    ],
+    [
+        "diṭṭheva",
+        "diṭṭhe + eva"
+    ],
+    [
+        "vamitaka",
+        "√vam + ita + ka\nvamita + ka"
+    ],
+    [
+        "pasiddhi",
+        "pa + √sidh + ti"
+    ],
+    [
+        "ābandhitvā",
+        "ā + √bandh + itvā"
+    ],
+    [
+        "suttaviññatti",
+        "sutta + viññatti"
+    ],
+    [
+        "saṃkasāyanta",
+        "?? saṃ + kasāya + nta"
+    ],
+    [
+        "nādhati",
+        "nādha + ti"
+    ],
+    [
+        "madayati",
+        "madaya + ti"
+    ],
+    [
+        "yathodakaṃ",
+        "yathā + udaka + aṃ\nyathodaka + aṃ"
+    ],
+    [
+        "santāsetvā",
+        "saṃ + tāse + tvā"
     ]
 ]
