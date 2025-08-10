@@ -45,6 +45,7 @@ export const bundleId = "lk.tipitaka.ios";
 export const iosFtsVersion = '2'; // remember to update this when a new fts version is released
 export const iosDictVersion = '2'; // remember to update this when a new dict version is released
 export const dpdReleaseVersion = 'v0.2.20250709'
+export const compoundChars = 'ඒඨධභඝඪථදඟඳඵඛ​ශඤඦඥ​ඬ​';
 
 // helper function to copy the title to the og:title
 export const copyMetaTitle = (title) => ({

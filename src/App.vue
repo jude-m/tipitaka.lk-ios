@@ -62,7 +62,7 @@
 
       <!-- search bar -->
       <v-text-field v-model="searchInput" hide-details placeholder="සෙවුම් පද මෙතැන යොදන්න"
-        @focus="$store.commit('search/routeToSearch')" clearable>
+        @focus="$store.commit('search/routeToSearch')" @keydown="handleKeyDown" clearable>
       </v-text-field>
 
       <v-spacer></v-spacer>
@@ -186,6 +186,8 @@ import TipitakaTree from '@/components/TipitakaTree'
 import TipitakaLink from '@/components/TipitakaLink'
 import TabColumnSelector from '@/components/TabColumnSelector'
 import { mapState, mapGetters } from 'vuex'
+import { compoundChars } from '@/constants.js'
+import { has } from 'lodash';
 
 export default {
   name: 'App',
@@ -212,6 +214,8 @@ export default {
         'dict': ['පාලි ශබ්දකෝෂ', 'mdi-book-open-page-variant'], 
       },
       tabsHeight: '40px',
+      userInputHadSpace: false,
+      currentInput: '',
     }
   },
   computed: {
@@ -222,7 +226,16 @@ export default {
     },
     searchInput: {
       get() { return this.$store.getters['search/getSearchInput'] },
-      set(input) { this.$store.commit('search/setSearchInput', input ? input.trim() : '') }
+
+      set(input) { 
+        let cleanInput = input ? input : '';
+        this.currentInput = cleanInput;
+
+        if (this.userInputHadSpace) {
+          cleanInput = this.fixCompoundCharSpacing(cleanInput);
+        }
+        this.$store.commit('search/setSearchInput', cleanInput.trim());
+      }
     },
     searchType: {
       get() { return this.$store.getters['search/getSearchType'] },
@@ -254,6 +267,35 @@ export default {
     //   if (this.isSettingsView) this.$router.go(-1) // go back
     //   else this.$router.push('/settings')
     // },
+    handleKeyDown(event) {
+      // Only reset flag if user is deleting a space with backspace
+      if (event.key === 'Backspace') {
+          const previousValue = event.target.value;
+
+          //Messy logic to check if the user deleted a space and to stand against helakuru (IME) firing the event. 
+          if (((this.currentInput !== '' && !this.currentInput.includes(' ') && previousValue.includes(' ')) && (!compoundChars.test(this.currentInput))) || 
+                ((this.currentInput === previousValue) && !this.currentInput.includes(' ') && !previousValue.includes(' '))) {
+            this.userInputHadSpace = false;
+            console.log(`userInputHadSpace: ${this.userInputHadSpace}`)
+          }
+      } else if (event.key === ' ') {
+        // User intentionally typed a space
+        this.userInputHadSpace = true;
+      }
+    },
+    fixCompoundCharSpacing(text) {
+      return text.replace(
+        new RegExp(`([අ-ෆ][ා-ෟ්]*?)([${compoundChars}])`, 'g'), 
+        (match, before, doubleChar, offset) => {
+          // Check if there's already a space before this match (Seems no need because the condition is already check beforehand)
+          // if (offset > 0 && text[offset - 1] === ' ') {
+          //   return match; // Don't change if space already exists
+          // }
+          return before + ' ' + doubleChar;
+        }
+      );
+    },
+
     isView(name) { return this.$route.name == name },
     toggleView(name) {
       if (this.isView(name)) this.$router.go(-1) // go back
