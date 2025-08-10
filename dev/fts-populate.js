@@ -82,6 +82,7 @@ const ftsDb = new SqliteDB(ftsDictFile, true)
 // Table creation and data insertion had to seperated in to two transactions, in order to work.
 // Uncomment the call to createVirtualTable() and the return statement first time.
 // Once the table is created, comment this block and run the script again to insert data.
+// if you're getting errors, just try step over in debugging mode from ftsDb.run('BEGIN') to ftsDb.run('COMMIT'). Strange!
 
 // createVirtualTable();
 // return;

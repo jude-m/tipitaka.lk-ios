@@ -1,24 +1,31 @@
 import { CapacitorSQLite, SQLiteConnection } from '@capacitor-community/sqlite';
-import { IOS, platform } from '../constants';
-
-const iosDbVersions = {
-   'dict': 1,
-   'fts': 1
-}
+import { IOS, iosDictVersion, iosFtsVersion, platform } from '../constants';
 
 export async function copyDatabaseFiles() {
    let sqlite;
    if (platform === IOS) {
       try {
          sqlite = new SQLiteConnection(CapacitorSQLite);
-         const result = await sqlite.getDatabaseList();
-         console.log('Database list before copy:', result.values);
+         const storedIosDictVersion = localStorage.getItem('iosDictVersion');
+         const storedIosFtsVersion = localStorage.getItem('iosFtsVersion');
+         
+         //Null check is for first time installations
+         const dictNeedsUpdate = storedIosDictVersion === null || storedIosDictVersion !== iosDictVersion;
+         const ftsNeedsUpdate = storedIosFtsVersion === null || storedIosFtsVersion !== iosFtsVersion;
+         console.log('From local storage iosDictVersion: ', storedIosDictVersion);
+         console.log('From local storage iosFtsVersion: ', storedIosFtsVersion);
 
-         if (!result.values || result.values.length === 0) {
+         if (dictNeedsUpdate || ftsNeedsUpdate) {
             await sqlite.copyFromAssets();
             const result = await sqlite.getDatabaseList();
+            localStorage.setItem('iosDictVersion', iosDictVersion);
+            localStorage.setItem('iosFtsVersion', iosFtsVersion);
+
+            console.log('Set local storage iosDictVersion: ', iosDictVersion);
+            console.log('Set local storage iosFtsVersion: ', iosFtsVersion);
             console.log('Database list after copy:', result.values);
          } else {
+            const result = await sqlite.getDatabaseList();
             console.log(`Database files already exists : ${result.values}`);
          }
       } catch (error) {

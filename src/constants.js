@@ -2,7 +2,7 @@ import { Capacitor } from "@capacitor/core"
 
 /** special flags and constants */
 export const installedAndroidAppVersion = 2.0 // used to determine if app needs to be updated, remember to update this when new version is released
-export const installedIosAppVersion = 2.2 // remember to update this when new version is released
+export const installedIosAppVersion = 2.3 // remember to update this when new version is released
 const settingsVersion = '2'
 export const settingsKey = `tipitaka.lk-settings-${settingsVersion}`
 const bookmarksVersion = '1'
@@ -42,7 +42,10 @@ export const platform = Capacitor.getPlatform();
 export const dbFileNameDict = 'dict.db';
 export const dbFileNameFts = 'fts.db';
 export const bundleId = "lk.tipitaka.ios";
- 
+export const iosFtsVersion = '2'; // remember to update this when a new fts version is released
+export const iosDictVersion = '2'; // remember to update this when a new dict version is released
+export const dpdReleaseVersion = 'v0.2.20250709'
+
 // helper function to copy the title to the og:title
 export const copyMetaTitle = (title) => ({
     title,
