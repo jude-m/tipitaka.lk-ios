@@ -1,5 +1,21 @@
-import { CapacitorSQLite, SQLiteConnection } from '@capacitor-community/sqlite';
 import { IOS, dbFileNameDict, dbFileNameFts, platform } from '../constants';
+
+// Initialize variables to null. They will be assigned if the environment is correct.
+let CapacitorSQLite = null;
+let SQLiteConnection = null;
+
+// Check if running in a browser environment and if the Capacitor global object is available.
+if (typeof window !== 'undefined' && window.Capacitor) {
+  try {
+    // If in a Capacitor environment, attempt to require the sqlite plugin.
+    const sqlitePlugin = require('@capacitor-community/sqlite');
+    
+    CapacitorSQLite = sqlitePlugin.CapacitorSQLite;
+    SQLiteConnection = sqlitePlugin.SQLiteConnection;
+  } catch (e) {
+    console.warn('Capacitor SQLite plugin not available.', e);
+  }
+}
 
 export const querySqlite = async (type, sql) => {
    if (platform === IOS) {

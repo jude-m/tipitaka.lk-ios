@@ -18,16 +18,16 @@
         <v-btn icon @click="inlineWordBackspace"><v-icon>mdi-backspace</v-icon></v-btn>
         <div class="button-container">
           <v-btn  @click="$router.push('/fts/' + inlineWord)" :icon="true">
-            <v-icon :size="$vuetify.breakpoint.mdAndUp ? '36px' : '24px'" color="primary">mdi-magnify</v-icon>
+            <v-icon :size="$vuetify.breakpoint.mdAndUp ? '30px' : '24px'" color="primary">mdi-magnify</v-icon>
           </v-btn>
           <v-btn v-model="exactMatch" @click="toggleExactMatch"  icon="true">
-            <v-icon :size="$vuetify.breakpoint.mdAndUp ? '36px' : '24px'" :color="exactMatch ? 'primary' : ''">mdi-format-letter-matches</v-icon>
+            <v-icon :size="$vuetify.breakpoint.mdAndUp ? '30px' : '24px'" :color="exactMatch ? 'primary' : ''">mdi-format-letter-matches</v-icon>
           </v-btn>
           <v-btn @click="resizeInlineDictSheet" icon="true">
-            <v-icon :size="$vuetify.breakpoint.mdAndUp ? '36px' : '24px'" color="primary">{{ isExpanded ? 'mdi-chevron-down-circle-outline' : 'mdi-chevron-up-circle-outline' }}</v-icon>
+            <v-icon :size="$vuetify.breakpoint.mdAndUp ? '30px' : '24px'" color="primary">{{ isExpanded ? 'mdi-chevron-down-circle-outline' : 'mdi-chevron-up-circle-outline' }}</v-icon>
           </v-btn>
           <v-btn @click="showInlineDict = !showInlineDict" icon color="error">
-            <v-icon :size="$vuetify.breakpoint.mdAndUp ? '36px' : '24px'">mdi-close</v-icon>
+            <v-icon :size="$vuetify.breakpoint.mdAndUp ? '30px' : '24px'">mdi-close</v-icon>
           </v-btn>
         </div>
       </v-toolbar>
@@ -77,9 +77,8 @@ import { mapState, mapGetters } from 'vuex'
 import TextTab from '@/components/TextTab.vue'
 import DictionaryResults from '@/components/DictionaryResults'
 import AudioControl from '@/components/AudioControl'
-import { copyMetaTitle } from '@/constants.js'
+import { copyMetaTitle, IOS, platform } from '@/constants.js'
 import _ from 'lodash'
-import { IOS, platform } from '../constants';
 
 export default {
   name: 'Home',

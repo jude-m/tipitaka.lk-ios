@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import router from '@/router'
 import { allFilterKeys, dictionaryInfo, searchSettingsKey, 
-  bookmarksStorageKey, callAndroidAsync, IOS } from '@/constants.js'
+  bookmarksStorageKey, callAndroidAsync, IOS, platform } from '@/constants.js'
 import md5 from 'md5'
 import { isSinglishQuery, getPossibleMatches } from '@pnfo/singlish-search'
 import axios from 'axios'
@@ -9,7 +9,6 @@ import axios from 'axios'
 //ios
 import { querySqlite } from '../services/sqlite-service'
 import { copyDatabaseFiles } from '../services/filecopy-service'
-import { platform } from '../constants'
 
 const routeToSearchPage = (input, type) => {
   if (!input) return
@@ -187,21 +186,14 @@ export default {
 
       const word = state.inlineDict.word
       const exactMatch = state.inlineDict.exactMatch
-
-      console.log("exactMatch>>>>" + state.inlineDict.exactMatch)
       const dictList = getters['getShortDicts']
 
-      let whereClause
-      if(exactMatch) {
-          whereClause = `WHERE word = '${normalizeWord(word)}';`
-      } else {
-          whereClause = `WHERE word IN ('${dictWordList(word).join("','")}')`
-      }
+      const whereClause = exactMatch ? `WHERE word = '${normalizeWord(word)}';`
+                                     : `WHERE word IN ('${dictWordList(word).join("','")}')`;
 
       const sql = `SELECT word, dict, meaning FROM dictionary 
                    ${whereClause} AND dict IN ('${[...dictList, 'BR'].join("','")}')
                    ORDER BY word LIMIT 50;`
-
       try {
         const results = await dispatch('runDictQuery', { sql, 'input': word })
         commit('setInlineDict', { prop: 'results', value: results })
@@ -213,13 +205,10 @@ export default {
 
     async runPageDictQuery({ dispatch, getters }, {input, exactMatchPage}) {
       const wordsList = dictWordList(input), dictFilter = `dict IN ('${getters['getShortDicts'].join("', '")}')`
-      let whereClause
-      if (exactMatchPage) {
-        whereClause = `WHERE word = '${normalizeWord(input)}'`
-      } else {
-        whereClause = `WHERE word IN ('${wordsList.join("','")}')`
-      }
-      
+
+      const whereClause = exactMatchPage ? `WHERE word = '${normalizeWord(input)}'`
+                                         : `WHERE word IN ('${wordsList.join("','")}')`;
+
       const likePrefixQuery = (wordsList.length > 100 || exactMatchPage) ? '' :
        `UNION
           SELECT word, COUNT(dict) AS num, 'like' AS meaning FROM dictionary 
@@ -271,9 +260,9 @@ async function sendSearchQuery(type, sql) {
     return await querySqlite(type, sql);
   }
   //const baseUrl = 'https://tipitaka.lk' // force prod server
-  // check devServer.proxy setting in vue.config.js
-  // const response = await axios.post('/tipitaka-query/' + type, { type, sql }) // for js server
-  const response = await axios.post('/sql-query', { dbname: type + '.db', query: sql }) // for go server
+  //check devServer.proxy setting in vue.config.js
+  const response = await axios.post('/sql-query/' + type, { type, sql }) // for js server. changed to sql-query from tipitaka-query to work
+  //const response = await axios.post('/sql-query', { dbname: type + '.db', query: sql }) // for go server
   return response.data
 }
 

@@ -88,11 +88,8 @@
             <div :class="versionColor">{{ versionText }}</div>
           </v-card-text>
           <v-card-actions class="px-4">
-            <v-btn @click="checkVersion" 
-              color="primary" 
-              outlined>
-              <v-icon class="mr-2">mdi-update</v-icon>
-              පරීක්‍ෂා කරන්න
+            <v-btn @click="checkVersion" color="primary" outlined>
+              <v-icon class="mr-2">mdi-update</v-icon>පරීක්‍ෂා කරන්න
             </v-btn>
           </v-card-actions>
         </v-card>

@@ -1,4 +1,11 @@
-import { Capacitor } from "@capacitor/core"
+let Capacitor = null;
+if (typeof window !== 'undefined' && window.Capacitor) {
+  try {
+    Capacitor = require('@capacitor/core').Capacitor;
+  } catch (e) {
+    console.warn('Capacitor not available');
+  }
+}
 
 /** special flags and constants */
 export const installedAndroidAppVersion = 2.0 // used to determine if app needs to be updated, remember to update this when new version is released
@@ -38,14 +45,13 @@ export const dictionaryInfo = {
 }
 
 export const IOS = 'ios';
-export const platform = Capacitor.getPlatform();
+export const platform = Capacitor ? Capacitor.getPlatform() : null;
 export const dbFileNameDict = 'dict.db';
 export const dbFileNameFts = 'fts.db';
 export const bundleId = "lk.tipitaka.ios";
 export const iosFtsVersion = '2'; // remember to update this when a new fts version is released
 export const iosDictVersion = '2'; // remember to update this when a new dict version is released
 export const dpdReleaseVersion = 'v0.2.20250709'
-export const compoundChars = 'ඒඨධභඝඪථදඟඳඵඛ​ශඤඦඥ​ඬ​';
 
 // helper function to copy the title to the og:title
 export const copyMetaTitle = (title) => ({
