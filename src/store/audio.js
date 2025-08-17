@@ -4,11 +4,26 @@ import axios from 'axios'
 
 const audio = new Audio()
 audio.onplay = () => {  store.commit('audio/setPlaying', true) };
-audio.onerror = audio.onpause = audio.onended = () => store.commit('audio/setPlaying', false);
+audio.onerror = (error) => {
+  store.commit('audio/setPlaying', false);
+  store.commit('audio/setAudioError', commonErrorMessage);
+  store.commit('audio/setAudioLoading', false);
+};
+audio.onpause = audio.onended = () => store.commit('audio/setPlaying', false);
 audio.ondurationchange = () => store.commit('audio/setDuration', audio.duration)
 audio.ontimeupdate = () => store.dispatch('audio/timeUpdated', audio.currentTime)
 
+// Add loading state handlers
+audio.onloadstart = () => {
+  store.commit('audio/setAudioLoading', true);
+  store.commit('audio/setAudioError', null);
+};
+audio.onloadeddata = () => {
+  store.commit('audio/setAudioLoading', false);
+};
+
 const audioBaseUrl = 'https://sajjha.sgp1.cdn.digitaloceanspaces.com/original/'
+const commonErrorMessage = 'සජ්ඣායනා දත්ත ලබාගත නොහැකි වි​ය. කරුණාකර අන්තර්ජාල සම්බන්ධතාවය පරීක්ෂා කරන්​න.'
 
 async function loadLabels(src) {
     try {
@@ -23,17 +38,8 @@ async function loadLabels(src) {
         }) 
     }
     catch (error) {
-      if (error.response) {
-          // Server responded with a status other than 2xx
-          console.error(`Server responded with status ${error.response.status} for URL: ${src}`);
-      } else if (error.request) {
-          // Request was made but no response was received
-          console.error(`No response received for URL: ${src}`, error.message);
-      } else {
-          // Something happened in setting up the request
-          console.error(`Error in setting up request for URL: ${src}`, error.message);
-      }
-      throw error;
+      console.error(`Failed to load audio metadata for ${src}:`, error.message);
+      store.commit('audio/setAudioError', commonErrorMessage);
     }
 }
 
@@ -50,6 +56,8 @@ export default {
     currentSrc: '',
     currentTime: 0,
     fileMap: {}, // mapping of text filenames to audio filenames
+    isLoading: false,
+    audioError: null,
   },
 
   getters: {
@@ -83,7 +91,12 @@ export default {
       if (state.isPlaying) {
         audio.pause()
       } else {
-        audio.play()
+        // Clear any previous errors before attempting to play
+        commit('clearAudioError');
+        audio.play().catch(error => {
+          this.commit('audio/setAudioError', `දෝෂයක් ඇතිවි​ය: ${error.message}`);
+          this.commit('audio/setPlaying', false);
+        });
       }
     },
     pauseAudio(state) {
@@ -100,6 +113,15 @@ export default {
       Object.preventExtensions(fileMap) // read-only not reactive - this improves perf
       state.fileMap = fileMap
     },
+    setLoading(state, loading) {
+      state.isLoading = loading
+    },
+    setAudioError(state, error) {
+      state.audioError = error
+    },
+    clearAudioError(state) {
+      state.audioError = null
+    },
   },
 
   actions: {
@@ -110,28 +132,50 @@ export default {
 
     async startEntry({state, commit, rootGetters, dispatch}, eInd) {
       try {
+        commit('clearAudioError');
         const data = rootGetters['tabs/getActiveTab'].data, entries = [], audioFiles = state.fileMap[data.filename]
-        if (!audioFiles) return // audio not availabe for this file
-        if (data.filename != state.filename) { // different text file being played
-          // reload text entries and the labels
-          data.pages.forEach(page => entries.push(...page.pali.entries))
-          
-          // parallel load all label files
-          const promises = audioFiles.map(async labelFile => await loadLabels(audioBaseUrl + labelFile))
-          const labelArrays = await Promise.all(promises), labels = []
-          labelArrays.flat(1).forEach(label => labels[label.text - 1] = label) // concat all arrays and sort by label text
-          entries.filter(e => !e.noAudio).forEach((entry, i) => entry.label = labels[i]) // assign labels to entries
-          Object.preventExtensions(entries)
-          state.entries = entries
-          state.filename = data.filename
-          //const noAudio = /(^$|^\$.+$|^[\d\.,\- ]+$)/.test(paliEntry.text) || paliEntry.noAudio // empty, starts with $ or all numbers
+        
+        if (!audioFiles) {
+          commit('setAudioError', 'මෙම ඡේද​ය සඳහා සජ්ඣායනා දත්ත නොමැත');
+          return;
         }
+
+        if (data.filename != state.filename) { // different text file being played
+          commit('setLoading', true);
+
+          try {
+            // reload text entries and the labels
+            data.pages.forEach(page => entries.push(...page.pali.entries))
+            
+            // parallel load all label files with error handling
+            const promises = audioFiles.map(async labelFile => await loadLabels(audioBaseUrl + labelFile))
+
+            const labelArrays = await Promise.all(promises);
+            const labels = []
+            labelArrays.flat(1).forEach(label => labels[label.text - 1] = label) // concat all arrays and sort by label text
+            entries.filter(e => !e.noAudio).forEach((entry, i) => entry.label = labels[i]) // assign labels to entries
+            Object.preventExtensions(entries)
+            state.entries = entries
+            state.filename = data.filename
+            //const noAudio = /(^$|^\$.+$|^[\d\.,\- ]+$)/.test(paliEntry.text) || paliEntry.noAudio // empty, starts with $ or all numbers
+          } catch (error) {
+            commit('setLoading', false);
+            commit('setAudioError', commonErrorMessage);
+            console.error('Error loading labels:', error.message);
+            return;
+          } finally {
+            commit('setLoading', false);
+          }
+        }
+
         commit('setAudioControls', true)
         const playEntry = state.entries.find(e => e.eInd[0] == eInd[0] && e.eInd[1] >= eInd[1])
         dispatch('updateAudio', { newInd: playEntry ? playEntry.cInd : 0, dir: 1 })
-      } catch (error) {
-        console.error('Error in startEntry:', error.message);
-      }
+       
+        } catch (error) {
+          commit('setAudioError', `දෝෂයක් ඇති වි​ය: ${error.message}`);
+          console.error('Error in startEntry:', error.message);
+        }
     },
   
     moveParagraph({state, dispatch}, inc) {
@@ -141,19 +185,29 @@ export default {
 
     updateAudio({state, commit}, {newInd, dir} ) {
       if (newInd < 0 || state.entries.length <= newInd) return
+
       while (!state.entries[newInd].label) { // find the next audio available paragraph
         newInd += dir
         if (newInd < 0 || state.entries.length <= newInd) return
       }
+
       const label = state.entries[newInd].label
-      // todo check errors
+      
+      commit('clearAudioError');
+
       audio.pause()
       audio.src = state.currentSrc = label.src
       audio.currentTime = label.start
       audio.playbackRate = state.playbackRate // move para after setting custom playbackRate needs this to stick
       commit('setActiveEntry', newInd)
-      audio.play()
-      console.log(`play para for key ${entryToKeyStr(state.entries[newInd])} cInd: ${newInd}, label: ${label.text}, time: ${audio.currentTime}`)
+
+      try {
+        audio.play()
+        console.log(`play para for key ${entryToKeyStr(state.entries[newInd])} cInd: ${newInd}, label: ${label.text}, time: ${audio.currentTime}`)
+      } catch (playError) {
+        commit('setAudioError', `දෝෂයක් ඇති වි​ය: ${playError.message}`);
+        console.error('Audio play error:', playError.message);
+      }
     },
 
     // check if needed to go to the next para

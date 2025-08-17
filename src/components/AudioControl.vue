@@ -4,6 +4,19 @@
         <v-progress-linear :value="progessPercentage" class="my-0" height="3"></v-progress-linear>
       </v-card>
       
+      <v-dialog v-model="showLoadingDialog" persistent>
+        <v-card>
+            <v-card-text>
+                <div class="d-flex flex-no-wrap justify-space-around align-center">
+                <div class="ml-3"><v-progress-circular size="50" indeterminate color="primary"></v-progress-circular></div> 
+                <div>
+                    <v-card-text>{{ loadingMessage }}</v-card-text>
+                </div>
+            </div>
+            </v-card-text>
+        </v-card>
+      </v-dialog>
+
       <v-toolbar :class="{ 'custom-toolbar-height': isIOS }" dense flat>
         
         <div class="text">{{ getActiveLabel.text }}</div>
@@ -85,7 +98,7 @@ export default {
     },
 
     computed: {
-        ...mapState('audio', ['audioControls', 'playbackRate', 'isPlaying', 'currentTime', 'duration', 'silenceGap']),
+        ...mapState('audio', ['audioControls', 'playbackRate', 'isPlaying', 'currentTime', 'duration', 'silenceGap', 'isLoading']),
         ...mapGetters('audio', ['getActiveEntry', 'getActiveLabel']),
 
         progessPercentage() { return this.duration ? this.currentTime / this.duration * 100 : 0 },
@@ -111,7 +124,13 @@ export default {
         },
         isIOS(){
             return platform === IOS;
-        }
+        },
+        showLoadingDialog() {
+            return this.isLoading;
+        },
+        loadingMessage() {
+            return 'සජ්ඣායනා දත්ත බාග​ත වෙමින් පවතී...';
+        },
     },
 
     methods: {

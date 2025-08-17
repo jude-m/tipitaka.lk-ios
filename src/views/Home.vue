@@ -7,6 +7,21 @@
     <v-btn fab small fixed bottom right @click="$vuetify.goTo(0)">
         <v-icon>mdi-chevron-triple-up</v-icon>
     </v-btn>
+    <!-- Audio Error Snackbar -->
+    <v-snackbar
+      v-model="showAudioErrorSnackbar"
+      :timeout="6000"
+      color="primary"
+      multi-line
+      centered
+      @input="handleSnackbarClose">
+      <div v-html="$store.state.audio.audioError" style="text-align: left;"></div>
+      <template v-slot:action="{ attrs }">
+        <v-btn text v-bind="attrs" @click="handleSnackbarClose(false)">
+        <v-icon>mdi-close</v-icon>
+        </v-btn>
+      </template>
+    </v-snackbar>
 
     <v-sheet v-if="$store.state.audio.audioControls" class="bottom-sheet pb-2" :height="getAudioControlSheetHeight" :elevation="5">
       <AudioControl/>
@@ -121,6 +136,9 @@ export default {
         this.debouncedWordQuery()
       } 
     },
+    showAudioErrorSnackbar: {
+      get() { return !!this.$store.state.audio.audioError }
+    },
   },
 
   methods: {
@@ -141,7 +159,13 @@ export default {
       // Toggle the isExpanded state and adjust height
       this.isExpanded = !this.isExpanded;
       this.sheetHeight = this.isExpanded ? '75vh' : '250px'; // Set to 75% viewport height or 250px
-    }
+    },
+    handleSnackbarClose(isVisible) {
+      // When snackbar becomes invisible (either by timeout or manual close)
+      if (!isVisible) {
+        this.$store.commit('audio/clearAudioError');
+      }
+    },
   },
 
   watch: {  },
