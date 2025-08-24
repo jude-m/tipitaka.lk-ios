@@ -211,13 +211,15 @@ export default {
 
       const likePrefixQuery = (wordsList.length > 100 || exactMatchPage) ? '' :
        `UNION
-          SELECT word, COUNT(dict) AS num, 'like' AS meaning FROM dictionary 
+          SELECT word, COUNT(dict) AS num, 'like' AS meaning, 2 as priority FROM dictionary 
             WHERE (word LIKE '${wordsList.join("_%' OR word LIKE '")}_%') AND ${dictFilter}
             GROUP BY word`
 
-      const sql = `SELECT word, dict, meaning FROM dictionary 
-                  ${whereClause} AND (${dictFilter} OR dict = 'BR')
-                  ${likePrefixQuery} ORDER BY word LIMIT 50;`
+      const sql = `SELECT word, dict, meaning, priority FROM (
+                    SELECT word, dict, meaning, 1 as priority FROM dictionary 
+                    ${whereClause} AND (${dictFilter} OR dict = 'BR')
+                    ${likePrefixQuery}
+                  ) combined_results ORDER BY priority, word LIMIT 50;`
       return dispatch('runDictQuery', { sql, input })
     },
 
