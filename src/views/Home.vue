@@ -26,21 +26,50 @@
     <v-sheet v-if="$store.state.audio.audioControls" class="bottom-sheet pb-2" :height="getAudioControlSheetHeight" :elevation="5">
       <AudioControl/>
     </v-sheet>
+
+    <DictionaryFilter ref="dictionaryFilter" />
     
     <v-sheet v-if="showInlineDict" class="bottom-sheet pb-2" :style="{ height: sheetHeight }" :elevation="7">
       <v-toolbar :dense="$vuetify.breakpoint.smAndDown" flat>
         <v-text-field v-model="inlineWord" hide-details :class="{ grow: $vuetify.breakpoint.mdAndUp }"></v-text-field>
         <v-btn icon @click="inlineWordBackspace"><v-icon>mdi-backspace</v-icon></v-btn>
         <div class="button-container">
-          <v-btn  @click="$router.push('/fts/' + inlineWord)" :icon="true">
-            <v-icon :size="$vuetify.breakpoint.mdAndUp ? '30px' : '24px'" color="primary">mdi-magnify</v-icon>
+          <v-btn  @click="$router.push('/fts/' + inlineWord)" icon>
+              <v-icon :size="$vuetify.breakpoint.mdAndUp ? '30px' : '24px'"  color="primary">mdi-magnify</v-icon>
           </v-btn>
-          <v-btn v-model="exactMatch" @click="toggleExactMatch"  icon="true">
-            <v-icon :size="$vuetify.breakpoint.mdAndUp ? '30px' : '24px'" :color="exactMatch ? 'primary' : ''">mdi-format-letter-matches</v-icon>
-          </v-btn>
-          <v-btn @click="resizeInlineDictSheet" icon="true">
+          <!-- Show inline on larger screens, hide on mobile -->
+          <template v-if="$vuetify.breakpoint.mdAndUp">
+            <v-btn v-model="exactMatch" @click="toggleExactMatch"  icon>
+              <v-icon size="30px" :color="exactMatch ? 'primary' : ''">mdi-format-letter-matches</v-icon>
+            </v-btn>
+            <v-btn @click="openDictionaryFilter" icon>
+              <v-icon size="30px" :color="isDictionaryFilterLimited ? 'primary' : ''">mdi-book-open-page-variant</v-icon>
+            </v-btn>
+          </template>
+          <v-btn @click="resizeInlineDictSheet" icon>
             <v-icon :size="$vuetify.breakpoint.mdAndUp ? '30px' : '24px'" color="primary">{{ isExpanded ? 'mdi-chevron-down-circle-outline' : 'mdi-chevron-up-circle-outline' }}</v-icon>
           </v-btn>
+          <v-menu v-if="$vuetify.breakpoint.smAndDown" offset-y left>
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn v-bind="attrs" v-on="on" icon>
+                <v-icon>mdi-dots-vertical</v-icon>
+              </v-btn>
+            </template>
+            <v-list dense>
+              <v-list-item @click="toggleExactMatch">
+                <v-list-item-icon>
+                  <v-icon :color="exactMatch ? 'primary' : ''">mdi-format-letter-matches</v-icon>
+                </v-list-item-icon>
+                <v-list-item-title>එම වචනයම සොයන්න</v-list-item-title>
+              </v-list-item>
+              <v-list-item @click="openDictionaryFilter">
+                <v-list-item-icon>
+                  <v-icon :color="isDictionaryFilterLimited ? 'primary' : ''">mdi-book-open-page-variant</v-icon>
+                </v-list-item-icon>
+                <v-list-item-title>{{isDictionaryFilterLimited ? 'ශබ්දකෝෂ සීමා වී ඇත' : 'ශබ්දකෝෂ සීමා කිරීම'}}</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
           <v-btn @click="showInlineDict = !showInlineDict" icon color="error">
             <v-icon :size="$vuetify.breakpoint.mdAndUp ? '30px' : '24px'">mdi-close</v-icon>
           </v-btn>
@@ -92,6 +121,7 @@ import { mapState, mapGetters } from 'vuex'
 import TextTab from '@/components/TextTab.vue'
 import DictionaryResults from '@/components/DictionaryResults'
 import AudioControl from '@/components/AudioControl'
+import DictionaryFilter from '@/components/DictionaryFilter'
 import { copyMetaTitle, IOS, platform } from '@/constants.js'
 import _ from 'lodash'
 
@@ -101,6 +131,7 @@ export default {
     TextTab,
     DictionaryResults,
     AudioControl,
+    DictionaryFilter,
   },
   data() {
     return {
@@ -112,6 +143,7 @@ export default {
     ...mapState('tabs', ['activeInd', 'tabList']),
     ...mapState('search', ['inlineDict']),
     ...mapGetters('tree', ['getName']),
+    ...mapGetters('search', ['isDictionaryFilterLimited']),
     smAndUp() { return this.$vuetify.breakpoint.smAndUp },
     activeTabInd: {
       get() { return this.activeInd },
@@ -166,9 +198,25 @@ export default {
         this.$store.commit('audio/clearAudioError');
       }
     },
+    openDictionaryFilter() {
+      // Open the dictionary filter dialog
+      this.$refs.dictionaryFilter.dialog = true;
+    },
   },
 
-  watch: {  },
+  watch: {
+    // Watch for dictionary selection changes
+    '$store.state.search.selectedDictionaries': {
+      deep: true,
+      handler() {
+        console.log(`dictionary list updated in Home`)
+        // Only run query if inline dict is visible and has a word
+        //if (this.showInlineDict && this.inlineWord) {
+          this.debouncedWordQuery()
+        //}
+      },
+    },
+  },
 
   created() { 
     this.debouncedWordQuery = _.debounce(this.runInlineDictQuery, 400)
