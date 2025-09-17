@@ -136,7 +136,8 @@ export default {
   data() {
     return {
       isExpanded: false, // Tracks the toggle state
-      sheetHeight: '250px' // Initial height
+      sheetHeight: '250px', // Initial height
+      isRestoringScroll: false, // Flag to prevent saving while restoring
     };
   },
   computed: {
@@ -202,6 +203,39 @@ export default {
       // Open the dictionary filter dialog
       this.$refs.dictionaryFilter.dialog = true;
     },
+    saveScrollPosition(tabIndex) {
+      // Don't save if index is invalid or no tabs exist
+      if (tabIndex == null || tabIndex < 0) return;
+      
+      // Don't save if the tab doesn't exist (e.g., was just closed)
+      if (!this.tabList[tabIndex]) return;
+      
+      const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || 0;
+      console.log(`Saving scroll position for tab ${tabIndex}: ${scrollPosition}`);
+      this.$store.commit('tabs/saveTabScrollPosition', {
+        tabIndex: tabIndex,
+        scrollPosition: scrollPosition
+      });
+    },
+    restoreScrollPosition(tabIndex) {
+      // Don't restore if index is invalid or no tabs exist
+      if (tabIndex == null || tabIndex < 0) return;
+      
+      // Don't restore if the tab doesn't exist
+      if (!this.tabList[tabIndex]) return;
+      
+      this.isRestoringScroll = true;
+      this.$nextTick(() => {
+        const savedPosition = this.$store.getters['tabs/getTabScrollPosition'](tabIndex) || 0;
+        console.log(`Restoring scroll position for tab ${tabIndex}: ${savedPosition}`);
+        window.scrollTo(0, savedPosition);
+        
+        // Reset flag after a short delay to ensure scroll has completed
+        setTimeout(() => {
+          this.isRestoringScroll = false;
+        }, 100);
+      });
+    },
   },
 
   watch: {
@@ -216,10 +250,41 @@ export default {
         //}
       },
     },
+
+    activeInd: {
+      handler(newInd, oldInd) {
+        // Don't process if we're closing all tabs (going to -1)
+        if (newInd === -1) {
+          return;
+        }
+        
+        console.log(`Tab changed from ${oldInd} to ${newInd}`);
+        
+        // Save scroll position of the tab we're leaving (if it's valid)
+        if (oldInd >= 0 && this.tabList[oldInd]) {
+          this.saveScrollPosition(oldInd);
+        }
+        
+        // Restore scroll position of the tab we're switching to (if it's valid)
+        if (newInd >= 0 && this.tabList[newInd]) {
+          // Use a small delay to ensure DOM is ready
+          setTimeout(() => {
+            this.restoreScrollPosition(newInd);
+          }, 50);
+        }
+      }
+    }
   },
 
   created() { 
-    this.debouncedWordQuery = _.debounce(this.runInlineDictQuery, 400)
+    this.debouncedWordQuery = _.debounce(this.runInlineDictQuery, 400);
+  },
+
+  mounted() {
+    // Restore initial tab's scroll position if there is one
+    if (this.activeInd >= 0 && this.tabList[this.activeInd]) {
+      this.restoreScrollPosition(this.activeInd);
+    }
   },
 
   metaInfo() { // create page title by joining keyName and rootName 
