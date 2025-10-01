@@ -301,5 +301,44 @@ export default {
       console.log('App component is being destroyed');
     }
   },
+  mounted() {
+    // Force safe area padding in landscape
+    if (platform === IOS && window.screen.width < 768) {
+      const checkOrientation = () => {
+        const isLandscape = window.matchMedia('(orientation: landscape)').matches;
+        const app = document.querySelector('.v-application');
+        const drawerContent = document.querySelector('.v-navigation-drawer__content');
+        
+        if (isLandscape) {
+          // iPhone notch is typically 44px
+          if (app) {
+            app.style.paddingLeft = '44px';
+            app.style.paddingRight = '44px';
+          }
+          // Add padding to drawer content
+          if (drawerContent) {
+            drawerContent.style.paddingLeft = '44px';
+          }
+        } else {
+          if (app) {
+            app.style.paddingLeft = '';
+            app.style.paddingRight = '';
+          }
+          if (drawerContent) {
+            drawerContent.style.paddingLeft = '';
+          }
+        }
+      };
+      
+      // Use 'resize' instead of 'orientationchange' (more reliable)
+      window.addEventListener('resize', checkOrientation);
+      checkOrientation(); // Check on mount
+      
+      // Also check when drawer opens (it might not exist on mount)
+      this.$watch('showTree', () => {
+        setTimeout(checkOrientation, 100); // Small delay for drawer animation
+      });
+    }
+  }
 };
 </script>

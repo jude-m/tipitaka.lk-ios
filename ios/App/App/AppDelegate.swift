@@ -29,23 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let topAnchor: NSLayoutConstraint, leadingAnchor: NSLayoutConstraint, trailingAnchor: NSLayoutConstraint, bottomAnchor: NSLayoutConstraint
 
-        if (isLandscape()) {
-            topAnchor = containerView.topAnchor.constraint(equalTo: rootViewController.view.topAnchor);
-
-            if (getNotchSideInLandscape() == "right") {
-                leadingAnchor = containerView.leadingAnchor.constraint(equalTo: rootViewController.view.leadingAnchor)
-                trailingAnchor = containerView.trailingAnchor.constraint(equalTo: rootViewController.view.safeAreaLayoutGuide.trailingAnchor)
-            }
-            else {
-                leadingAnchor = containerView.leadingAnchor.constraint(equalTo: rootViewController.view.safeAreaLayoutGuide.leadingAnchor)
-                trailingAnchor = containerView.trailingAnchor.constraint(equalTo: rootViewController.view.trailingAnchor)
-            }
-        }
-        else {
-            leadingAnchor = containerView.leadingAnchor.constraint(equalTo: rootViewController.view.leadingAnchor)
-            trailingAnchor = containerView.trailingAnchor.constraint(equalTo: rootViewController.view.trailingAnchor)
-            topAnchor = containerView.topAnchor.constraint(equalTo: rootViewController.view.safeAreaLayoutGuide.topAnchor)
-        }
+        leadingAnchor = containerView.leadingAnchor.constraint(equalTo: rootViewController.view.leadingAnchor)
+        trailingAnchor = containerView.trailingAnchor.constraint(equalTo: rootViewController.view.trailingAnchor)
+        topAnchor = containerView.topAnchor.constraint(equalTo: rootViewController.view.safeAreaLayoutGuide.topAnchor)
         
         bottomAnchor = containerView.bottomAnchor.constraint(equalTo: rootViewController.view.bottomAnchor)
         NSLayoutConstraint.activate([
@@ -67,7 +53,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
    
-    
     // Handle orientation change
     @objc private func didChangeOrientation() {
         let rootViewController = getRootViewController();
@@ -84,28 +69,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = rootViewController
         }
         return rootViewController;
-    }
-    
-    func getNotchSideInLandscape() -> String? {
-        guard let window = UIApplication.shared.windows.first else { return nil }
-        
-        let orientation = window.windowScene?.interfaceOrientation
-        
-        return orientation == .landscapeLeft ? "right" :
-               orientation == .landscapeRight ? "left" : nil
-    }
-    
-    // Helper method to check if the device is in landscape mode
-    private func isLandscape() -> Bool {
-        // Safely unwrap the first window
-        guard let window = UIApplication.shared.windows.first,
-              let windowScene = window.windowScene else {
-            // If either the window or windowScene is nil, return false
-            return false
-        }
-        
-        // Safely access and return whether the interface orientation is landscape
-        return windowScene.interfaceOrientation.isLandscape
     }
 
     deinit {
