@@ -17,17 +17,17 @@
           </v-btn>
         </template>
         <v-list dense shaped>
-          <v-list-item @click="searchType = 'title'">
+          <v-list-item @click="searchType = 'title'" :ripple="false">
             <v-list-item-icon><v-icon>mdi-format-title</v-icon></v-list-item-icon>
             <v-list-item-title>සූත්‍ර නාම සෙවීම</v-list-item-title>
             <v-list-item-icon><v-icon color="success">{{ searchType == 'title' ? 'mdi-check' : ''}}</v-icon></v-list-item-icon>
           </v-list-item>
-          <v-list-item @click="searchType = 'fts'">
+          <v-list-item @click="searchType = 'fts'" :ripple="false">
             <v-list-item-icon><v-icon>mdi-text</v-icon></v-list-item-icon>
             <v-list-item-title>සූත්‍ර අන්තර්ගතය සෙවීම</v-list-item-title>
             <v-list-item-icon><v-icon color="success">{{ searchType == 'fts' ? 'mdi-check' : ''}}</v-icon></v-list-item-icon>
           </v-list-item>
-          <v-list-item @click="searchType = 'dict'">
+          <v-list-item @click="searchType = 'dict'" :ripple="false">
             <v-list-item-icon><v-icon>mdi-book-open-page-variant</v-icon></v-list-item-icon>
             <v-list-item-title>පාලි ශබ්දකෝෂ සෙවීම</v-list-item-title>
             <v-list-item-icon><v-icon color="success">{{ searchType == 'dict' ? 'mdi-check' : ''}}</v-icon></v-list-item-icon>
@@ -37,23 +37,23 @@
             <v-list-item-icon><v-icon>mdi-cog</v-icon></v-list-item-icon>
             <v-list-item-title>{{ isView('Settings') ? 'සැකසුමෙන් පිටවෙන්න' : 'සැකසුම් / Settings' }}</v-list-item-title>
           </v-list-item>
-          <v-list-item @click="toggleView('Bookmarks')" :input-value="isView('Bookmarks')">
+          <v-list-item @click="toggleView('Bookmarks')" :input-value="isView('Bookmarks')" :ripple="false">
             <v-list-item-icon><v-icon color="star">mdi-star</v-icon></v-list-item-icon>
             <v-list-item-title>{{ isView('Bookmarks') ? 'තරු යෙදුමෙන් පිටවෙන්න' : 'තරු යෙදූ සූත්‍ර / Bookmarks' }}</v-list-item-title>
           </v-list-item>
-          <v-list-item @click="toggleView('Abbreviations')" :input-value="isView('Abbreviations')">
+          <v-list-item @click="toggleView('Abbreviations')" :input-value="isView('Abbreviations')" :ripple="false">
             <v-list-item-icon><v-icon>mdi-asterisk</v-icon></v-list-item-icon>
             <v-list-item-title>{{ isView('Abbreviations') ? 'කෙටි යෙදුමෙන් පිටවෙන්න' : 'කෙටි යෙදුම් / Abbreviations' }}</v-list-item-title>
           </v-list-item>
-          <v-list-item to="Help" disabled>
+          <v-list-item to="Help" v-show="false" :ripple="false">
             <v-list-item-icon><v-icon>mdi-help-circle</v-icon></v-list-item-icon>
             <v-list-item-title>උදව් / උපදෙස්</v-list-item-title>
           </v-list-item>
-          <v-list-item href="https://pathnirvana.github.io/tipitaka.lk/" target="_blank">
+          <v-list-item href="https://pathnirvana.github.io/tipitaka.lk/" target="_blank" :ripple="false">
             <v-list-item-icon><v-icon>mdi-information</v-icon></v-list-item-icon>
             <v-list-item-title>අප ගැන / About</v-list-item-title>
           </v-list-item>
-          <v-list-item href="https://github.com/pathnirvana/tipitaka.lk" target="_blank">
+          <v-list-item href="https://github.com/pathnirvana/tipitaka.lk" target="_blank" :ripple="false">
             <v-list-item-icon><v-icon>mdi-github</v-icon></v-list-item-icon>
             <v-list-item-title>කේත කෝෂ්ඨය / GitHub</v-list-item-title>
           </v-list-item>

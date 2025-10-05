@@ -5,7 +5,7 @@
     <v-simple-table v-if="$store.getters.isLoaded">
       <tbody>
         <tr v-for="(bookmark, bKey) in bookmarks" :key="bKey">
-          <td :style="getTdStyle">
+          <td>
             <TipitakaLink :itemKey="bookmark.key" :params="bookmark" />
 
             <div v-if="bookmark.type != 'heading'" :class="bookmark.type" :style="$store.getters['styles']">
