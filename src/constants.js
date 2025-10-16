@@ -9,7 +9,7 @@ if (typeof window !== 'undefined' && window.Capacitor) {
 
 /** special flags and constants */
 export const installedAndroidAppVersion = 2.0 // used to determine if app needs to be updated, remember to update this when new version is released
-export const installedIosAppVersion = 2.3 // remember to update this when new version is released
+export const installedIosAppVersion = 2.4 // remember to update this when new version is released
 const settingsVersion = '2'
 export const settingsKey = `tipitaka.lk-settings-${settingsVersion}`
 const bookmarksVersion = '1'

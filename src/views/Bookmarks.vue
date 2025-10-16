@@ -10,7 +10,15 @@
 
             <div v-if="bookmark.type != 'heading'" :class="bookmark.type" :style="$store.getters['styles']">
               <template v-if="!!bookmark.text">
-                <span v-for="(se, i) in bookmark.text" :class="se[1] || false" :key="i" v-html="se[0]"></span>
+                <!-- iOS rendering -->
+                <template v-if="platform === IOS">
+                  <span class="bookmark-span">{{ bookmark.text }}</span>
+                </template>
+
+                <!-- Web rendering -->
+                <template v-else>
+                  <span v-for="(se, i) in bookmark.text" :class="se[1] || false" :key="i" v-html="se[0]"></span>
+                </template>
               </template>
               <div v-else class="html" v-html="bookmark.hText"></div>
             </div>
@@ -27,6 +35,11 @@
 <style scoped>
 /* TODO consider copying some basic styles for gatha/para/centered here from TextEntry */
 .html >>> sr { background-color: var(--v-highlight-base); }
+.bookmark-span {
+  display: inline;
+  white-space: pre-wrap; /* keep line breaks */
+  line-height: 1.6em;
+}
 </style>
 
 <script>
